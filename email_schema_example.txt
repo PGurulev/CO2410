@@ -1,0 +1,21 @@
+{
+  "mails": [
+    {
+      "id": "0",
+      "content": {
+        "subject": "content",
+        "recievers": [
+          {
+            "name": "NameForExample",
+            "email": "example@gmail.com"
+          }
+        ],
+        "sender": {
+          "name": "NameForExample",
+          "email": "example@gmail.com"
+        }
+      },
+      "body": "content"
+    }
+  ]
+}

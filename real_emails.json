@@ -1,0 +1,344 @@
+{
+  "mails": [
+    {
+      "id": "0",
+      "content": {
+        "subject": "Onboarding Schedule & Portal Access",
+        "recievers": [
+          {
+            "name": "Hassan Al\u2011Masri",
+            "email": "halmasri@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.example.com"
+        }
+      },
+      "body": "Welcome aboard! Your AOU account has been created. Please sign in to the portal to review your first\u2011week schedule and complete your profile."
+    },
+    {
+      "id": "1",
+      "content": {
+        "subject": "Weekly Research Sync \u2013 Ocean Sensing Lab",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.example.com"
+        }
+      },
+      "body": "Reminder: Our Wednesday sync is at 10:00 in Lab B. Bring sensor deployment notes and calibration results."
+    },
+    {
+      "id": "2",
+      "content": {
+        "subject": "Network Maintenance Window (Friday 20:00\u201322:00)",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "nkouris@aou.example.com"
+        }
+      },
+      "body": "IT will perform routine upgrades this Friday. VPN and Wi\u2011Fi may briefly drop. No action needed."
+    },
+    {
+      "id": "3",
+      "content": {
+        "subject": "Purchase Order Approved \u2013 ROV Tethers",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "apetrescu@aou.example.com"
+        }
+      },
+      "body": "Finance has approved PO #11872 for ROV tethers. Vendor: BlueLine Marine. Expected delivery: next Tuesday."
+    },
+    {
+      "id": "4",
+      "content": {
+        "subject": "Faculty Town Hall \u2013 Agenda & Q&A",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.example.com"
+        }
+      },
+      "body": "Attached is the agenda for Thursday\u2019s town hall. Submit questions via the Q&A form by 17:00 tomorrow."
+    },
+    {
+      "id": "5",
+      "content": {
+        "subject": "Security Awareness Refresher",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al\u2011Masri",
+          "email": "halmasri@aou.example.com"
+        }
+      },
+      "body": "Please complete the 15\u2011minute security refresher by Friday. It covers phishing simulations and MFA best practices."
+    },
+    {
+      "id": "6",
+      "content": {
+        "subject": "Student Open Day Volunteers",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "smarin@aou.example.com"
+        }
+      },
+      "body": "Admissions is seeking volunteers for Open Day. Two\u2011hour shifts available. Reply if you can help."
+    },
+    {
+      "id": "7",
+      "content": {
+        "subject": "Timesheets Due",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "jmikkelsen@aou.example.com"
+        }
+      },
+      "body": "A quick reminder to submit your timesheets by 12:00 today to avoid payroll delays."
+    },
+    {
+      "id": "8",
+      "content": {
+        "subject": "Grant Proposal Internal Review",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.example.com"
+        }
+      },
+      "body": "R&D: send your abstracts and methodology sections by Monday for internal peer review."
+    },
+    {
+      "id": "9",
+      "content": {
+        "subject": "Access Card Replacement Drive",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "odlamini@aou.example.com"
+        }
+      },
+      "body": "Operations will issue updated access cards next week. Visit the Marina Gate office between 09:00\u201316:00."
+    },
+    {
+      "id": "10",
+      "content": {
+        "subject": "Budget Reforecast \u2013 Q3",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "anowak@aou.example.com"
+        }
+      },
+      "body": "Please review departmental spend and submit adjustments by end of week."
+    },
+    {
+      "id": "11",
+      "content": {
+        "subject": "Wellness Workshop Sign\u2011Up",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "tchristoforou@aou.example.com"
+        }
+      },
+      "body": "HR is hosting a stress\u2011management session on campus next Wednesday. Limited seats, register via HR portal."
+    },
+    {
+      "id": "12",
+      "content": {
+        "subject": "Data Governance Policy Update",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "ikovacs@aou.example.com"
+        }
+      },
+      "body": "We\u2019ve updated retention rules for research datasets. See the policy page and acknowledge receipt."
+    },
+    {
+      "id": "13",
+      "content": {
+        "subject": "Student Advising Slots Open",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "bajayi@aou.example.com"
+        }
+      },
+      "body": "New advising appointments are available. Book via the Student Affairs portal."
+    },
+    {
+      "id": "14",
+      "content": {
+        "subject": "New Printer Deployment \u2013 Building C",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "eyildiz@aou.example.com"
+        }
+      },
+      "body": "IT will place two new MFDs on Level 2. Follow the driver install instructions in the portal."
+    },
+    {
+      "id": "15",
+      "content": {
+        "subject": "Lab Safety Drill",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.example.com"
+        }
+      },
+      "body": "A short safety drill will run tomorrow at 09:30 in the ROV bay. Please participate and follow coordinator instructions."
+    },
+    {
+      "id": "16",
+      "content": {
+        "subject": "Conference Travel Reimbursements",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.example.com"
+        }
+      },
+      "body": "Remember to upload receipts within 10 days of travel. Finance can help with per\u2011diem questions."
+    },
+    {
+      "id": "17",
+      "content": {
+        "subject": "Marina Shuttle Schedule Update",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.example.com"
+        }
+      },
+      "body": "Operations updated the shuttle timetable. First trip now at 07:20. See intranet schedule."
+    },
+    {
+      "id": "18",
+      "content": {
+        "subject": "Admissions Fair Materials",
+        "recievers": [
+          {
+            "name": "Hassan Al\u2011Masri",
+            "email": "halmasri@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.example.com"
+        }
+      },
+      "body": "Outreach kits are ready for pickup. Check your assigned schools and confirm logistics."
+    },
+    {
+      "id": "19",
+      "content": {
+        "subject": "Semester Kickoff Briefing",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.example.com"
+        }
+      },
+      "body": "President\u2019s briefing is Monday 09:00 in Auditorium A. Coffee from 08:30."
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "mails": [
+    {
+      "id": "0",
+      "content": {
+        "subject": "URGENT: Verify your AOU Password NOW",
+        "recievers": [
+          {
+            "name": "Hassan Al\u2011Masri",
+            "email": "halmasri@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "jonas@a0u-security.com"
+        }
+      },
+      "body": "Your AOU mailbox will be closed in 6 hours. Verify here: http://a0u-security.com/verify to keep access. Do not ignore."
+    },
+    {
+      "id": "1",
+      "content": {
+        "subject": "Invoice Overdue \u2013 Immediate Action Required",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "maria@a0u-security.com"
+        }
+      },
+      "body": "We couldn\u2019t process PO#11872. Open the attached \u2018Invoice.xlsm\u2019 and enable macros to review payment details."
+    },
+    {
+      "id": "2",
+      "content": {
+        "subject": "New Voicemail (1)",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "owen@a0u-security.com"
+        }
+      },
+      "body": "You have a new voicemail. Listen securely at http://aou-internal-login.net/audio. Sign in with email and password."
+    },
+    {
+      "id": "3",
+      "content": {
+        "subject": "HR Bonus Confirmation",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al\u2011Masri",
+          "email": "agata@a0u-security.com"
+        }
+      },
+      "body": "Congratulations! Your bonus is ready. Confirm bank details at http://aou-payroll-support.com to receive funds today."
+    },
+    {
+      "id": "4",
+      "content": {
+        "subject": "IT Ticket Closed \u2013 Feedback Needed",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "theo@a0u-security.com"
+        }
+      },
+      "body": "We closed your ticket. For a small gift card, complete this survey: http://bit.ly/aou\u2011service\u2011review."
+    },
+    {
+      "id": "5",
+      "content": {
+        "subject": "Shared Drive Access Suspended",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "irina@a0u-security.com"
+        }
+      },
+      "body": "Your drive access is disabled due to abnormal activity. Restore at http://aou\u2011restore.info within 30 minutes."
+    },
+    {
+      "id": "6",
+      "content": {
+        "subject": "Password Expiration Notice",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "babatunde@a0u-security.com"
+        }
+      },
+      "body": "Your password expired. Reset now: http://aou\u2011reset-password.co. Failure to comply results in account lockout."
+    },
+    {
+      "id": "7",
+      "content": {
+        "subject": "Conference Invitation \u2013 Final Confirmation",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "elif@a0u-security.com"
+        }
+      },
+      "body": "Please download the attached \u2018Invite.pdf.exe\u2019 for entry QR. Required for Monday\u2019s briefing."
+    },
+    {
+      "id": "8",
+      "content": {
+        "subject": "Urgent President Request",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "george@a0u-security.com"
+        }
+      },
+      "body": "I need 10 Apple gift cards in the next hour for VIP guests. Scratch and send codes here. Keep this confidential."
+    },
+    {
+      "id": "9",
+      "content": {
+        "subject": "Multi\u2011Factor Device Removed",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "rita@a0u-security.com"
+        }
+      },
+      "body": "A new device removed your MFA. If this wasn\u2019t you, re\u2011enroll at http://secure-aou-auth.com immediately."
+    },
+    {
+      "id": "10",
+      "content": {
+        "subject": "Delivery Failure \u2013 Reauthenticate",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "samuel@a0u-security.com"
+        }
+      },
+      "body": "Emails to students are bouncing. Reauthenticate mailbox: http://aou\u2011mail\u2011fix.org now to prevent loss of service."
+    },
+    {
+      "id": "11",
+      "content": {
+        "subject": "Document Share From Finance",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "dr.@a0u-security.com"
+        }
+      },
+      "body": "Maria shared \u2018Q3_Budget.xls\u2019. Sign in via http://aou-finance-share.com to download."
+    },
+    {
+      "id": "12",
+      "content": {
+        "subject": "Covid Compliance Form",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "mateo@a0u-security.com"
+        }
+      },
+      "body": "Complete the campus COVID form at http://aou\u2011health\u2011portal.cc or your ID will be deactivated."
+    },
+    {
+      "id": "13",
+      "content": {
+        "subject": "Parking Violation",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "prof.@a0u-security.com"
+        }
+      },
+      "body": "Unpaid parking ticket detected. Appeal within 24 hours at http://aou\u2011parking\u2011appeals.com to avoid penalties."
+    },
+    {
+      "id": "14",
+      "content": {
+        "subject": "Security Camera Footage",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "armin@a0u-security.com"
+        }
+      },
+      "body": "Motion detected in Lab B. View footage: http://aou\u2011cctv.net and log in to confirm your identity."
+    },
+    {
+      "id": "15",
+      "content": {
+        "subject": "Helpdesk Upgrade",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "lia@a0u-security.com"
+        }
+      },
+      "body": "Migration requires password reconfirmation. Submit here: http://helpdesk\u2011aou.com/upgrade."
+    },
+    {
+      "id": "16",
+      "content": {
+        "subject": "Scholarship Refund",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "hassan@a0u-security.com"
+        }
+      },
+      "body": "You qualify for a refund. Enter bank details at http://aou\u2011refunds.center to receive payment today."
+    },
+    {
+      "id": "17",
+      "content": {
+        "subject": "Shared Invoice via OneDrive",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "sofia@a0u-security.com"
+        }
+      },
+      "body": "Access invoice: http://onedr1ve-aou.com. Sign in with institutional credentials."
+    },
+    {
+      "id": "18",
+      "content": {
+        "subject": "Payroll Correction Needed",
+        "recievers": [
+          {
+            "name": "Hassan Al\u2011Masri",
+            "email": "halmasri@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "jonas@a0u-security.com"
+        }
+      },
+      "body": "Your payroll info is invalid. Open attachment \u2018Payroll_Update.htm\u2019 and follow steps within."
+    },
+    {
+      "id": "19",
+      "content": {
+        "subject": "VPN Access Disabled",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.example.com"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "maria@a0u-security.com"
+        }
+      },
+      "body": "Your VPN was disabled. Restore now: http://aou\u2011vpn\u2011restore.net to retain remote access."
+    }
+  ]
+}
