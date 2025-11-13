@@ -1,6 +1,6 @@
-'use strict';
+'use strict'; 
+// declare the strict types. This is used to enforce type checking and good practise to prevent errors  
 
-// Получение списка писем и вывод в консоль/DOM
 fetch('php/mails.php')
 	.then(r => {
 		if (!r.ok) throw new Error('Network response was not ok');
