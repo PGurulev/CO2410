@@ -9,7 +9,7 @@ $conn = db_connect();
 
 // Getting emails
 $sqlMails = "SELECT id, subject, body, sender_name, sender_email FROM mails ORDER BY id ASC";
-$resultMails = $conn->query($sqlMails);
+$resultMails = $conn->query($sqlMails);// select mails from the table of mails
 if ($resultMails === false) {
 	http_response_code(500);
 	echo json_encode(['error' => 'Query failed', 'details' => $conn->error], JSON_UNESCAPED_UNICODE);
@@ -27,7 +27,7 @@ while ($row = $resultMails->fetch_assoc()) {
 
 $recipientsByMail = [];
 if (count($mailIds) > 0) {
-	$idsList = implode(',', array_map('intval', $mailIds));
+	$idsList = implode(',', array_map('intval', $mailIds));  // list of mail ids which are in the mails table
 	$sqlRecipients = "SELECT mail_id, name, email FROM mail_recipients WHERE mail_id IN ($idsList) ORDER BY id ASC";
 	$resultRecipients = $conn->query($sqlRecipients);
 	if ($resultRecipients === false) {
@@ -54,13 +54,13 @@ foreach ($mails as $mail) {
 		'id' => strval($mid),
 		'content' => [
 			'subject' => $mail['subject'],
-			'recievers' => array_values($recievers),
+			'recievers' => array_values($recievers), 
 			'sender' => [
 				'name' => $mail['sender_name'],
 				'email' => $mail['sender_email'],
-			],
+			],// all this is the content of the email
 		],
-		'body' => $mail['body'],
+		'body' => $mail['body'],// which gets the body of the email
 	];
 }
 
