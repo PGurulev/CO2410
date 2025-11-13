@@ -7,7 +7,7 @@ require_once __DIR__ . '/db.php';
 
 $conn = db_connect();
 
-// Получаем письма
+// Getting emails
 $sqlMails = "SELECT id, subject, body, sender_name, sender_email FROM mails ORDER BY id ASC";
 $resultMails = $conn->query($sqlMails);
 if ($resultMails === false) {
@@ -17,7 +17,7 @@ if ($resultMails === false) {
 	exit;
 }
 
-// Собираем id писем
+// Gathering the mail's ID number 
 $mailIds = [];
 $mails = [];
 while ($row = $resultMails->fetch_assoc()) {
@@ -54,7 +54,7 @@ foreach ($mails as $mail) {
 		'id' => strval($mid),
 		'content' => [
 			'subject' => $mail['subject'],
-			'recievers' => array_values($recievers), // намеренная орфография по ТЗ
+			'recievers' => array_values($recievers),
 			'sender' => [
 				'name' => $mail['sender_name'],
 				'email' => $mail['sender_email'],
