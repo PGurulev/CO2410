@@ -1,29 +1,16 @@
-:root {
-    --bg: #0e0f12;
-    --fg: #e6e6e6;
-    --muted: #9aa3b2;
-    --accent: #4cc9f0;
-    --card: #151821;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+body{
+    margin:0;
+    padding:0;
+    font-family: system-ui;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
-
 .GameTitle {
     font-size: 60px;
     margin: 40px 0 60px;
@@ -34,7 +21,7 @@ body {
     animation: gradientMove 4s infinite linear;
 }
 
-.buttons {
+.buttons{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -42,7 +29,7 @@ body {
     flex-grow: 1;
 }
 
-button {
+button{
     padding: 15px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -51,15 +38,12 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
-button:hover {
+button:hover{
     background-color: #f0f0f0;
     transform: scale(1.05);
 }
-
-footer {
+footer{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -69,7 +53,6 @@ footer {
     text-align: left;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .contact {
     max-width: 400px;
     margin-left: 20px;
@@ -81,60 +64,66 @@ footer {
     line-height: 1.5;
 }
 
-main {
-    max-width: 960px;
-    margin: 32px auto;
-    padding: 0 16px;
-    color: var(--fg);
-    text-align: left;
-}
 
-h1 {
-    font-size: 28px;
-    margin: 0 0 16px;
-    color: var(--accent);
-    text-align: left;
-}
-
-.mail-item {
-    background: var(--card);
-    border: 1px solid #222634;
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     border-radius: 8px;
-    padding: 12px 16px;
-    margin: 12px 0;
-    color: var(--fg);
 }
 
-.mail-item h3 {
-    margin: 0 0 8px;
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
 }
 
-.mail-item pre.mail-body {
-    background: #0f1117;
-    color: var(--muted);
-    padding: 8px;
-    border-radius: 6px;
+
+.dropdown {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    background-color: #f1f1f1;
+    min-width: 160px;
     overflow: auto;
-    white-space: pre-wrap;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+    border-radius: 8px;
 }
 
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 300% 50%;
-    }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-#MainPage {
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show { display: block; }
+
+
+
+.header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-#GamePage{
-    display: none;
+    gap: 15px;
 }
 
+.GameTitle {
+    margin: 0;
+}
