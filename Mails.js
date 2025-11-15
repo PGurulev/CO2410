@@ -4,11 +4,10 @@ async function GenerateMailsMenu()
     StartingContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
-    var JsonInfo = await JSONTransmitter("CO2410/AssetsAndExampless/JsonFiles/real_emails.json");
+    var JsonInfo = await JSONTransmitter("AssetsAndExampless/JsonFiles/real_emails.json");
 }
 async function JSONTransmitter(filename)
 {
-    let FetchedData = await fetch(filename);
-    let ParcedData = await FetchedData.json();
-    console.log(ParcedData);
+    let FetchedData = (await fetch(filename)).json();
+    console.log(FetchedData);
 }
