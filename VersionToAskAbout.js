@@ -1,11 +1,9 @@
 let MailsFileName = "AssetsAndExamples/JsonFiles/real_emails.json";
+let mailCounter = 0;
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 const MailsCheckArray = Array(20).fill(0);
 let FinalMailsArray = null
-let mailCounter = 0
 // sorce code for IIFE async https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_esm_dynamic
-// TO DO Ask about IIFE and why it is not working
-/*
 (async () => {
     FinalMailsArray = await MailsArrayDetermination(MailsFileName);
     FinalMailsArray = await ShuffleMailArray(FinalMailsArray);
@@ -19,13 +17,15 @@ async function ShuffleMailArray(array) {
     }    
     return array;
 }
-*/
 
 async function StartGame(){
     var StartingContent = document.getElementById("MainPage");
     StartingContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
+    if(!FinalMailsArray){
+        return;
+    }
     GetNextMail();
 }
 async function JSONTransmitter(filename){
@@ -35,17 +35,11 @@ async function JSONTransmitter(filename){
 
 async function MailsArrayDetermination(filename) {
     let res = await JSONTransmitter(filename);
-    //console.log(res.mails);
+    console.log(res.mails);
     return res.mails;
 }
 async function GetNextMail() {
-    let FinalMailsArray = await MailsArrayDetermination(MailsFileName);
-    console.log(FinalMailsArray)
-    let FreeMailIndex = await GetFreeMailIndex(FinalMailsArray);
-    console.log(FreeMailIndex);
-    if(FreeMailIndex !== null){
-        MailsCheckArray[FreeMailIndex] = 0;
-        mailCounter+=1;
+    if(await CheckMailsAwailability()){
         let subject = document.getElementById("MailsSubject");
         let recievers = document.getElementById("MailsRecievers");
         let sender = document.getElementById("MailsSender");
@@ -58,22 +52,17 @@ async function GetNextMail() {
         FinalMailsArray[mailCounter].content.recievers.forEach(reciever => {
             recievers.innerHTML += "<p>" + reciever.name + " " + reciever.email + "</p>";
         });
+        mailCounter+=1;
     }
     else{
         alert("You completed the game!");
     }
 }
-async function GetFreeMailIndex(array) {
-   if(mailCounter >= array.length){
-    return null;
-   }
-   let PossibleIndex = Math.floor(Math.random() * array.length);
-   let Tries = 0;
-   let MaxTries = array.length**2;
-    do{
-    PossibleIndex = Math.floor(Math.random() * array.length);
-    Tries+=1;
-
-   } while(MailsCheckArray[PossibleIndex] > 0);
-    return PossibleIndex;
+async function CheckMailsAwailability() {
+    if(mailCounter >= FinalMailsArray.length){
+        return false;
+    }
+    else{
+        return true;
+    }
 }
