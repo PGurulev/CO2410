@@ -1,10 +1,10 @@
-function GenerateMailsMenu()
+async function GenerateMailsMenu()
 {
     var StartingContent = document.getElementById("MainPage");
     StartingContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
-    var JsonInfo = JSONTransmitter("AssetsAndExampless/JsonFiles/real_emails.json");
+    var JsonInfo = await JSONTransmitter("AssetsAndExampless/JsonFiles/real_emails.json");
 }
 async function JSONTransmitter(filename)
 {
