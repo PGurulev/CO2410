@@ -127,3 +127,10 @@ h1 {
     }
 }
 
+#MainPage {
+    display: flex;
+}
+#GamePage{
+    display: none;
+}
+
