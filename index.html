@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <title>Starting page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Mails.js"></script>
 </head>
 <body>
+    <div id="MainPage">
 <h1 class="GameTitle">Name of our game</h1>
 <br><br><br>
 <h1>
     Some additional info/guide to the users later...
 </h1>
 <div class="buttons">
-    <button>Start the game</button>
+    <button onclick="GenerateMailsMenu()">Start the game</button>
     <button>General info</button>
     <button>Rules of the game</button>
 
 </div>
+    </div>
+<div class="GamePage">
+    <div id="MailsSender">
 
+    </div>
+    <div id="MailsRecievers">
+
+    </div>
+    <div id="MailsSubject">
+
+    </div>
+    <div id="MailsBody">
+
+    </div>
+</div>
+</div>
     <footer>
         <div class="contact">
             <p>12–14 University Avenue, Pyla, 7080<br>Larnaka, Cyprus</p>
@@ -25,5 +42,6 @@
             <p><a href="mailto:info@uclancyprus.ac.cy" style="color:#a8cfff;">info@uclancyprus.ac.cy</a></p>
         </div>
     </footer>
+
 </body>
 </html>
