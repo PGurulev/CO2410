@@ -6,24 +6,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 class="GameTitle">Name of our game</h1>
+<div class="header">
+    <h1 class="GameTitle">Name of our game</h1>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</div>
 <br><br><br>
 <h1>
     Some additional info/guide to the users later...
 </h1>
 <div class="buttons">
-    <button>Start the game</button>
+     <button>Start the game</button>
     <button>General info</button>
-    <button>Rules of the game</button>
+    <button>Rules og the game</button>
 
 </div>
-
     <footer>
         <div class="contact">
-            <p>12–14 University Avenue, Pyla, 7080<br>Larnaka, Cyprus</p>
-            <p>T: +357 24 69 40 00<br>F: +357 24 81 21 20</p>
-            <p><a href="mailto:info@uclancyprus.ac.cy" style="color:#a8cfff;">info@uclancyprus.ac.cy</a></p>
+        <p>12–14 University Avenue, Pyla, 7080<br>Larnaka, Cyprus</p>
+        <p>T: +357 24 69 40 00<br>F: +357 24 81 21 20</p>
+        <p><a href="mailto:info@uclancyprus.ac.cy" style="color:#a8cfff;">info@uclancyprus.ac.cy</a></p>
         </div>
     </footer>
+
+
+<script src="dropdownMenu.js"></script>
 </body>
 </html>
