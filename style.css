@@ -127,3 +127,7 @@ footer{
 .GameTitle {
     margin: 0;
 }
+
+#GamePage{
+    display: none;
+}

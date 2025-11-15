@@ -77,3 +77,16 @@ async function GetFreeMailIndex(array) {
    } while(MailsCheckArray[PossibleIndex] > 0);
     return PossibleIndex;
 }
+
+function checkForCorrectness(string)
+{
+    //TO DO implement Game Logic
+    if(string == "Fake")
+    {
+
+    }
+    else{
+
+    }
+    GetNextMail();
+}
