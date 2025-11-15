@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1); //  strict types declaration
 
 function db_connect(): mysqli {
 	$host = 'localhost';
