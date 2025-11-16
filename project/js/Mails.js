@@ -40,9 +40,7 @@ async function MailsArrayDetermination(filename) {
 }
 async function GetNextMail() {
     let FinalMailsArray = await MailsArrayDetermination(MailsFileName);
-    console.log(FinalMailsArray)
     let FreeMailIndex = await GetFreeMailIndex(FinalMailsArray);
-    console.log(FreeMailIndex);
     if(FreeMailIndex !== null){
         MailsCheckArray[FreeMailIndex] = 0;
         mailCounter+=1;
