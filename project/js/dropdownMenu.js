@@ -21,4 +21,6 @@ function goback(){
     StartingContent.style.display = "block";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "none";
+    var StartingContent = document.getElementById("MainPage");
+    mailCounter = 0
 }
