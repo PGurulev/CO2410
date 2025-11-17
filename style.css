@@ -1,133 +1,245 @@
+/*so to have reusable and consistent color */
+:root{
+  --bg-1: #1e3c72;
+  --bg-2: #2a5298;
+  --muted: #cdd8e6;
+  --card-bg: rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.06);
+  --accent: #ffd966;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
 body{
-    margin:0;
-    padding:0;
-    font-family: system-ui;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.GameTitle {
-    font-size: 60px;
-    margin: 40px 0 60px;
-    background: linear-gradient(90deg, #ff00ff, #00ffff, #ffcc00, #ff00ff);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientMove 4s infinite linear;
+  margin:0;
+  padding:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(135deg,var(--bg-1),var(--bg-2));
+  color: #fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.4;
+  min-height:100vh;
 }
 
+/* Page wrapper to center but allow full height scrolling */
+.page-wrapper{
+  max-width:1100px;
+  margin:0 auto;
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  gap:18px;
+}
+
+/* Panel style reused for header, main, modal etc. */
+.panel{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Header */
+.site-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:6px;
+}
+
+.header-left{ display:flex; flex-direction:column; gap:4px; align-items:flex-start; }
+
+/* Title */
+.GameTitle{
+  font-size: clamp(28px, 5vw, 48px);
+  margin:0;
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ffcc00, #ff00ff);
+  background-size:300%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation: gradientMove 6s linear infinite;
+}
+
+/* small subtitle / lead */
+.subtitle{
+  margin: 2px 0 0;
+  font-size:clamp(13px, 2vw, 16px);
+  color: var(--muted);
+}
+
+.lead{
+  max-width: 900px;
+  margin: 0 auto 6px;
+  color: rgba(255,255,255,0.92);
+}
+
+/* Buttons (class-based) */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight:700;
+  color: #0f2848;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+.btn:active{ transform: translateY(1px) }
+
+/* Variants */
+.btn-start { background: var(--accent); color:#123; }
+.btn-info { background: #d6f5d6; }
+.btn-rules { background: #d6e7ff; }
+.btn-fake { background: #fff0f0; color:#7a1212; }
+.btn-real { background: #f0fff4; color:#0a5d0a; }
+.btn-check-structure { background: #eef3ff; color:#05336a; }
+.btn-restart { background: #fff0f0; color:#ee0505; }
+.btn-close-modal { margin-top:12px; background:#ddd }
+
+/* Layout helpers */
 .buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    flex-grow: 1;
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top: 12px;
 }
 
-button{
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #1e3c72;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #f0f0f0;
-    transform: scale(1.05);
-}
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0f2848;
-    padding: 20px;
-    text-align: left;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-.contact {
-    max-width: 400px;
-    margin-left: 20px;
-    color: #cdd8e6;
+/* Game page & components */
+.hidden{ display:none}
+
+.game-panel{
+  margin-top:8px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:stretch;
 }
 
-.contact p {
-    margin: 6px 0;
-    line-height: 1.5;
+/* Mail card look */
+.mail-container{
+  background: var(--glass);
+  padding: 14px;
+  border-radius: 10px;
+  color: #f7fbff;
+  border: 1px solid rgba(255,255,255,0.03);
 }
 
+.mail-header-row{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:8px;
+}
 
+.mail-sender, .mail-receivers{
+  font-weight:600;
+  font-size: 0.95rem;
+  color: #e7f2ff;
+}
+
+.mail-subject{
+  font-weight:700;
+  margin:8px 0;
+  color:#fff;
+}
+
+.mail-body{
+  white-space:pre-wrap;
+  color:#eaf4ff;
+  background: transparent;
+  padding-top:6px;
+  line-height:1.6;
+  font-size:0.95rem;
+}
+
+/* Game buttons & scoreboard */
+.GameButtons{
+  display:flex;
+  gap:12px;
+  margin-top:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.score-board{
+  margin-top:8px;
+  text-align:center;
+  font-weight:700;
+  color: var(--muted);
+}
+
+/* Dropdown */
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
+  background-color: #3498DB;
+  color: white;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.dropdown { position:relative; display:flex; align-items:center; }
+
+/* Footer */
+.site-footer{
+  margin-top:auto;
+  padding:18px 0 6px;
+  color:var(--muted);
+}
+.contact p{ margin:4px 0; color:var(--muted) }
+.mail-link{ color:#a8cfff }
+
+/* Animations */
+@keyframes gradientMove {
+  from { background-position: 0% 50% }
+  to { background-position: 100% 50% }
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+/* Responsiveness */
+@media (min-width: 760px) {
+  .mail-header-row{ flex-direction:row; justify-content:space-between; align-items:center }
+  .mail-sender, .mail-receivers{ font-size:1rem }
+  .buttons{ justify-content:flex-start }
 }
 
-
-.dropdown {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+@media (max-width: 760px) {
+  .buttons{ flex-direction:column; gap:10px; align-items:stretch }
+  .GameButtons{ flex-direction:column; gap:10px; }
+  .page-wrapper{ padding:16px }
 }
 
+@media (max-width: 420px) {
+  .GameTitle{ font-size:22px }
+  .btn{ font-size:15px; padding:10px 14px }
+  .mail-body{ font-size:0.92rem }
+}
 
+/* Dropdown menu specifics (kept from your original styles but polished) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: calc(100% + 8px);
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1001;
-    border-radius: 8px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.35);
+  z-index: 1001;
+  border-radius: 8px;
 }
-
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
-
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.show { display: block; }
-
-
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.GameTitle {
-    margin: 0;
-}
-
-#GamePage{
-    display: none;
-}
+.dropdown-content a:hover { background-color: #ddd; }
+.show { display:block !important; }

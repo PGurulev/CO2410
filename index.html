@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Starting page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="modal.css">
+  <meta charset="UTF-8" />
+  <title>Starting page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="modal.css" />
 </head>
 <body>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div class="page-wrapper">
+    <header class="site-header panel">
+      <div class="header-left">
+        <h1 class="GameTitle">PhishPlay</h1>
+        <div class="subtitle">Spot fake vs real emails</div>
+      </div>
+
+      <div class="dropdown" style="position:relative">
+        <button onclick="myFunction()" class="dropbtn">Menu ▾</button>
         <div id="myDropdown" class="dropdown-content">
-            <button onclick="goback()">Home</button>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-    </div>
-    <div id="MainPage">
-<div class="header">
-    <h1 class="GameTitle">Name of our game</h1>
-</div>
-<br><br><br>
-<h1>
-    Some additional info/guide to the users later...
-</h1>
-<div class="buttons">
-    <button onclick="StartGame()">Start the game</button>
-    <button>General info</button>
-    <button>Rules og the game</button>
+      </div>
+    </header>
 
-</div>
-</div>
-<div id="GamePage">
-    <div id="MailsSender">
+    <main id="MainPage" class="panel">
+      <p class="lead">
+        Some additional info / short guide for the users. Explain what they should look for, then press Start to begin.
+      </p>
 
-    </div>
-    <div id="MailsRecievers">
+      <section class="buttons" aria-label="main actions">
+        <button class="btn btn-start" onclick="StartGame()">Start the game</button>
+        <button class="btn btn-info">General info</button>
+        <button class="btn btn-rules">Rules of the game</button>
+      </section>
+    </main>
 
-    </div>
-    <div id="MailsSubject">
+    <!-- Game page (hidden until StartGame shows it) -->
+    <section id="GamePage" class="panel hidden">
+      <div class="game-panel">
+        <div class="mail-container" id="MailsSender"></div>
+        <div class="mail-container" id="MailsRecievers"></div>
+        <div class="mail-container" id="MailsSubject"></div>
+        <div class="mail-container" id="MailsBody"></div>
 
-    </div>
-    <div id="MailsBody">
-
-    </div>
-    <div class="GameButtons">
-        <button onclick="checkForCorrectness(`Fake`)">Fake</button>
-        <button onclick="checkForCorrectness(`Real`)">Real</button>
-        <button onclick="CheckCorparativeStructureToMakeSure()">Check Corporative structure</button>
-    </div>
-</div>
-<div class="modal">
-    <div class="modal-content">
-        <div class="modalLeftPanel">
-            <div id="DepartmentDetails">
-
-            </div>
+        <div class="GameButtons">
+          <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
+          <button class="btn btn-real" onclick="checkForCorrectness(`Real`)">Real</button>
+          <button class="btn btn-check-structure" onclick="CheckCorparativeStructureToMakeSure()">Corporative Structure</button>
+          <button class="btn btn-restart" onclick="restart(`Fake`)">Restart</button>
         </div>
-        <div class="modalRightPanel" id="EmployeeDetails">
-                
-        </div>
-    </div>
-</div>
 
-    <footer>
-        <div class="contact">
-        <p>12–14 University Avenue, Pyla, 7080<br>Larnaka, Cyprus</p>
-        <p>T: +357 24 69 40 00<br>F: +357 24 81 21 20</p>
-        <p><a href="mailto:info@uclancyprus.ac.cy" style="color:#a8cfff;">info@uclancyprus.ac.cy</a></p>
+        <div class="score-board" id="ScoreBoard">Score: 0</div>
+      </div>
+    </section>
+
+    <!-- Modal (structure styling handled in modal.css) -->
+    <div class="modal" id="DetailsModal" aria-hidden="true">
+      <div class="modal-content panel">
+        <div class="modalLeftPanel" style="display:flex; gap:12px;">
+          <div id="DepartmentDetails" style="flex:1"></div>
         </div>
+        <div class="modalRightPanel" id="EmployeeDetails" style="margin-top:12px;"></div>
+        <div style="text-align:center;">
+          <button class="btn btn-close-modal" onclick="document.querySelector('.modal').style.display='none'">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="contact panel">
+        <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
+        <p>T: +357 24 69 40 00<br />F: +357 24 81 21 20</p>
+        <p><a class="mail-link" href="mailto:info@uclancyprus.ac.cy">info@uclancyprus.ac.cy</a></p>
+      </div>
     </footer>
+  </div>
 
-
-<script src="project\js\dropdownMenu.js"></script>
-<script src="project\js\Mails.js"></script>
-<script src="project\js\CorpStructure.js"></script>
+  <script src="project/js/dropdownMenu.js"></script>
+  <script src="project/js/Mails.js"></script>
+  <script src="project/js/CorpStructure.js"></script>
 </body>
 </html>
