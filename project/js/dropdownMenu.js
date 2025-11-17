@@ -15,3 +15,10 @@ window.onclick = function(event) {
         }
     }
 }
+
+function goback(){
+    var StartingContent = document.getElementById("MainPage");
+    StartingContent.style.display = "block";
+    var EmailContent = document.getElementById("GamePage");
+    EmailContent.style.display = "none";
+}
