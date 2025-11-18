@@ -15,7 +15,6 @@ window.onclick = function(event) {
         }
     }
 }
-
 function goback(){
     var StartingContent = document.getElementById("MainPage");
     StartingContent.style.display = "block";
