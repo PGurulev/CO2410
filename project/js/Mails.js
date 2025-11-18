@@ -24,6 +24,10 @@ async function ShuffleMailArray(array) {
 async function StartGame(){
     var StartingContent = document.getElementById("MainPage");
     StartingContent.style.display = "none";
+    var AboutContent = document.getElementById("AboutPage");
+    AboutContent.style.display = "none";
+    var ContactContent = document.getElementById("ContactsPage");
+    ContactContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
     GetNextMail();
@@ -48,13 +52,13 @@ async function GetNextMail() {
         let recievers = document.getElementById("MailsRecievers");
         let sender = document.getElementById("MailsSender");
         let content = document.getElementById("MailsBody");
-        content.innerHTML =  "<p>" + FinalMailsArray[mailCounter].body + "</p>";
-        subject.innerHTML = "<p>" + FinalMailsArray[mailCounter].content.subject + "</p>";
-        sender.innerHTML = "<p>" + FinalMailsArray[mailCounter].content.sender.name + " " + FinalMailsArray[mailCounter].content.sender.email + "</p>";
+        content.innerHTML =  "<p> Content: " + FinalMailsArray[mailCounter].body + "</p>";
+        subject.innerHTML = "<p> Subject: " + FinalMailsArray[mailCounter].content.subject + "</p>";
+        sender.innerHTML = "<p> From: " + FinalMailsArray[mailCounter].content.sender.name + " " + FinalMailsArray[mailCounter].content.sender.email + "</p>";
         //content for forEach() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
         recievers.innerHTML = "";
         FinalMailsArray[mailCounter].content.recievers.forEach(reciever => {
-            recievers.innerHTML += "<p>" + reciever.name + " " + reciever.email + "</p>";
+            recievers.innerHTML += "<p> To: " + reciever.name + " " + reciever.email + "</p>";
         });
     }
     else{

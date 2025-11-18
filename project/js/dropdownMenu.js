@@ -20,6 +20,33 @@ function goback(){
     StartingContent.style.display = "block";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "none";
+    var AboutContent = document.getElementById("AboutPage");
+    AboutContent.style.display = "none";
     var StartingContent = document.getElementById("MainPage");
+    var ContactContent = document.getElementById("ContactsPage");
+    ContactContent.style.display = "none";
     mailCounter = 0
 }
+
+function about(){
+    var StartingContent = document.getElementById("MainPage");
+    StartingContent.style.display = "none";
+    var EmailContent = document.getElementById("GamePage");
+    EmailContent.style.display = "none";
+    var AboutContent = document.getElementById("AboutPage");
+    AboutContent.style.display = "block";
+    var ContactContent = document.getElementById("ContactsPage");
+    ContactContent.style.display = "none";
+}
+
+function contacts() {
+    var StartingContent = document.getElementById("MainPage");
+    StartingContent.style.display = "none";
+    var AboutContent = document.getElementById("AboutPage");
+    AboutContent.style.display = "none";
+    var ContactContent = document.getElementById("ContactsPage");
+    ContactContent.style.display = "block";
+    var EmailContent = document.getElementById("GamePage");
+    EmailContent.style.display = "none";
+}
+

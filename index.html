@@ -19,8 +19,8 @@
         <button onclick="myFunction()" class="dropbtn">Menu ▾</button>
         <div id="myDropdown" class="dropdown-content">
             <a onclick="goback()">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a onclick="about()">About</a>
+            <a onclick="contacts()">Contacts</a>
         </div>
       </div>
     </header>
@@ -55,8 +55,96 @@
         <div class="score-board" id="ScoreBoard">Score: 0</div>
       </div>
     </section>
+<!--about section-->
+      <section id="AboutPage" class="panel hidden">
+          <ul class="list">
 
-    <!-- Modal (structure styling handled in modal.css) -->
+              <li class="profile-card ">
+                  <img src="project/assets/images/ScrumMaster.png" alt="Profile Picture" class="profile-pic">
+                  <div class="profile-details">
+                      <h2 class="name">Petr Gurulev</h2>
+                      <p class="position">Scrum Master</p>
+                      <p class="role">G-21258765</p>
+                      <p class="email"><a href="mailto:PGurulev2@uclan.ac.uk">PGurulev2@uclan.ac.uk</a></p>
+                  </div>
+              </li>
+
+              <li class="profile-card leader">
+                  <img src="project/assets/images/Software.png" alt="Profile Picture" class="profile-pic">
+                  <div class="profile-details">
+                      <h2 class="name">Devid Brodskii</h2>
+                      <p class="position">Software Developer</p>
+                      <p class="role">G-21254142</p>
+                      <p class="email"><a href="mailto:dbrodskii@uclan.ac.uk">dbrodskii@uclan.ac.uk</a></p>
+                  </div>
+              </li>
+
+              <li class="profile-card ">
+                  <img src="project/assets/images/Database.png" alt="Profile Picture" class="profile-pic">
+                  <div class="profile-details">
+                      <h2 class="name">Tymofii Klochko--shemiakin</h2>
+                      <p class="position">Database Administrator</p>
+                      <p class="role">G-21253710</p>
+                      <p class="email"><a href="mailto:tklochko-shemiakin@uclan.ac.uk">tklochko-shemiakin@uclan.ac.uk</a></p>
+                  </div>
+              </li>
+
+              <li class="profile-card ">
+                  <img src="project/assets/images/ux.png" alt="Profile Picture" class="profile-pic">
+                  <div class="profile-details">
+                      <h2 class="name">Festus Chinedu Obiwundu</h2>
+                      <p class="position">UI/UX Designer</p>
+                      <p class="role">G-21254053</p>
+                      <p class="email"><a href="mailto:fcobiwundu@uclan.ac.uk">fcobiwundu@uclan.ac.uk</a></p>
+                  </div>
+              </li>
+
+
+              <li class="profile-card ">
+                  <img src="project/assets/images/QA.png" alt="Profile Picture" class="profile-pic">
+                  <div class="profile-details">
+                      <h2 class="name">Owais Alhomsi </h2>
+                      <p class="position">QA Engineer/Tester</p>
+                      <p class="role">G-21260389</p>
+                      <p class="email"><a href="mailto:OAlhomsi@uclan.ac.uk">OAlhomsi@uclan.ac.uk</a></p>
+                  </div>
+              </li>
+
+              <li class="profile-card ">
+                  <img src="project/assets/images/SystemAnalyst.png" alt="Profile Picture" class="profile-pic">
+                  <div class="profile-details">
+                      <h2 class="name">Roman Myslov </h2>
+                      <p class="position">System Analyst</p>
+                      <p class="role">G-21251404</p>
+                      <p class="email"><a href="mailto:RMyslov@uclan.ac.uk">RMyslov@uclan.ac.uk</a></p>
+                  </div>
+              </li>
+
+
+
+          </ul>
+      </section>
+
+      <!-- CONTACTS PAGE -->
+      <section id="ContactsPage" class="panel hidden">
+          <h2 style="margin-top:0; color:var(--accent)">Contact the Team</h2>
+
+          <p>If you have issues with project coordination — please contact: <a href="mailto:PGurulev2@uclan.ac.uk">PGurulev2@uclan.ac.uk</a></p>
+
+          <p>If you have issues with functionality or game logic — please contact: <a href="mailto:dbrodskii@uclan.ac.uk">dbrodskii@uclan.ac.uk</a></p>
+
+          <p>If you have issues with data, JSON structure or content — please contact: <a href="mailto:tklochko-shemiakin@uclan.ac.uk">tklochko-shemiakin@uclan.ac.uk</a></p>
+
+          <p>If you have issues with UI, layout, or design — please contact: <a href="mailto:fcobiwundu@uclan.ac.uk">fcobiwundu@uclan.ac.uk</a></p>
+
+          <p>If you found a bug or unexpected behaviour — please contact: <a href="mailto:OAlhomsi@uclan.ac.uk">OAlhomsi@uclan.ac.uk</a></p>
+
+          <p>If you have issues with system logic or requirements — please contact: <a href="mailto:RMyslov@uclan.ac.uk">RMyslov@uclan.ac.uk</a></p>
+      </section>
+
+
+
+      <!-- Modal (structure styling handled in modal.css) -->
     <div class="modal" id="DetailsModal" aria-hidden="true">
       <div class="modal-content panel">
         <div class="modalLeftPanel" style="display:flex; gap:12px;">
