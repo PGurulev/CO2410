@@ -18,5 +18,4 @@ Custom email headers as key-value pairs.
 Example:
 JSON"headers": {  "X-Priority": "High"}Show more lines
 
-
-Do you want me to also include a diagram (like a JSON schema tree) or generate a Mermaid diagram to visualize the structure?
+The api.js script fetches email data from php/mails.php and expects the response to be in JSON format. This JSON contains an array of mail objects, each with a structure similar to mail_structure.json.
