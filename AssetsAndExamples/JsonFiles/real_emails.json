@@ -6,30 +6,30 @@
         "subject": "Onboarding Schedule & Portal Access",
         "recievers": [
           {
-            "name": "Hassan Al\u2011Masri",
-            "email": "halmasri@aou.example.com"
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Dr. Eleni Hadjis",
-          "email": "ehadjis@aou.example.com"
+          "email": "ehadjis@aou.ac.cy"
         }
       },
-      "body": "Welcome aboard! Your AOU account has been created. Please sign in to the portal to review your first\u2011week schedule and complete your profile."
+      "body": "Welcome aboard! Your AOU account has been created. Please sign in to the portal to review your first-week schedule and complete your profile."
     },
     {
       "id": "1",
       "content": {
-        "subject": "Weekly Research Sync \u2013 Ocean Sensing Lab",
+        "subject": "Weekly Research Sync - Ocean Sensing Lab",
         "recievers": [
           {
             "name": "Sofia Marin",
-            "email": "smarin@aou.example.com"
+            "email": "smarin@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Mateo Grivas",
-          "email": "mgrivas@aou.example.com"
+          "email": "mgrivas@aou.ac.cy"
         }
       },
       "body": "Reminder: Our Wednesday sync is at 10:00 in Lab B. Bring sensor deployment notes and calibration results."
@@ -37,33 +37,33 @@
     {
       "id": "2",
       "content": {
-        "subject": "Network Maintenance Window (Friday 20:00\u201322:00)",
+        "subject": "Network Maintenance Window (Friday 20:00-22:00)",
         "recievers": [
           {
             "name": "Jonas Mikkelsen",
-            "email": "jmikkelsen@aou.example.com"
+            "email": "jmikkelsen@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Prof. Nia Kouris",
-          "email": "nkouris@aou.example.com"
+          "email": "nkouris@aou.ac.cy"
         }
       },
-      "body": "IT will perform routine upgrades this Friday. VPN and Wi\u2011Fi may briefly drop. No action needed."
+      "body": "IT will perform routine upgrades this Friday. VPN and Wi-Fi may briefly drop. No action needed."
     },
     {
       "id": "3",
       "content": {
-        "subject": "Purchase Order Approved \u2013 ROV Tethers",
+        "subject": "Purchase Order Approved - ROV Tethers",
         "recievers": [
           {
             "name": "Maria Kyriakou",
-            "email": "mkyriakou@aou.example.com"
+            "email": "mkyriakou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Armin Petrescu",
-          "email": "apetrescu@aou.example.com"
+          "email": "apetrescu@aou.ac.cy"
         }
       },
       "body": "Finance has approved PO #11872 for ROV tethers. Vendor: BlueLine Marine. Expected delivery: next Tuesday."
@@ -71,19 +71,19 @@
     {
       "id": "4",
       "content": {
-        "subject": "Faculty Town Hall \u2013 Agenda & Q&A",
+        "subject": "Faculty Town Hall - Agenda & Q&A",
         "recievers": [
           {
             "name": "Owen Dlamini",
-            "email": "odlamini@aou.example.com"
+            "email": "odlamini@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Lia Demetriou",
-          "email": "ldemetriou@aou.example.com"
+          "email": "ldemetriou@aou.ac.cy"
         }
       },
-      "body": "Attached is the agenda for Thursday\u2019s town hall. Submit questions via the Q&A form by 17:00 tomorrow."
+      "body": "Attached is the agenda for Thursday's town hall. Submit questions via the Q&A form by 17:00 tomorrow."
     },
     {
       "id": "5",
@@ -92,15 +92,15 @@
         "recievers": [
           {
             "name": "Agata Nowak",
-            "email": "anowak@aou.example.com"
+            "email": "anowak@aou.ac.cy"
           }
         ],
         "sender": {
-          "name": "Hassan Al\u2011Masri",
-          "email": "halmasri@aou.example.com"
+          "name": "Hassan Al-Masri",
+          "email": "halmasri@aou.ac.cy"
         }
       },
-      "body": "Please complete the 15\u2011minute security refresher by Friday. It covers phishing simulations and MFA best practices."
+      "body": "Please complete the 15-minute security refresher by Friday. It covers phishing simulations and MFA best practices."
     },
     {
       "id": "6",
@@ -109,15 +109,15 @@
         "recievers": [
           {
             "name": "Theo Christoforou",
-            "email": "tchristoforou@aou.example.com"
+            "email": "tchristoforou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Sofia Marin",
-          "email": "smarin@aou.example.com"
+          "email": "smarin@aou.ac.cy"
         }
       },
-      "body": "Admissions is seeking volunteers for Open Day. Two\u2011hour shifts available. Reply if you can help."
+      "body": "Admissions is seeking volunteers for Open Day. Two-hour shifts available. Reply if you can help."
     },
     {
       "id": "7",
@@ -126,12 +126,12 @@
         "recievers": [
           {
             "name": "Irina Kovacs",
-            "email": "ikovacs@aou.example.com"
+            "email": "ikovacs@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Jonas Mikkelsen",
-          "email": "jmikkelsen@aou.example.com"
+          "email": "jmikkelsen@aou.ac.cy"
         }
       },
       "body": "A quick reminder to submit your timesheets by 12:00 today to avoid payroll delays."
@@ -143,12 +143,12 @@
         "recievers": [
           {
             "name": "Babatunde Ajayi",
-            "email": "bajayi@aou.example.com"
+            "email": "bajayi@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Maria Kyriakou",
-          "email": "mkyriakou@aou.example.com"
+          "email": "mkyriakou@aou.ac.cy"
         }
       },
       "body": "R&D: send your abstracts and methodology sections by Monday for internal peer review."
@@ -160,29 +160,29 @@
         "recievers": [
           {
             "name": "Elif Yildiz",
-            "email": "eyildiz@aou.example.com"
+            "email": "eyildiz@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Owen Dlamini",
-          "email": "odlamini@aou.example.com"
+          "email": "odlamini@aou.ac.cy"
         }
       },
-      "body": "Operations will issue updated access cards next week. Visit the Marina Gate office between 09:00\u201316:00."
+      "body": "Operations will issue updated access cards next week. Visit the Marina Gate office between 09:00-16:00."
     },
     {
       "id": "10",
       "content": {
-        "subject": "Budget Reforecast \u2013 Q3",
+        "subject": "Budget Reforecast - Q3",
         "recievers": [
           {
             "name": "George Papas",
-            "email": "gpapas@aou.example.com"
+            "email": "gpapas@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Agata Nowak",
-          "email": "anowak@aou.example.com"
+          "email": "anowak@aou.ac.cy"
         }
       },
       "body": "Please review departmental spend and submit adjustments by end of week."
@@ -190,19 +190,19 @@
     {
       "id": "11",
       "content": {
-        "subject": "Wellness Workshop Sign\u2011Up",
+        "subject": "Wellness Workshop Sign-Up",
         "recievers": [
           {
             "name": "Rita Okoye",
-            "email": "rokoye@aou.example.com"
+            "email": "rokoye@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Theo Christoforou",
-          "email": "tchristoforou@aou.example.com"
+          "email": "tchristoforou@aou.ac.cy"
         }
       },
-      "body": "HR is hosting a stress\u2011management session on campus next Wednesday. Limited seats, register via HR portal."
+      "body": "HR is hosting a stress-management session on campus next Wednesday. Limited seats, register via HR portal."
     },
     {
       "id": "12",
@@ -211,15 +211,15 @@
         "recievers": [
           {
             "name": "Samuel Petrou",
-            "email": "spetrou@aou.example.com"
+            "email": "spetrou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Irina Kovacs",
-          "email": "ikovacs@aou.example.com"
+          "email": "ikovacs@aou.ac.cy"
         }
       },
-      "body": "We\u2019ve updated retention rules for research datasets. See the policy page and acknowledge receipt."
+      "body": "We've updated retention rules for research datasets. See the policy page and acknowledge receipt."
     },
     {
       "id": "13",
@@ -228,12 +228,12 @@
         "recievers": [
           {
             "name": "Dr. Eleni Hadjis",
-            "email": "ehadjis@aou.example.com"
+            "email": "ehadjis@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Babatunde Ajayi",
-          "email": "bajayi@aou.example.com"
+          "email": "bajayi@aou.ac.cy"
         }
       },
       "body": "New advising appointments are available. Book via the Student Affairs portal."
@@ -241,16 +241,16 @@
     {
       "id": "14",
       "content": {
-        "subject": "New Printer Deployment \u2013 Building C",
+        "subject": "New Printer Deployment - Building C",
         "recievers": [
           {
             "name": "Mateo Grivas",
-            "email": "mgrivas@aou.example.com"
+            "email": "mgrivas@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Elif Yildiz",
-          "email": "eyildiz@aou.example.com"
+          "email": "eyildiz@aou.ac.cy"
         }
       },
       "body": "IT will place two new MFDs on Level 2. Follow the driver install instructions in the portal."
@@ -262,12 +262,12 @@
         "recievers": [
           {
             "name": "Prof. Nia Kouris",
-            "email": "nkouris@aou.example.com"
+            "email": "nkouris@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "George Papas",
-          "email": "gpapas@aou.example.com"
+          "email": "gpapas@aou.ac.cy"
         }
       },
       "body": "A short safety drill will run tomorrow at 09:30 in the ROV bay. Please participate and follow coordinator instructions."
@@ -279,15 +279,15 @@
         "recievers": [
           {
             "name": "Armin Petrescu",
-            "email": "apetrescu@aou.example.com"
+            "email": "apetrescu@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Rita Okoye",
-          "email": "rokoye@aou.example.com"
+          "email": "rokoye@aou.ac.cy"
         }
       },
-      "body": "Remember to upload receipts within 10 days of travel. Finance can help with per\u2011diem questions."
+      "body": "Remember to upload receipts within 10 days of travel. Finance can help with per-diem questions."
     },
     {
       "id": "17",
@@ -296,12 +296,12 @@
         "recievers": [
           {
             "name": "Lia Demetriou",
-            "email": "ldemetriou@aou.example.com"
+            "email": "ldemetriou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Samuel Petrou",
-          "email": "spetrou@aou.example.com"
+          "email": "spetrou@aou.ac.cy"
         }
       },
       "body": "Operations updated the shuttle timetable. First trip now at 07:20. See intranet schedule."
@@ -312,13 +312,13 @@
         "subject": "Admissions Fair Materials",
         "recievers": [
           {
-            "name": "Hassan Al\u2011Masri",
-            "email": "halmasri@aou.example.com"
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Dr. Eleni Hadjis",
-          "email": "ehadjis@aou.example.com"
+          "email": "ehadjis@aou.ac.cy"
         }
       },
       "body": "Outreach kits are ready for pickup. Check your assigned schools and confirm logistics."
@@ -330,15 +330,1847 @@
         "recievers": [
           {
             "name": "Sofia Marin",
-            "email": "smarin@aou.example.com"
+            "email": "smarin@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Mateo Grivas",
-          "email": "mgrivas@aou.example.com"
+          "email": "mgrivas@aou.ac.cy"
         }
       },
-      "body": "President\u2019s briefing is Monday 09:00 in Auditorium A. Coffee from 08:30."
+      "body": "President's briefing is Monday 09:00 in Auditorium A. Coffee from 08:30."
+    },
+    {
+      "id": "20",
+      "content": {
+        "subject": "Notice: Data Pull Request",
+        "recievers": [
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          },
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link."
+    },
+    {
+      "id": "21",
+      "content": {
+        "subject": "Reminder: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          },
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD. Please acknowledge on the portal."
+    },
+    {
+      "id": "22",
+      "content": {
+        "subject": "Update: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with Tuesday 14:00. Follow-up notes: Online via Teams Please acknowledge on the portal."
+    },
+    {
+      "id": "23",
+      "content": {
+        "subject": "Schedule: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          },
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: next Monday. Please acknowledge on the policy page."
+    },
+    {
+      "id": "24",
+      "content": {
+        "subject": "Invitation: Health & Safety Update",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "eyildiz@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with Thursday 09:30. Follow-up notes: Conference Room 2 Please acknowledge on the portal."
+    },
+    {
+      "id": "25",
+      "content": {
+        "subject": "Report: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Tuesday 14:00 has been approved. Details are in the portal."
+    },
+    {
+      "id": "26",
+      "content": {
+        "subject": "Request: Student Placement List",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Thursday 09:30."
+    },
+    {
+      "id": "27",
+      "content": {
+        "subject": "Action Required: Training Session",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          },
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.ac.cy"
+        }
+      },
+      "body": "Can you provide an ETA for tomorrow 10:00? Finance needs it for planning. Please acknowledge on the portal."
+    },
+    {
+      "id": "28",
+      "content": {
+        "subject": "Confirmation: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "nkouris@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Tuesday 14:00 has been approved. Details are in the portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "29",
+      "content": {
+        "subject": "Request: Committee Minutes",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          },
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "eyildiz@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: next Monday. Please acknowledge on the policy page."
+    },
+    {
+      "id": "30",
+      "content": {
+        "subject": "Notice: Student Placement List",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "jmikkelsen@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Thursday 09:30. Please acknowledge on the portal."
+    },
+    {
+      "id": "31",
+      "content": {
+        "subject": "Invitation: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          },
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your Thursday 09:30 to the shared drive before Auditorium A."
+    },
+    {
+      "id": "32",
+      "content": {
+        "subject": "Update: Student Placement List",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Tuesday 14:00 has been approved. Details are in the portal."
+    },
+    {
+      "id": "33",
+      "content": {
+        "subject": "Invitation: Marina Docking Update",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "bajayi@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Tuesday 14:00."
+    },
+    {
+      "id": "34",
+      "content": {
+        "subject": "Notice: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "tchristoforou@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Friday 16:00 has been approved. Details are in the portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "35",
+      "content": {
+        "subject": "Schedule: Volunteer Roster",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "odlamini@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your tomorrow 10:00 to the shared drive before Conference Room 2. Please acknowledge on the portal."
+    },
+    {
+      "id": "36",
+      "content": {
+        "subject": "Notice: Marina Docking Update",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for Friday 16:00, location: Marina Gate office. Please acknowledge on the portal."
+    },
+    {
+      "id": "37",
+      "content": {
+        "subject": "Notice: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "bajayi@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your tomorrow 10:00 to the shared drive before Marina Gate office. Please acknowledge on the portal."
+    },
+    {
+      "id": "38",
+      "content": {
+        "subject": "Reminder: Student Placement List",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          },
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "anowak@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for next Monday next week. Track via vendor portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "39",
+      "content": {
+        "subject": "Availability: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          },
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with Friday 16:00. Follow-up notes: Lab B Please acknowledge on the portal."
+    },
+    {
+      "id": "40",
+      "content": {
+        "subject": "Schedule: Health & Safety Update",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Can you provide an ETA for Thursday 09:30? Finance needs it for planning."
+    },
+    {
+      "id": "41",
+      "content": {
+        "subject": "Report: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          },
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "anowak@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: tomorrow 10:00. Please acknowledge on the policy page."
+    },
+    {
+      "id": "42",
+      "content": {
+        "subject": "Invitation: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          },
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "odlamini@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for Tuesday 14:00, location: Conference Room 2."
+    },
+    {
+      "id": "43",
+      "content": {
+        "subject": "Notice: Budget Line Clarification",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "apetrescu@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Tuesday 14:00."
+    },
+    {
+      "id": "44",
+      "content": {
+        "subject": "Schedule: Data Pull Request",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Can you provide an ETA for next Monday? Finance needs it for planning. Please acknowledge on the portal."
+    },
+    {
+      "id": "45",
+      "content": {
+        "subject": "Action Required: Committee Minutes",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          },
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "nkouris@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your next Monday to the shared drive before Conference Room 2. Please acknowledge on the portal."
+    },
+    {
+      "id": "46",
+      "content": {
+        "subject": "Schedule: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "smarin@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: next Monday."
+    },
+    {
+      "id": "47",
+      "content": {
+        "subject": "Action Required: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "apetrescu@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that next Monday has been approved. Details are in the portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "48",
+      "content": {
+        "subject": "Confirmation: Student Placement List",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "IT Vendor",
+          "email": "support@itvendor.example.com"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Tuesday 14:00."
+    },
+    {
+      "id": "49",
+      "content": {
+        "subject": "Request: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "tchristoforou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your tomorrow 10:00 to the shared drive before Conference Room 2."
+    },
+    {
+      "id": "50",
+      "content": {
+        "subject": "Confirmation: Training Session",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "apetrescu@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for Thursday 09:30, location: Marina Gate office."
+    },
+    {
+      "id": "51",
+      "content": {
+        "subject": "Action Required: Student Placement List",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for Friday 16:00 next week. Track via vendor portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "52",
+      "content": {
+        "subject": "Update: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link."
+    },
+    {
+      "id": "53",
+      "content": {
+        "subject": "Update: Training Session",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "bajayi@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link."
+    },
+    {
+      "id": "54",
+      "content": {
+        "subject": "Confirmation: Student Placement List",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "bajayi@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with next Monday. Follow-up notes: Lab B"
+    },
+    {
+      "id": "55",
+      "content": {
+        "subject": "Availability: Committee Minutes",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with tomorrow 10:00. Follow-up notes: Conference Room 2 Please acknowledge on the portal."
+    },
+    {
+      "id": "56",
+      "content": {
+        "subject": "Notice: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Logistics Co",
+          "email": "logistics@coastal-logistics.example.com"
+        }
+      },
+      "body": "Our vendor confirmed delivery for Thursday 09:30 next week. Track via vendor portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "57",
+      "content": {
+        "subject": "Report: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.ac.cy"
+        }
+      },
+      "body": "Can you provide an ETA for Thursday 09:30? Finance needs it for planning. Please acknowledge on the portal."
+    },
+    {
+      "id": "58",
+      "content": {
+        "subject": "Confirmation: Training Session",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "odlamini@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD. Please acknowledge on the portal."
+    },
+    {
+      "id": "59",
+      "content": {
+        "subject": "Report: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Student Union",
+          "email": "studentunion@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for tomorrow 10:00, location: Lab B. Please acknowledge on the portal."
+    },
+    {
+      "id": "60",
+      "content": {
+        "subject": "Action Required: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Tuesday 14:00 has been approved. Details are in the portal."
+    },
+    {
+      "id": "61",
+      "content": {
+        "subject": "Schedule: Training Session",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with Tuesday 14:00. Follow-up notes: Conference Room 2"
+    },
+    {
+      "id": "62",
+      "content": {
+        "subject": "Reminder: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "anowak@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Thursday 09:30. Please acknowledge on the portal."
+    },
+    {
+      "id": "63",
+      "content": {
+        "subject": "Reminder: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your next Monday to the shared drive before Auditorium A."
+    },
+    {
+      "id": "64",
+      "content": {
+        "subject": "Update: Research Coordination",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "anowak@aou.ac.cy"
+        }
+      },
+      "body": "Can you provide an ETA for tomorrow 10:00? Finance needs it for planning. Please acknowledge on the portal."
+    },
+    {
+      "id": "65",
+      "content": {
+        "subject": "Reminder: Budget Line Clarification",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for Tuesday 14:00, location: Lab B. Please acknowledge on the portal."
+    },
+    {
+      "id": "66",
+      "content": {
+        "subject": "Update: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "IT Vendor",
+          "email": "support@itvendor.example.com"
+        }
+      },
+      "body": "Meeting scheduled for tomorrow 10:00, location: Conference Room 2. Please acknowledge on the portal."
+    },
+    {
+      "id": "67",
+      "content": {
+        "subject": "Availability: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "jmikkelsen@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD. Please acknowledge on the portal."
+    },
+    {
+      "id": "68",
+      "content": {
+        "subject": "Request: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD."
+    },
+    {
+      "id": "69",
+      "content": {
+        "subject": "Reminder: Volunteer Roster",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          },
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for tomorrow 10:00, location: Auditorium A. Please acknowledge on the portal."
+    },
+    {
+      "id": "70",
+      "content": {
+        "subject": "Schedule: Budget Line Clarification",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "anowak@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for Friday 16:00, location: Online via Teams. Please acknowledge on the portal."
+    },
+    {
+      "id": "71",
+      "content": {
+        "subject": "Confirmation: Research Coordination",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "tchristoforou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your next Monday to the shared drive before Auditorium A."
+    },
+    {
+      "id": "72",
+      "content": {
+        "subject": "Invitation: Equipment Booking",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with next Monday. Follow-up notes: Lab B Please acknowledge on the portal."
+    },
+    {
+      "id": "73",
+      "content": {
+        "subject": "Action Required: Equipment Booking",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          },
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "smarin@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for tomorrow 10:00 next week. Track via vendor portal."
+    },
+    {
+      "id": "74",
+      "content": {
+        "subject": "Action Required: Health & Safety Update",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your Tuesday 14:00 to the shared drive before Online via Teams. Please acknowledge on the portal."
+    },
+    {
+      "id": "75",
+      "content": {
+        "subject": "Schedule: Volunteer Roster",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for Tuesday 14:00, location: Online via Teams. Please acknowledge on the portal."
+    },
+    {
+      "id": "76",
+      "content": {
+        "subject": "Notice: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Marina Supplies Ltd",
+          "email": "sales@marinasupplies.example.com"
+        }
+      },
+      "body": "Meeting scheduled for Friday 16:00, location: Online via Teams."
+    },
+    {
+      "id": "77",
+      "content": {
+        "subject": "Notice: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          },
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD."
+    },
+    {
+      "id": "78",
+      "content": {
+        "subject": "Reminder: Research Coordination",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD."
+    },
+    {
+      "id": "79",
+      "content": {
+        "subject": "Notice: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: Thursday 09:30. Please acknowledge on the policy page."
+    },
+    {
+      "id": "80",
+      "content": {
+        "subject": "Update: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: Friday 16:00. Please acknowledge on the policy page."
+    },
+    {
+      "id": "81",
+      "content": {
+        "subject": "Schedule: Budget Line Clarification",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Friday 16:00 has been approved. Details are in the portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "82",
+      "content": {
+        "subject": "Reminder: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          },
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Banking Partner",
+          "email": "payments@marina-bank.example.com"
+        }
+      },
+      "body": "Our vendor confirmed delivery for Tuesday 14:00 next week. Track via vendor portal."
+    },
+    {
+      "id": "83",
+      "content": {
+        "subject": "Update: Student Placement List",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for tomorrow 10:00, location: Marina Gate office. Please acknowledge on the portal."
+    },
+    {
+      "id": "84",
+      "content": {
+        "subject": "Request: Health & Safety Update",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Tuesday 14:00 has been approved. Details are in the portal."
+    },
+    {
+      "id": "85",
+      "content": {
+        "subject": "Confirmation: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for Thursday 09:30 next week. Track via vendor portal."
+    },
+    {
+      "id": "86",
+      "content": {
+        "subject": "Reminder: Health & Safety Update",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "eyildiz@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your next Monday to the shared drive before Marina Gate office. Please acknowledge on the portal."
+    },
+    {
+      "id": "87",
+      "content": {
+        "subject": "Action Required: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "spetrou@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link."
+    },
+    {
+      "id": "88",
+      "content": {
+        "subject": "Confirmation: Equipment Booking",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your Tuesday 14:00 to the shared drive before Lab B."
+    },
+    {
+      "id": "89",
+      "content": {
+        "subject": "Confirmation: Research Coordination",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          },
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Tuesday 14:00."
+    },
+    {
+      "id": "90",
+      "content": {
+        "subject": "Request: Marina Docking Update",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "tchristoforou@aou.ac.cy"
+        }
+      },
+      "body": "Can you provide an ETA for tomorrow 10:00? Finance needs it for planning. Please acknowledge on the portal."
+    },
+    {
+      "id": "91",
+      "content": {
+        "subject": "Notice: Marina Docking Update",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that tomorrow 10:00 has been approved. Details are in the portal."
+    },
+    {
+      "id": "92",
+      "content": {
+        "subject": "Notice: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          },
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "mkyriakou@aou.ac.cy"
+        }
+      },
+      "body": "This is to confirm that Friday 16:00 has been approved. Details are in the portal. Please acknowledge on the portal."
+    },
+    {
+      "id": "93",
+      "content": {
+        "subject": "Update: Equipment Booking",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mgrivas@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Tuesday 14:00. Please acknowledge on the portal."
+    },
+    {
+      "id": "94",
+      "content": {
+        "subject": "Report: Equipment Booking",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Thursday 09:30."
+    },
+    {
+      "id": "95",
+      "content": {
+        "subject": "Report: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          },
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Marina Supplies Ltd",
+          "email": "sales@marinasupplies.example.com"
+        }
+      },
+      "body": "Please upload your next Monday to the shared drive before Conference Room 2."
+    },
+    {
+      "id": "96",
+      "content": {
+        "subject": "Report: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "odlamini@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: next Monday. Please acknowledge on the policy page."
+    },
+    {
+      "id": "97",
+      "content": {
+        "subject": "Notice: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for next Monday next week. Track via vendor portal."
+    },
+    {
+      "id": "98",
+      "content": {
+        "subject": "Request: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Thursday 09:30."
+    },
+    {
+      "id": "99",
+      "content": {
+        "subject": "Availability: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with tomorrow 10:00. Follow-up notes: Auditorium A"
+    },
+    {
+      "id": "100",
+      "content": {
+        "subject": "Report: Research Coordination",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          },
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "nkouris@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with Tuesday 14:00. Follow-up notes: Auditorium A Please acknowledge on the portal."
+    },
+    {
+      "id": "101",
+      "content": {
+        "subject": "Notice: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Student Union",
+          "email": "studentunion@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: Tuesday 14:00. Please acknowledge on the policy page."
+    },
+    {
+      "id": "102",
+      "content": {
+        "subject": "Availability: Committee Minutes",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "ehadjis@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: next Monday. Please acknowledge on the policy page."
+    },
+    {
+      "id": "103",
+      "content": {
+        "subject": "Availability: Data Pull Request",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          },
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "nkouris@aou.ac.cy"
+        }
+      },
+      "body": "Thanks for your help with next Monday. Follow-up notes: Online via Teams"
+    },
+    {
+      "id": "104",
+      "content": {
+        "subject": "Schedule: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your Thursday 09:30 to the shared drive before Auditorium A."
+    },
+    {
+      "id": "105",
+      "content": {
+        "subject": "Notice: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "gpapas@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your Thursday 09:30 to the shared drive before Auditorium A. Please acknowledge on the portal."
+    },
+    {
+      "id": "106",
+      "content": {
+        "subject": "Invitation: Committee Minutes",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "odlamini@aou.ac.cy"
+        }
+      },
+      "body": "Meeting scheduled for tomorrow 10:00, location: Auditorium A. Please acknowledge on the portal."
+    },
+    {
+      "id": "107",
+      "content": {
+        "subject": "Request: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for Tuesday 14:00 next week. Track via vendor portal."
+    },
+    {
+      "id": "108",
+      "content": {
+        "subject": "Report: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "jmikkelsen@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your tomorrow 10:00 to the shared drive before Lab B."
+    },
+    {
+      "id": "109",
+      "content": {
+        "subject": "Report: Data Pull Request",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your Friday 16:00 to the shared drive before Online via Teams."
+    },
+    {
+      "id": "110",
+      "content": {
+        "subject": "Update: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Student Union",
+          "email": "studentunion@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link. Please acknowledge on the portal."
+    },
+    {
+      "id": "111",
+      "content": {
+        "subject": "Schedule: Visitor Access Request",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          },
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Student Union",
+          "email": "studentunion@aou.ac.cy"
+        }
+      },
+      "body": "Please review the attached document and confirm by EOD."
+    },
+    {
+      "id": "112",
+      "content": {
+        "subject": "Availability: Research Coordination",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          },
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "nkouris@aou.ac.cy"
+        }
+      },
+      "body": "We've updated the policy: Tuesday 14:00. Please acknowledge on the policy page."
+    },
+    {
+      "id": "113",
+      "content": {
+        "subject": "Availability: Volunteer Roster",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "tchristoforou@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for Friday 16:00 next week. Track via vendor portal."
+    },
+    {
+      "id": "114",
+      "content": {
+        "subject": "Request: Data Pull Request",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Student Union",
+          "email": "studentunion@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link."
+    },
+    {
+      "id": "115",
+      "content": {
+        "subject": "Report: Data Pull Request",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "eyildiz@aou.ac.cy"
+        }
+      },
+      "body": "Please add these attendees to the calendar invite: Tuesday 14:00."
+    },
+    {
+      "id": "116",
+      "content": {
+        "subject": "Schedule: Lab Calibration Notes",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.ac.cy"
+        }
+      },
+      "body": "Reminder: complete the compliance form using the intranet link. Please acknowledge on the portal."
+    },
+    {
+      "id": "117",
+      "content": {
+        "subject": "Availability: Maintenance Schedule",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Marina Supplies Ltd",
+          "email": "sales@marinasupplies.example.com"
+        }
+      },
+      "body": "Please upload your Thursday 09:30 to the shared drive before Lab B."
+    },
+    {
+      "id": "118",
+      "content": {
+        "subject": "Availability: Invoice Receipt",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "ldemetriou@aou.ac.cy"
+        }
+      },
+      "body": "Please upload your next Monday to the shared drive before Marina Gate office."
+    },
+    {
+      "id": "119",
+      "content": {
+        "subject": "Report: Grant Review Deadline",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "rokoye@aou.ac.cy"
+        }
+      },
+      "body": "Our vendor confirmed delivery for next Monday next week. Track via vendor portal."
     }
   ]
 }

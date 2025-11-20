@@ -6,13 +6,13 @@
         "subject": "URGENT: Verify your AOU Password NOW",
         "recievers": [
           {
-            "name": "Hassan Al\u2011Masri",
-            "email": "halmasri@aou.example.com"
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Prof. Nia Kouris",
-          "email": "jonas@a0u-security.com"
+          "email": "support@aou-security-alerts.net"
         }
       },
       "body": "Your AOU mailbox will be closed in 6 hours. Verify here: http://a0u-security.com/verify to keep access. Do not ignore."
@@ -20,19 +20,19 @@
     {
       "id": "1",
       "content": {
-        "subject": "Invoice Overdue \u2013 Immediate Action Required",
+        "subject": "Invoice Overdue - Immediate Action Required",
         "recievers": [
           {
             "name": "Sofia Marin",
-            "email": "smarin@aou.example.com"
+            "email": "smarin@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Armin Petrescu",
-          "email": "maria@a0u-security.com"
+          "email": "accounts@aou-support.co"
         }
       },
-      "body": "We couldn\u2019t process PO#11872. Open the attached \u2018Invoice.xlsm\u2019 and enable macros to review payment details."
+      "body": "We couldn't process PO#11872. Open the attached 'Invoice.xlsm' and enable macros to review payment details."
     },
     {
       "id": "2",
@@ -41,12 +41,12 @@
         "recievers": [
           {
             "name": "Jonas Mikkelsen",
-            "email": "jmikkelsen@aou.example.com"
+            "email": "jmikkelsen@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Lia Demetriou",
-          "email": "owen@a0u-security.com"
+          "email": "notifications@aou-login-secure.co"
         }
       },
       "body": "You have a new voicemail. Listen securely at http://aou-internal-login.net/audio. Sign in with email and password."
@@ -58,12 +58,12 @@
         "recievers": [
           {
             "name": "Maria Kyriakou",
-            "email": "mkyriakou@aou.example.com"
+            "email": "mkyriakou@aou.ac.cy"
           }
         ],
         "sender": {
-          "name": "Hassan Al\u2011Masri",
-          "email": "agata@a0u-security.com"
+          "name": "Hassan Al-Masri",
+          "email": "payroll@aou-payroll-support.com"
         }
       },
       "body": "Congratulations! Your bonus is ready. Confirm bank details at http://aou-payroll-support.com to receive funds today."
@@ -71,19 +71,19 @@
     {
       "id": "4",
       "content": {
-        "subject": "IT Ticket Closed \u2013 Feedback Needed",
+        "subject": "IT Ticket Closed - Feedback Needed",
         "recievers": [
           {
             "name": "Owen Dlamini",
-            "email": "odlamini@aou.example.com"
+            "email": "odlamini@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Sofia Marin",
-          "email": "theo@a0u-security.com"
+          "email": "it-notify@aou-it-services.com"
         }
       },
-      "body": "We closed your ticket. For a small gift card, complete this survey: http://bit.ly/aou\u2011service\u2011review."
+      "body": "We closed your ticket. For a small gift card, complete this survey: http://bit.ly/aou-service-review."
     },
     {
       "id": "5",
@@ -92,15 +92,15 @@
         "recievers": [
           {
             "name": "Agata Nowak",
-            "email": "anowak@aou.example.com"
+            "email": "anowak@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Jonas Mikkelsen",
-          "email": "irina@a0u-security.com"
+          "email": "alerts@aou-restore.info"
         }
       },
-      "body": "Your drive access is disabled due to abnormal activity. Restore at http://aou\u2011restore.info within 30 minutes."
+      "body": "Your drive access is disabled due to abnormal activity. Restore at http://aou-restore.info within 30 minutes."
     },
     {
       "id": "6",
@@ -109,32 +109,32 @@
         "recievers": [
           {
             "name": "Theo Christoforou",
-            "email": "tchristoforou@aou.example.com"
+            "email": "tchristoforou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Maria Kyriakou",
-          "email": "babatunde@a0u-security.com"
+          "email": "security@secure-aou-auth.com"
         }
       },
-      "body": "Your password expired. Reset now: http://aou\u2011reset-password.co. Failure to comply results in account lockout."
+      "body": "Your password expired. Reset now: http://aou-reset-password.co. Failure to comply results in account lockout."
     },
     {
       "id": "7",
       "content": {
-        "subject": "Conference Invitation \u2013 Final Confirmation",
+        "subject": "Conference Invitation - Final Confirmation",
         "recievers": [
           {
             "name": "Irina Kovacs",
-            "email": "ikovacs@aou.example.com"
+            "email": "ikovacs@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Owen Dlamini",
-          "email": "elif@a0u-security.com"
+          "email": "events@aou-admin-portal.net"
         }
       },
-      "body": "Please download the attached \u2018Invite.pdf.exe\u2019 for entry QR. Required for Monday\u2019s briefing."
+      "body": "Please download the attached 'Invite.pdf.exe' for entry QR. Required for Monday's briefing."
     },
     {
       "id": "8",
@@ -143,12 +143,12 @@
         "recievers": [
           {
             "name": "Babatunde Ajayi",
-            "email": "bajayi@aou.example.com"
+            "email": "bajayi@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Agata Nowak",
-          "email": "george@a0u-security.com"
+          "email": "requests@aou-account-verify.net"
         }
       },
       "body": "I need 10 Apple gift cards in the next hour for VIP guests. Scratch and send codes here. Keep this confidential."
@@ -156,36 +156,36 @@
     {
       "id": "9",
       "content": {
-        "subject": "Multi\u2011Factor Device Removed",
+        "subject": "Multi-Factor Device Removed",
         "recievers": [
           {
             "name": "Elif Yildiz",
-            "email": "eyildiz@aou.example.com"
+            "email": "eyildiz@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Theo Christoforou",
-          "email": "rita@a0u-security.com"
+          "email": "security@aou-mail-secure.com"
         }
       },
-      "body": "A new device removed your MFA. If this wasn\u2019t you, re\u2011enroll at http://secure-aou-auth.com immediately."
+      "body": "A new device removed your MFA. If this wasn't you, re-enroll at http://secure-aou-auth.com immediately."
     },
     {
       "id": "10",
       "content": {
-        "subject": "Delivery Failure \u2013 Reauthenticate",
+        "subject": "Delivery Failure - Reauthenticate",
         "recievers": [
           {
             "name": "George Papas",
-            "email": "gpapas@aou.example.com"
+            "email": "gpapas@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Irina Kovacs",
-          "email": "samuel@a0u-security.com"
+          "email": "support@aou-mail-fix.org"
         }
       },
-      "body": "Emails to students are bouncing. Reauthenticate mailbox: http://aou\u2011mail\u2011fix.org now to prevent loss of service."
+      "body": "Emails to students are bouncing. Reauthenticate mailbox: http://aou-mail-fix.org now to prevent loss of service."
     },
     {
       "id": "11",
@@ -194,15 +194,15 @@
         "recievers": [
           {
             "name": "Rita Okoye",
-            "email": "rokoye@aou.example.com"
+            "email": "rokoye@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Babatunde Ajayi",
-          "email": "dr.@a0u-security.com"
+          "email": "share@aou-finance-share.com"
         }
       },
-      "body": "Maria shared \u2018Q3_Budget.xls\u2019. Sign in via http://aou-finance-share.com to download."
+      "body": "Maria shared 'Q3_Budget.xls'. Sign in via http://aou-finance-share.com to download."
     },
     {
       "id": "12",
@@ -211,15 +211,15 @@
         "recievers": [
           {
             "name": "Samuel Petrou",
-            "email": "spetrou@aou.example.com"
+            "email": "spetrou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Elif Yildiz",
-          "email": "mateo@a0u-security.com"
+          "email": "health@aou-health-portal.cc"
         }
       },
-      "body": "Complete the campus COVID form at http://aou\u2011health\u2011portal.cc or your ID will be deactivated."
+      "body": "Complete the campus COVID form at http://aou-health-portal.cc or your ID will be deactivated."
     },
     {
       "id": "13",
@@ -228,15 +228,15 @@
         "recievers": [
           {
             "name": "Dr. Eleni Hadjis",
-            "email": "ehadjis@aou.example.com"
+            "email": "ehadjis@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "George Papas",
-          "email": "prof.@a0u-security.com"
+          "email": "notices@aou-parking-appeals.com"
         }
       },
-      "body": "Unpaid parking ticket detected. Appeal within 24 hours at http://aou\u2011parking\u2011appeals.com to avoid penalties."
+      "body": "Unpaid parking ticket detected. Appeal within 24 hours at http://aou-parking-appeals.com to avoid penalties."
     },
     {
       "id": "14",
@@ -245,15 +245,15 @@
         "recievers": [
           {
             "name": "Mateo Grivas",
-            "email": "mgrivas@aou.example.com"
+            "email": "mgrivas@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Rita Okoye",
-          "email": "armin@a0u-security.com"
+          "email": "cctv@aou-cctv-notify.net"
         }
       },
-      "body": "Motion detected in Lab B. View footage: http://aou\u2011cctv.net and log in to confirm your identity."
+      "body": "Motion detected in Lab B. View footage: http://aou-cctv.net and log in to confirm your identity."
     },
     {
       "id": "15",
@@ -262,15 +262,15 @@
         "recievers": [
           {
             "name": "Prof. Nia Kouris",
-            "email": "nkouris@aou.example.com"
+            "email": "nkouris@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Samuel Petrou",
-          "email": "lia@a0u-security.com"
+          "email": "helpdesk@aou-it-services.com"
         }
       },
-      "body": "Migration requires password reconfirmation. Submit here: http://helpdesk\u2011aou.com/upgrade."
+      "body": "Migration requires password reconfirmation. Submit here: http://helpdesk-aou.com/upgrade."
     },
     {
       "id": "16",
@@ -279,15 +279,15 @@
         "recievers": [
           {
             "name": "Armin Petrescu",
-            "email": "apetrescu@aou.example.com"
+            "email": "apetrescu@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Dr. Eleni Hadjis",
-          "email": "hassan@a0u-security.com"
+          "email": "refunds@aou-refunds.center"
         }
       },
-      "body": "You qualify for a refund. Enter bank details at http://aou\u2011refunds.center to receive payment today."
+      "body": "You qualify for a refund. Enter bank details at http://aou-refunds.center to receive payment today."
     },
     {
       "id": "17",
@@ -296,12 +296,12 @@
         "recievers": [
           {
             "name": "Lia Demetriou",
-            "email": "ldemetriou@aou.example.com"
+            "email": "ldemetriou@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Mateo Grivas",
-          "email": "sofia@a0u-security.com"
+          "email": "files@onedr1ve-aou.com"
         }
       },
       "body": "Access invoice: http://onedr1ve-aou.com. Sign in with institutional credentials."
@@ -312,16 +312,16 @@
         "subject": "Payroll Correction Needed",
         "recievers": [
           {
-            "name": "Hassan Al\u2011Masri",
-            "email": "halmasri@aou.example.com"
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Prof. Nia Kouris",
-          "email": "jonas@a0u-security.com"
+          "email": "payroll-alerts@aou-mail-secure.com"
         }
       },
-      "body": "Your payroll info is invalid. Open attachment \u2018Payroll_Update.htm\u2019 and follow steps within."
+      "body": "Your payroll info is invalid. Open attachment 'Payroll_Update.htm' and follow steps within."
     },
     {
       "id": "19",
@@ -330,15 +330,1827 @@
         "recievers": [
           {
             "name": "Sofia Marin",
-            "email": "smarin@aou.example.com"
+            "email": "smarin@aou.ac.cy"
           }
         ],
         "sender": {
           "name": "Armin Petrescu",
-          "email": "maria@a0u-security.com"
+          "email": "vpn@aou-vpn-restore.net"
         }
       },
-      "body": "Your VPN was disabled. Restore now: http://aou\u2011vpn\u2011restore.net to retain remote access."
+      "body": "Your VPN was disabled. Restore now: http://aou-vpn-restore.net to retain remote access."
+    },
+    {
+      "id": "20",
+      "content": {
+        "subject": "Notice: MFA Removed",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "security@aou-mail-fix.org"
+        }
+      },
+      "body": "Restore access by following the steps at http://aou-mail-fix.org/auth within 30 minutes."
+    },
+    {
+      "id": "21",
+      "content": {
+        "subject": "Final Warning: Payment Refund",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "alerts@aou-support.co"
+        }
+      },
+      "body": "Provide bank details at http://aou-mail-fix.org/reset to receive funds. Action required immediately."
+    },
+    {
+      "id": "22",
+      "content": {
+        "subject": "Immediate: Password Verification",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "finance@aou-finance-share.com"
+        }
+      },
+      "body": "Open 'http://aou-finance-share.com/reset' and enable macros to review payment details. Attachment: 'Invite.pdf.exe'."
+    },
+    {
+      "id": "23",
+      "content": {
+        "subject": "Verify Now: New Voicemail",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "notify@aou-login-secure.co"
+        }
+      },
+      "body": "Download the attached file 'http://onedr1ve-aou.com/login' for your entry pass."
+    },
+    {
+      "id": "24",
+      "content": {
+        "subject": "Security Alert: Payment Refund",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://a0u-security.com/login - sign in required. Action required immediately."
+    },
+    {
+      "id": "25",
+      "content": {
+        "subject": "Immediate: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "hr@aou-security-alerts.net"
+        }
+      },
+      "body": "Reset your password now at http://aou-vpn-restore.net/download or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "26",
+      "content": {
+        "subject": "Verify Now: New Voicemail",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mateo@aou-it-services.com"
+        }
+      },
+      "body": "Download the attached file 'http://aou-finance-share.com/reset' for your entry pass. Action required immediately."
+    },
+    {
+      "id": "27",
+      "content": {
+        "subject": "URGENT: MFA Removed",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          },
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "security@aou-account-verify.net"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://a0u-security.com/auth"
+    },
+    {
+      "id": "28",
+      "content": {
+        "subject": "Notice: Conference Invite",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "events@aou-support.co"
+        }
+      },
+      "body": "Click the link http://aou-finance-share.com/verify and sign in with your institutional credentials."
+    },
+    {
+      "id": "29",
+      "content": {
+        "subject": "Security Alert: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "payroll@aou-mail-secure.com"
+        }
+      },
+      "body": "Reset your password now at http://a0u-security.com/download or your account will be locked."
+    },
+    {
+      "id": "30",
+      "content": {
+        "subject": "Security Alert: Conference Invite",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "events@aou-restore.info"
+        }
+      },
+      "body": "Reset your password now at http://aou-mail-fix.org/reset or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "31",
+      "content": {
+        "subject": "Immediate: New Voicemail",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          },
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Download the attached file 'http://aou-refunds.center/auth' for your entry pass. Action required immediately."
+    },
+    {
+      "id": "32",
+      "content": {
+        "subject": "Your Account: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Open attachment 'http://a0u-security.com/verify' and enable macros to review payment details. Attachment: 'Report.docm'."
+    },
+    {
+      "id": "33",
+      "content": {
+        "subject": "Confirm: New Voicemail",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "voice@aou-mail-secure.com"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://onedr1ve-aou.com/verify - sign in required."
+    },
+    {
+      "id": "34",
+      "content": {
+        "subject": "Notice: New Voicemail",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          },
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "alerts@aou-support.co"
+        }
+      },
+      "body": "Reset your password now at http://aou-mail-fix.org/login or your account will be locked."
+    },
+    {
+      "id": "35",
+      "content": {
+        "subject": "Final Warning: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "payroll@aou-mail-secure.com"
+        }
+      },
+      "body": "Open attachment 'http://onedr1ve-aou.com/auth' and enable macros to review payment details. Attachment: 'Payroll_Update.htm'."
+    },
+    {
+      "id": "36",
+      "content": {
+        "subject": "Payment Issue: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "delivery@onedr1ve-aou.com"
+        }
+      },
+      "body": "Restore access by following the steps at http://onedr1ve-aou.com/reset within 30 minutes. Action required immediately."
+    },
+    {
+      "id": "37",
+      "content": {
+        "subject": "URGENT: New Voicemail",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "notify@aou-security-alerts.net"
+        }
+      },
+      "body": "Restore access by following the steps at http://aou-mail-fix.org/login within 30 minutes."
+    },
+    {
+      "id": "38",
+      "content": {
+        "subject": "Immediate: Invoice Overdue",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "invoices@a0u-security.com"
+        }
+      },
+      "body": "Download the attached file 'http://a0u-security.com/download' for your entry pass."
+    },
+    {
+      "id": "39",
+      "content": {
+        "subject": "Immediate: New Voicemail",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "mateo@aou-mail-secure.com"
+        }
+      },
+      "body": "Complete this survey http://a0u-security.com/reset to claim your gift card."
+    },
+    {
+      "id": "40",
+      "content": {
+        "subject": "Action Required: Conference Invite",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "events@aou-admin-portal.net"
+        }
+      },
+      "body": "Open attachment 'http://onedr1ve-aou.com/login' and enable macros to review payment details. Attachment: 'Payroll_Update.htm'."
+    },
+    {
+      "id": "41",
+      "content": {
+        "subject": "Confirm: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "security@aou-vpn-restore.net"
+        }
+      },
+      "body": "Reset your password now at http://aou-vpn-restore.net/verify or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "42",
+      "content": {
+        "subject": "Security Alert: New Voicemail",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          },
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "alerts@aou-restore.info"
+        }
+      },
+      "body": "Download the attached file 'http://aou-restore.info/auth' for your entry pass."
+    },
+    {
+      "id": "43",
+      "content": {
+        "subject": "Notice: New Voicemail",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "notify@aou-login-secure.co"
+        }
+      },
+      "body": "Restore access by following the steps at http://onedr1ve-aou.com/login within 30 minutes."
+    },
+    {
+      "id": "44",
+      "content": {
+        "subject": "Confirm: Conference Invite",
+        "recievers": [
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "events@aou-finance-share.com"
+        }
+      },
+      "body": "Open attachment 'http://aou-restore.info/download' and enable macros to review payment details. Attachment: 'VoiceMsg.mp3.lnk'. Action required immediately."
+    },
+    {
+      "id": "45",
+      "content": {
+        "subject": "URGENT: Security Camera Alert",
+        "recievers": [
+          {
+            "name": "Dr. Eleni Hadjis",
+            "email": "ehadjis@aou.ac.cy"
+          },
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "alerts@aou-admin-portal.net"
+        }
+      },
+      "body": "Open attachment 'http://aou-restore.info/download' and enable macros to review payment details. Attachment: 'Report.docm'."
+    },
+    {
+      "id": "46",
+      "content": {
+        "subject": "Security Alert: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "payroll@aou-finance-share.com"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-finance-share.com/auth"
+    },
+    {
+      "id": "47",
+      "content": {
+        "subject": "Notice: Password Verification",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          },
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "security@aou-mail-secure.com"
+        }
+      },
+      "body": "Open attachment 'http://aou-vpn-restore.net/reset' and enable macros to review payment details. Attachment: 'Invite.pdf.exe'."
+    },
+    {
+      "id": "48",
+      "content": {
+        "subject": "Your Account: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Reset your password now at http://onedr1ve-aou.com/download or your account will be locked."
+    },
+    {
+      "id": "49",
+      "content": {
+        "subject": "Confirm: Password Verification",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "security@aou-vpn-restore.net"
+        }
+      },
+      "body": "Click the link http://aou-vpn-restore.net/download and sign in with your institutional credentials. Action required immediately."
+    },
+    {
+      "id": "50",
+      "content": {
+        "subject": "Action Required: Conference Invite",
+        "recievers": [
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "alerts@aou-finance-share.com"
+        }
+      },
+      "body": "Provide bank details at http://aou-vpn-restore.net/login to receive funds. Action required immediately."
+    },
+    {
+      "id": "51",
+      "content": {
+        "subject": "Immediate: Password Verification",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "it@aou-login-secure.co"
+        }
+      },
+      "body": "Open attachment 'http://onedr1ve-aou.com/login' and enable macros to review payment details. Attachment: 'EntryPass.pif'. Action required immediately."
+    },
+    {
+      "id": "52",
+      "content": {
+        "subject": "Final Warning: Password Verification",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "accounts@aou-support.co"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-finance-share.com/reset"
+    },
+    {
+      "id": "53",
+      "content": {
+        "subject": "Notice: Password Verification",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "security@aou-restore.info"
+        }
+      },
+      "body": "Click the link http://aou-restore.info/auth and sign in with your institutional credentials. Action required immediately."
+    },
+    {
+      "id": "54",
+      "content": {
+        "subject": "Notice: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "noreply@onedr1ve-aou.com"
+        }
+      },
+      "body": "Click the link http://onedr1ve-aou.com/auth and sign in with your institutional credentials."
+    },
+    {
+      "id": "55",
+      "content": {
+        "subject": "URGENT: Invoice Overdue",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          },
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Irina Kovacs",
+          "email": "billing@aou-refunds.center"
+        }
+      },
+      "body": "Complete this survey http://aou-restore.info/verify to claim your gift card."
+    },
+    {
+      "id": "56",
+      "content": {
+        "subject": "Immediate: Password Verification",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-refunds.center/login"
+    },
+    {
+      "id": "57",
+      "content": {
+        "subject": "Security Alert: MFA Removed",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          },
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "security@aou-mail-secure.com"
+        }
+      },
+      "body": "Download the attached file 'http://aou-refunds.center/download' for your entry pass."
+    },
+    {
+      "id": "58",
+      "content": {
+        "subject": "Your Account: Security Camera Alert",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-account-verify.net"
+        }
+      },
+      "body": "Provide bank details at http://aou-refunds.center/auth to receive funds. Action required immediately."
+    },
+    {
+      "id": "59",
+      "content": {
+        "subject": "Payment Issue: Payment Refund",
+        "recievers": [
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          },
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "notify@aou-mail-secure.com"
+        }
+      },
+      "body": "Download the attached file 'http://a0u-security.com/auth' for your entry pass."
+    },
+    {
+      "id": "60",
+      "content": {
+        "subject": "Action Required: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Reauthenticate mailbox here: http://a0u-security.com/auth to prevent loss of service."
+    },
+    {
+      "id": "61",
+      "content": {
+        "subject": "Action Required: New Voicemail",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "voice@aou-mail-secure.com"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-refunds.center/login Action required immediately."
+    },
+    {
+      "id": "62",
+      "content": {
+        "subject": "Action Required: MFA Removed",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "security@aou-security-alerts.net"
+        }
+      },
+      "body": "Reauthenticate mailbox here: http://a0u-security.com/login to prevent loss of service. Action required immediately."
+    },
+    {
+      "id": "63",
+      "content": {
+        "subject": "Notice: Invoice Overdue",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "billing@onedr1ve-aou.com"
+        }
+      },
+      "body": "Reauthenticate mailbox here: http://onedr1ve-aou.com/auth to prevent loss of service."
+    },
+    {
+      "id": "64",
+      "content": {
+        "subject": "Security Alert: Password Verification",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "it@aou-mail-fix.org"
+        }
+      },
+      "body": "Open attachment 'http://aou-mail-fix.org/download' and enable macros to review payment details. Attachment: 'Invite.pdf.exe'. Action required immediately."
+    },
+    {
+      "id": "65",
+      "content": {
+        "subject": "Security Alert: Password Verification",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "alerts@aou-support.co"
+        }
+      },
+      "body": "Open attachment 'http://onedr1ve-aou.com/login' and enable macros to review payment details. Attachment: 'Payroll_Update.htm'. Action required immediately."
+    },
+    {
+      "id": "66",
+      "content": {
+        "subject": "Final Warning: MFA Removed",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "security@aou-mail-secure.com"
+        }
+      },
+      "body": "Click the link http://aou-mail-fix.org/download and sign in with your institutional credentials. Action required immediately."
+    },
+    {
+      "id": "67",
+      "content": {
+        "subject": "Confirm: Security Camera Alert",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Click the link http://aou-vpn-restore.net/verify and sign in with your institutional credentials."
+    },
+    {
+      "id": "68",
+      "content": {
+        "subject": "Immediate: New Voicemail",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "notify@aou-restore.info"
+        }
+      },
+      "body": "Open attachment 'http://aou-restore.info/auth' and enable macros to review payment details. Attachment: 'Report.docm'. Action required immediately."
+    },
+    {
+      "id": "69",
+      "content": {
+        "subject": "Security Alert: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "delivery@onedr1ve-aou.com"
+        }
+      },
+      "body": "Provide bank details at http://aou-mail-fix.org/verify to receive funds."
+    },
+    {
+      "id": "70",
+      "content": {
+        "subject": "Notice: Invoice Overdue",
+        "recievers": [
+          {
+            "name": "Prof. Nia Kouris",
+            "email": "nkouris@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "accounts@aou-support.co"
+        }
+      },
+      "body": "Complete this survey http://aou-refunds.center/login to claim your gift card. Action required immediately."
+    },
+    {
+      "id": "71",
+      "content": {
+        "subject": "Security Alert: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          },
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Download the attached file 'http://aou-restore.info/auth' for your entry pass."
+    },
+    {
+      "id": "72",
+      "content": {
+        "subject": "Notice: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "payroll@aou-finance-share.com"
+        }
+      },
+      "body": "Click the link http://aou-finance-share.com/reset and sign in with your institutional credentials. Action required immediately."
+    },
+    {
+      "id": "73",
+      "content": {
+        "subject": "Security Alert: Conference Invite",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Dr. Eleni Hadjis",
+          "email": "alerts@aou-admin-portal.net"
+        }
+      },
+      "body": "Restore access by following the steps at http://onedr1ve-aou.com/download within 30 minutes."
+    },
+    {
+      "id": "74",
+      "content": {
+        "subject": "Notice: Payment Refund",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "alerts@a0u-security.com"
+        }
+      },
+      "body": "Restore access by following the steps at http://a0u-security.com/reset within 30 minutes."
+    },
+    {
+      "id": "75",
+      "content": {
+        "subject": "Final Warning: Payment Refund",
+        "recievers": [
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "security@aou-refunds.center"
+        }
+      },
+      "body": "Reset your password now at http://onedr1ve-aou.com/auth or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "76",
+      "content": {
+        "subject": "Your Account: Conference Invite",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          },
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "events@aou-admin-portal.net"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://onedr1ve-aou.com/verify"
+    },
+    {
+      "id": "77",
+      "content": {
+        "subject": "Verify Now: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "payroll@aou-finance-share.com"
+        }
+      },
+      "body": "Reauthenticate mailbox here: http://onedr1ve-aou.com/verify to prevent loss of service. Action required immediately."
+    },
+    {
+      "id": "78",
+      "content": {
+        "subject": "Security Alert: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          },
+          {
+            "name": "Agata Nowak",
+            "email": "anowak@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Reset your password now at http://aou-refunds.center/verify or your account will be locked."
+    },
+    {
+      "id": "79",
+      "content": {
+        "subject": "Security Alert: Delivery Failure",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "support@aou-mail-fix.org"
+        }
+      },
+      "body": "Provide bank details at http://a0u-security.com/login to receive funds. Action required immediately."
+    },
+    {
+      "id": "80",
+      "content": {
+        "subject": "Final Warning: New Voicemail",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "voice@aou-mail-secure.com"
+        }
+      },
+      "body": "Click the link http://aou-vpn-restore.net/auth and sign in with your institutional credentials."
+    },
+    {
+      "id": "81",
+      "content": {
+        "subject": "Final Warning: New Voicemail",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Prof. Nia Kouris",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Click the link http://aou-vpn-restore.net/auth and sign in with your institutional credentials. Action required immediately."
+    },
+    {
+      "id": "82",
+      "content": {
+        "subject": "Action Required: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          },
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Provide bank details at http://a0u-security.com/login to receive funds. Action required immediately."
+    },
+    {
+      "id": "83",
+      "content": {
+        "subject": "Security Alert: Invoice Overdue",
+        "recievers": [
+          {
+            "name": "Irina Kovacs",
+            "email": "ikovacs@aou.ac.cy"
+          },
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "billing@onedr1ve-aou.com"
+        }
+      },
+      "body": "Reset your password now at http://onedr1ve-aou.com/login or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "84",
+      "content": {
+        "subject": "Action Required: Security Camera Alert",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "security@aou-mail-secure.com"
+        }
+      },
+      "body": "Provide bank details at http://aou-mail-fix.org/reset to receive funds. Action required immediately."
+    },
+    {
+      "id": "85",
+      "content": {
+        "subject": "Notice: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "George Papas",
+            "email": "gpapas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "alerts@aou-admin-portal.net"
+        }
+      },
+      "body": "Reset your password now at http://onedr1ve-aou.com/login or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "86",
+      "content": {
+        "subject": "Verify Now: MFA Removed",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Complete this survey http://aou-refunds.center/verify to claim your gift card. Action required immediately."
+    },
+    {
+      "id": "87",
+      "content": {
+        "subject": "Your Account: Payment Refund",
+        "recievers": [
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "payments@aou-refunds.center"
+        }
+      },
+      "body": "Reset your password now at http://aou-finance-share.com/reset or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "88",
+      "content": {
+        "subject": "Security Alert: MFA Removed",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          },
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Complete this survey http://aou-mail-fix.org/download to claim your gift card."
+    },
+    {
+      "id": "89",
+      "content": {
+        "subject": "Security Alert: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "invoices@a0u-security.com"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://aou-finance-share.com/verify - sign in required. Action required immediately."
+    },
+    {
+      "id": "90",
+      "content": {
+        "subject": "Verify Now: Security Camera Alert",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          },
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Lia Demetriou",
+          "email": "security@aou-finance-share.com"
+        }
+      },
+      "body": "Provide bank details at http://aou-finance-share.com/auth to receive funds."
+    },
+    {
+      "id": "91",
+      "content": {
+        "subject": "URGENT: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "billing@a0u-security.com"
+        }
+      },
+      "body": "Download the attached file 'http://a0u-security.com/reset' for your entry pass. Action required immediately."
+    },
+    {
+      "id": "92",
+      "content": {
+        "subject": "Security Alert: MFA Removed",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-mail-secure.com"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-finance-share.com/verify Action required immediately."
+    },
+    {
+      "id": "93",
+      "content": {
+        "subject": "Final Warning: Conference Invite",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          },
+          {
+            "name": "Hassan Al-Masri",
+            "email": "halmasri@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://aou-vpn-restore.net/reset - sign in required."
+    },
+    {
+      "id": "94",
+      "content": {
+        "subject": "Final Warning: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Armin Petrescu",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "Complete this survey http://aou-restore.info/login to claim your gift card."
+    },
+    {
+      "id": "95",
+      "content": {
+        "subject": "URGENT: Password Verification",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-account-verify.net"
+        }
+      },
+      "body": "Provide bank details at http://onedr1ve-aou.com/login to receive funds. Action required immediately."
+    },
+    {
+      "id": "96",
+      "content": {
+        "subject": "Notice: Password Verification",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "security@aou-security-alerts.net"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-refunds.center/download"
+    },
+    {
+      "id": "97",
+      "content": {
+        "subject": "Verify Now: MFA Removed",
+        "recievers": [
+          {
+            "name": "Jonas Mikkelsen",
+            "email": "jmikkelsen@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "George Papas",
+          "email": "notify@a0u-security.com"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://aou-refunds.center/login - sign in required. Action required immediately."
+    },
+    {
+      "id": "98",
+      "content": {
+        "subject": "Verify Now: MFA Removed",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "security@aou-mail-secure.com"
+        }
+      },
+      "body": "Provide bank details at http://aou-refunds.center/auth to receive funds."
+    },
+    {
+      "id": "99",
+      "content": {
+        "subject": "Security Alert: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Babatunde Ajayi",
+            "email": "bajayi@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "alerts@aou-restore.info"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-restore.info/reset"
+    },
+    {
+      "id": "100",
+      "content": {
+        "subject": "Notice: Payment Refund",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          },
+          {
+            "name": "Theo Christoforou",
+            "email": "tchristoforou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Reset your password now at http://aou-refunds.center/verify or your account will be locked. Action required immediately."
+    },
+    {
+      "id": "101",
+      "content": {
+        "subject": "Security Alert: New Voicemail",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Babatunde Ajayi",
+          "email": "alerts@aou-mail-secure.com"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://a0u-security.com/auth"
+    },
+    {
+      "id": "102",
+      "content": {
+        "subject": "Final Warning: Conference Invite",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "alerts@aou-restore.info"
+        }
+      },
+      "body": "Click the link http://aou-restore.info/download and sign in with your institutional credentials."
+    },
+    {
+      "id": "103",
+      "content": {
+        "subject": "Your Account: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "security@a0u-security.com"
+        }
+      },
+      "body": "Reauthenticate mailbox here: http://aou-mail-fix.org/verify to prevent loss of service. Action required immediately."
+    },
+    {
+      "id": "104",
+      "content": {
+        "subject": "URGENT: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          },
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-finance-share.com"
+        }
+      },
+      "body": "Restore access by following the steps at http://aou-finance-share.com/download within 30 minutes."
+    },
+    {
+      "id": "105",
+      "content": {
+        "subject": "Verify Now: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "notify@aou-mail-secure.com"
+        }
+      },
+      "body": "Provide bank details at http://onedr1ve-aou.com/verify to receive funds."
+    },
+    {
+      "id": "106",
+      "content": {
+        "subject": "Security Alert: Password Verification",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Elif Yildiz",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://a0u-security.com/verify - sign in required. Action required immediately."
+    },
+    {
+      "id": "107",
+      "content": {
+        "subject": "Final Warning: Password Verification",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Restore access by following the steps at http://aou-mail-fix.org/login within 30 minutes. Action required immediately."
+    },
+    {
+      "id": "108",
+      "content": {
+        "subject": "Final Warning: New Voicemail",
+        "recievers": [
+          {
+            "name": "Sofia Marin",
+            "email": "smarin@aou.ac.cy"
+          },
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Mateo Grivas",
+          "email": "alerts@aou-support.co"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://a0u-security.com/verify"
+    },
+    {
+      "id": "109",
+      "content": {
+        "subject": "Final Warning: New Voicemail",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Open attachment 'http://onedr1ve-aou.com/login' and enable macros to review payment details. Attachment: 'Payroll_Update.htm'. Action required immediately."
+    },
+    {
+      "id": "110",
+      "content": {
+        "subject": "Notice: New Voicemail",
+        "recievers": [
+          {
+            "name": "Armin Petrescu",
+            "email": "apetrescu@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Maria Kyriakou",
+          "email": "notify@aou-login-secure.co"
+        }
+      },
+      "body": "Reauthenticate mailbox here: http://aou-refunds.center/verify to prevent loss of service."
+    },
+    {
+      "id": "111",
+      "content": {
+        "subject": "Notice: Payroll Issue",
+        "recievers": [
+          {
+            "name": "Elif Yildiz",
+            "email": "eyildiz@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Rita Okoye",
+          "email": "billing@aou-finance-share.com"
+        }
+      },
+      "body": "Open attachment 'http://aou-mail-fix.org/download' and enable macros to review payment details. Attachment: 'Invoice.xlsm'. Action required immediately."
+    },
+    {
+      "id": "112",
+      "content": {
+        "subject": "Action Required: Conference Invite",
+        "recievers": [
+          {
+            "name": "Lia Demetriou",
+            "email": "ldemetriou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Theo Christoforou",
+          "email": "voice@aou-mail-secure.com"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://aou-refunds.center/login - sign in required."
+    },
+    {
+      "id": "113",
+      "content": {
+        "subject": "Payment Issue: New Voicemail",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Jonas Mikkelsen",
+          "email": "alerts@aou-security-alerts.net"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://a0u-security.com/auth - sign in required. Action required immediately."
+    },
+    {
+      "id": "114",
+      "content": {
+        "subject": "Final Warning: Conference Invite",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "alerts@aou-support.co"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-restore.info/login"
+    },
+    {
+      "id": "115",
+      "content": {
+        "subject": "Security Alert: MFA Removed",
+        "recievers": [
+          {
+            "name": "Owen Dlamini",
+            "email": "odlamini@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Agata Nowak",
+          "email": "security@a0u-security.com"
+        }
+      },
+      "body": "Your account will be closed unless you verify here: http://aou-mail-fix.org/login Action required immediately."
+    },
+    {
+      "id": "116",
+      "content": {
+        "subject": "Notice: Shared Drive Suspended",
+        "recievers": [
+          {
+            "name": "Rita Okoye",
+            "email": "rokoye@aou.ac.cy"
+          },
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Sofia Marin",
+          "email": "alerts@aou-refunds.center"
+        }
+      },
+      "body": "Download the attached file 'http://a0u-security.com/download' for your entry pass."
+    },
+    {
+      "id": "117",
+      "content": {
+        "subject": "Payment Issue: Delivery Failure",
+        "recievers": [
+          {
+            "name": "Samuel Petrou",
+            "email": "spetrou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Owen Dlamini",
+          "email": "voice@aou-mail-secure.com"
+        }
+      },
+      "body": "You've received a voice message. Play it: http://aou-mail-fix.org/auth - sign in required."
+    },
+    {
+      "id": "118",
+      "content": {
+        "subject": "Security Alert: Payment Refund",
+        "recievers": [
+          {
+            "name": "Mateo Grivas",
+            "email": "mgrivas@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Samuel Petrou",
+          "email": "alerts@a0u-security.com"
+        }
+      },
+      "body": "Download the attached file 'http://aou-finance-share.com/download' for your entry pass. Action required immediately."
+    },
+    {
+      "id": "119",
+      "content": {
+        "subject": "Security Alert: Password Verification",
+        "recievers": [
+          {
+            "name": "Maria Kyriakou",
+            "email": "mkyriakou@aou.ac.cy"
+          }
+        ],
+        "sender": {
+          "name": "Hassan Al-Masri",
+          "email": "alerts@aou-restore.info"
+        }
+      },
+      "body": "Restore access by following the steps at http://aou-refunds.center/download within 30 minutes."
     }
   ]
 }

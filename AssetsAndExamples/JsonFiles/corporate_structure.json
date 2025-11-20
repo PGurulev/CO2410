@@ -5,7 +5,7 @@
     "founded_year": 1998,
     "hq_location": "Larnaca, Cyprus",
     "mission": "Advance sustainable maritime innovation and educate leaders for the blue economy.",
-    "history": "AOU began as a small maritime academy established by a coalition of local port authorities in 1998. In the mid\u20112000s, it partnered with European research councils to develop ocean\u2011sensing platforms and autonomous ROVs for reef conservation. After 2015, AOU expanded into fintech-for-marinas and supply\u2011chain analytics for coastal logistics. Today, AOU operates three research centers and a technology incubator focused on resilient coastal infrastructure and green shipping.",
+    "history": "AOU began as a small maritime academy established by a coalition of local port authorities in 1998. In the mid 2000s, it partnered with European research councils to develop ocean-sensing platforms and autonomous ROVs for reef conservation. After 2015, AOU expanded into fintech-for-marinas and supply-chain analytics for coastal logistics. Today, AOU operates three research centers and a technology incubator focused on resilient coastal infrastructure and green shipping.",
     "departments": [
       {
         "name": "Executive Office"
@@ -36,7 +36,7 @@
       {
         "name": "Dr. Eleni Hadjis",
         "password": "AOU!Pres2025",
-        "email": "ehadjis@aou.example.com",
+        "email": "ehadjis@aou.ac.cy",
         "position": "President & Vice\u2011Chancellor",
         "department": "Executive Office",
         "manager": null
@@ -44,138 +44,138 @@
       {
         "name": "Mateo Grivas",
         "password": "Exec#Strat_8842",
-        "email": "mgrivas@aou.example.com",
+        "email": "mgrivas@aou.ac.cy",
         "position": "Chief of Staff",
         "department": "Executive Office",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Prof. Nia Kouris",
         "password": "R&D_Lead^2025",
-        "email": "nkouris@aou.example.com",
+        "email": "nkouris@aou.ac.cy",
         "position": "Director of Engineering & R&D",
         "department": "Engineering & R&D",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Armin Petrescu",
         "password": "AuvLab$412",
-        "email": "apetrescu@aou.example.com",
+        "email": "apetrescu@aou.ac.cy",
         "position": "Senior Robotics Engineer",
         "department": "Engineering & R&D",
-        "manager": "nkouris@aou.example.com"
+        "manager": "nkouris@aou.ac.cy"
       },
       {
         "name": "Lia Demetriou",
         "password": "OceanData_73!",
-        "email": "ldemetriou@aou.example.com",
+        "email": "ldemetriou@aou.ac.cy",
         "position": "Data Scientist (Ocean Sensing)",
         "department": "Engineering & R&D",
-        "manager": "nkouris@aou.example.com"
+        "manager": "nkouris@aou.ac.cy"
       },
       {
-        "name": "Hassan Al\u2011Masri",
+        "name": "Hassan Al-Masri",
         "password": "CISO@AOU_2025",
-        "email": "halmasri@aou.example.com",
+        "email": "halmasri@aou.ac.cy",
         "position": "Head of IT & Security (CISO)",
         "department": "IT & Security",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Sofia Marin",
         "password": "IdP-Gateway*902",
-        "email": "smarin@aou.example.com",
+        "email": "smarin@aou.ac.cy",
         "position": "Systems Administrator",
         "department": "IT & Security",
-        "manager": "halmasri@aou.example.com"
+        "manager": "halmasri@aou.ac.cy"
       },
       {
         "name": "Jonas Mikkelsen",
         "password": "NetOps^Switch31",
-        "email": "jmikkelsen@aou.example.com",
+        "email": "jmikkelsen@aou.ac.cy",
         "position": "Network Engineer",
         "department": "IT & Security",
-        "manager": "halmasri@aou.example.com"
+        "manager": "halmasri@aou.ac.cy"
       },
       {
         "name": "Maria Kyriakou",
         "password": "FinCtrl_77$",
-        "email": "mkyriakou@aou.example.com",
+        "email": "mkyriakou@aou.ac.cy",
         "position": "Finance Controller",
         "department": "Finance",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Owen Dlamini",
         "password": "P2P_Ledger009!",
-        "email": "odlamini@aou.example.com",
+        "email": "odlamini@aou.ac.cy",
         "position": "Accounts Payable Specialist",
         "department": "Finance",
-        "manager": "mkyriakou@aou.example.com"
+        "manager": "mkyriakou@aou.ac.cy"
       },
       {
         "name": "Agata Nowak",
         "password": "HR_Policy*2025",
-        "email": "anowak@aou.example.com",
+        "email": "anowak@aou.ac.cy",
         "position": "HR Manager",
         "department": "Human Resources",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Theo Christoforou",
         "password": "Talent!Board_55",
-        "email": "tchristoforou@aou.example.com",
+        "email": "tchristoforou@aou.ac.cy",
         "position": "Talent Acquisition Specialist",
         "department": "Human Resources",
-        "manager": "anowak@aou.example.com"
+        "manager": "anowak@aou.ac.cy"
       },
       {
         "name": "Irina Kovacs",
         "password": "Ops_Marina^441",
-        "email": "ikovacs@aou.example.com",
+        "email": "ikovacs@aou.ac.cy",
         "position": "Operations Lead (Marina Campus)",
         "department": "Operations (Marina Campus)",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Babatunde Ajayi",
         "password": "GateCtrl_NFC!28",
-        "email": "bajayi@aou.example.com",
+        "email": "bajayi@aou.ac.cy",
         "position": "Access Control Technician",
         "department": "Operations (Marina Campus)",
-        "manager": "ikovacs@aou.example.com"
+        "manager": "ikovacs@aou.ac.cy"
       },
       {
         "name": "Elif Yildiz",
         "password": "StudentCare_960",
-        "email": "eyildiz@aou.example.com",
+        "email": "eyildiz@aou.ac.cy",
         "position": "Director of Student Affairs",
         "department": "Student Affairs",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "George Papas",
         "password": "Advisor*2025",
-        "email": "gpapas@aou.example.com",
+        "email": "gpapas@aou.ac.cy",
         "position": "Student Advisor",
         "department": "Student Affairs",
-        "manager": "eyildiz@aou.example.com"
+        "manager": "eyildiz@aou.ac.cy"
       },
       {
         "name": "Rita Okoye",
         "password": "Outreach+Enroll77",
-        "email": "rokoye@aou.example.com",
+        "email": "rokoye@aou.ac.cy",
         "position": "Head of Admissions & Outreach",
         "department": "Admissions & Outreach",
-        "manager": "ehadjis@aou.example.com"
+        "manager": "ehadjis@aou.ac.cy"
       },
       {
         "name": "Samuel Petrou",
         "password": "Fairs&Schools_33",
-        "email": "spetrou@aou.example.com",
+        "email": "spetrou@aou.ac.cy",
         "position": "Admissions Officer",
         "department": "Admissions & Outreach",
-        "manager": "rokoye@aou.example.com"
+        "manager": "rokoye@aou.ac.cy"
       }
     ]
   }
