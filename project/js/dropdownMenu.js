@@ -49,4 +49,3 @@ function contacts() {
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "none";
 }
-
