@@ -212,7 +212,7 @@ body{
   background-color: rgba(214,231,255,0.95); 
   color: #07203a;
   padding: 10px 12px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -229,15 +229,16 @@ body{
   right: 0;
   top: calc(100% + 8px);
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 12rem;
   overflow: auto;
   box-shadow: 0px 8px 24px rgba(0,0,0,0.35);
   z-index: 1001;
   border-radius: 8px;
 }
 .dropdown-content a{
+  font-size: 1rem; 
   color: black;
-  padding: 12px 16px;
+  padding: 0.7rem 1rem;
   text-decoration: none;
   display: block;
 }
