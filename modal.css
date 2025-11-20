@@ -12,11 +12,121 @@
   background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content - horizontal split updated */
 .modal-content {
+  display: flex;
+  flex-direction: row; /* force horizontal split */
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-width: 1100px;
+  border-radius: 12px;
+}
+
+/* Left and Right panels */
+.modalLeftPanel {
+  flex: 0 0 35%; /* 35% width, won’t shrink too much */
+  max-height: 70vh; /* optional: scroll if content too tall */
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.modalRightPanel {
+  flex: 1; /* take remaining space */
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-left: 15px;
+}
+
+/* ===== Corporate Structure Modal Styling ===== */
+
+/* Department container */
+.DeptContainer {
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 12px 14px;
+  background: #f0f4ff; /* softer modern blue */
+  color: #1b2d5f; /* darker text for contrast */
+  border-radius: 10px;
+  transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.DeptContainer:hover {
+  background: #d9e4ff;
+  transform: translateX(2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Employee container (nested under department) */
+.EmpContainer {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* Employee name item */
+.EmpName {
+  cursor: pointer;
+  padding: 8px 6px;
+  color: #1b2d5f; /* match department text */
+  background: #f7f9ff; /* subtle contrast for employee names */
+  border-radius: 8px;
+  transition: background 0.25s, color 0.25s, transform 0.15s;
+  margin-bottom: 4px;
+}
+
+.EmpName:hover {
+  background: #e2e8ff;
+  color: #0e1f4a;
+  transform: translateX(2px);
+}
+
+/* Highlight selected employee */
+.EmpName.active {
+  background: #c1d4ff;
+  color: #00285a;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Employee details panel (right side) */
+.EmpDetailsPanel {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.EmpDetailsPanel h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #1a3d7c;
+}
+
+.EmpDetailsPanel p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.EmpDetailsPanel p strong {
+  color: #0e2a5d;
+}
+
+/* Smooth appear animation for panels */
+.EmpDetailsPanel.show {
+  display: block;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
 }

@@ -1,78 +1,86 @@
 let CorpStructPath = "./AssetsAndExamples/JsonFiles/corporate_structure.json";
 let DeptPlace = document.getElementById("DepartmentDetails");
 let RightPanel = document.getElementById("EmployeeDetails");
-//map info from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-let EmpList = new Map();
+
+let EmpList = new Map();  // employeeName → employeePanel
+let EmpData = [];         // filled after JSON loads
+let DeptData = [];        // filled after JSON loads
+
 async function GenerateDepartmentOBJ() {
     let FullData = await JSONTransmitter(CorpStructPath);
-    console.log(FullData);
+
     DeptData = FullData.company.departments;
-    console.log(DeptData);
     EmpData = FullData.company.employees;
-    console.log(EmpData);
+
     DeptData.forEach(dept => {
-        deptDiv = document.createElement("div");
-        deptDiv.class = "DeptContainer";
-        deptDiv.textContent = `${dept.name}`;
+        // ----- DEPARTMENT DIV -----
+        let deptDiv = document.createElement("div");
+        deptDiv.className = "DeptContainer";
+        deptDiv.textContent = dept.name;
+
+        // container that holds employees under this department
         let empContainer = document.createElement("div");
-        empContainer.class = "EmpContainer";
+        empContainer.className = "EmpContainer";
         empContainer.style.display = "none";
+
         deptDiv.onclick = () => {
-            empContainer.style.display = CheckForVisibility(empContainer);
-        }
-        for(let i = 0; i < EmpData.length; i++){
-            if(EmpData[i].department != dept.name){
-                continue;
-            }
-            else{
-                let EmpDiv = document.createElement("div");
-                EmpDiv.textContent = `${EmpData[i].name}`;
-                EmpDiv.onclick = () => {
-                    hideAllEmpData();
-                    EmpList.get(EmpData[i].name).style.display = "flex";
-                }
-                empContainer.appendChild(EmpDiv);
-            }
+            empContainer.style.display =
+                empContainer.style.display === "none" ? "block" : "none";
+        };
 
-            
+        // ----- EMPLOYEES UNDER THIS DEPT -----
+        EmpData.forEach(emp => {
+            if (emp.department !== dept.name) return;
 
-            EmpPanel = document.createElement("div");
+            let EmpDiv = document.createElement("div");
+            EmpDiv.className = "EmpName";
+            EmpDiv.textContent = emp.name;
+
+            EmpDiv.onclick = (event) => {
+                event.stopPropagation(); // prevent collapsing the department
+                hideAllEmpData();
+                EmpList.get(emp.name).style.display = "block";
+            };
+
+            empContainer.appendChild(EmpDiv);
+
+            // ----- RIGHT-SIDE PANEL FOR EMPLOYEE -----
+            let EmpPanel = document.createElement("div");
+            EmpPanel.className = "EmpDetailsPanel";
             EmpPanel.style.display = "none";
 
-            EmpPanel.innerHTML = `<p>${EmpData[i].name}</p>
-            <p>${EmpData[i].password}</p>
-            <p>${EmpData[i].email}</p>
-            <p>${EmpData[i].position}</p>
-            <p>${EmpData[i].department}</p>
-            <p>${EmpData[i].manager}</p>`;
+            EmpPanel.innerHTML = `
+                <h3>${emp.name}</h3>
+                <p><strong>Email:</strong> ${emp.email}</p>
+                <p><strong>Password:</strong> ${emp.password}</p>
+                <p><strong>Position:</strong> ${emp.position}</p>
+                <p><strong>Department:</strong> ${emp.department}</p>
+                <p><strong>Manager:</strong> ${emp.manager ?? "—"}</p>
+            `;
 
             RightPanel.appendChild(EmpPanel);
-            EmpList.set(EmpData[i].name, EmpPanel);
-        }
+            EmpList.set(emp.name, EmpPanel);
+        });
+
         DeptPlace.appendChild(deptDiv);
         DeptPlace.appendChild(empContainer);
-    })
-}
-async function JSONTransmitter(filename){
-    let FetchedData = await (await fetch(filename)).json();
-    return FetchedData;
-}
-
-function CheckForVisibility(element){
-    if(element.style == "none")
-        return "flex";
-    else
-        return "none";
-}
-function hideAllEmpData()
-{
-    EmpData.forEach(emp => {
-        emp.style.display = "none";
     });
 }
-GenerateDepartmentOBJ();
-//TO DO implement the changes in visibility, so it works correctly and create basic css
-function CheckCorparativeStructureToMakeSure()
-{
 
+async function JSONTransmitter(filename) {
+    let data = await (await fetch(filename)).json();
+    return data;
 }
+
+function hideAllEmpData() {
+    EmpList.forEach(panel => {
+        panel.style.display = "none";
+    });
+}
+
+// OPEN MODAL WHEN BUTTON PRESSED
+function CheckCorparativeStructureToMakeSure() {
+    document.getElementById("DetailsModal").style.display = "block";
+}
+
+GenerateDepartmentOBJ();
