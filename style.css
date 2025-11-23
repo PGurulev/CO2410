@@ -35,7 +35,7 @@ html[data-theme="dark"]{
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 120ms ease;
 }
 
-/* 
+/*
    Base & layout
   */
 html,body{height:100%}
@@ -142,63 +142,19 @@ body{
 }
 
 
-
-.hidden{ display: none; }
-
-/* Game page & components */
-.game-panel{
-  margin-top:8px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  align-items:stretch;
-}
-
-/* Generic mail card look */
-.mail-container{
-  background: var(--glass);
-  padding: 14px;
-  border-radius: 10px;
-  color: var(--text);
-  border: 1px solid rgba(255,255,255,0.03);
-}
-
-.mail-header-row{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  margin-bottom:8px;
-}
-
-.mail-sender, .mail-receivers{
-  font-weight:600;
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-.mail-subject{
-  font-weight:700;
-  margin:8px 0;
-  color: var(--text);
-}
-
-.mail-body{
-  white-space:pre-wrap;
-  color: var(--text);
-  background: transparent;
-  padding-top:6px;
-  line-height:1.6;
-  font-size:0.95rem;
+.hidden {
+    display: none;
 }
 
 /* Game buttons & scoreboard */
 .GameButtons{
-  display:flex;
-  gap:12px;
-  margin-top:12px;
-  flex-wrap:wrap;
-  justify-content:center;
+    display:flex;
+    gap:12px;
+    margin-top:12px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
+
 
 .score-board{
   margin-top:8px;
@@ -209,7 +165,7 @@ body{
 
 /* Dropdown */
 .dropbtn {
-  background-color: rgba(214,231,255,0.95); 
+  background-color: rgba(214,231,255,0.95);
   color: #07203a;
   padding: 10px 12px;
   font-size: 1rem;
@@ -219,7 +175,7 @@ body{
   border-radius: 8px;
 }
 .dropbtn:hover{
-    background-color: rgba(189, 216, 255, 0.95); 
+    background-color: rgba(189, 216, 255, 0.95);
 }
 .dropdown { position:relative; display:flex; align-items:center; }
 
@@ -236,7 +192,7 @@ body{
   border-radius: 8px;
 }
 .dropdown-content a{
-  font-size: 1rem; 
+  font-size: 1rem;
   color: black;
   padding: 0.7rem 1rem;
   text-decoration: none;
@@ -259,112 +215,8 @@ body{
   from { background-position: 0% 50% }
   to { background-position: 100% 50% }
 }
+   /*About / profiles section styles*/
 
-/*
-   Email two-pane layout
-    */
-.email-layout{
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 16px;
-  align-items: start;
-}
-
-/* Inbox list  */
-.inbox-list{
-  max-height: 62vh;
-  overflow-y: auto;
-  padding: 8px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0));
-  border: 1px solid rgba(255,255,255,0.02);
-}
-
-/* single preview item */
-.mail-item{
-  display:flex;
-  gap:10px;
-  align-items:flex-start;
-  padding:10px;
-  border-radius:8px;
-  cursor:pointer;
-  transition: background .12s ease, transform .06s ease;
-  margin-bottom:8px;
-}
-.mail-item:hover{ background: rgba(255,255,255,0.02); transform: translateY(-1px); }
-
-/* active/selected state (will add .selected via JS) */
-.mail-item.selected{
-  background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.02);
-}
-
-/* avatar */
-.mail-item .avatar{
-  width:44px;
-  height:44px;
-  border-radius:8px;
-  background: linear-gradient(135deg,#6cc1ff,#9b6bff);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  color:#07203a;
-  flex-shrink:0;
-  font-size:14px;
-}
-
-/* meta */
-.mail-item .mail-meta{ flex:1; text-align:left; }
-.mail-item .mail-subject-line{ font-weight:700; color: var(--text); margin-bottom:4px; }
-.mail-item .mail-snippet{ font-size:0.9rem; color: var(--mail-snippet); }
-
-/* time */
-.mail-item .mail-time{ font-size:0.8rem; color: var(--muted); margin-left:8px; }
-
-/* Email view (right column) */
-.email-view{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  min-height: 60vh;
-  padding: 12px;
-  border-radius:10px;
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.02);
-}
-
-/* reading pane header */
-.mail-header-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:12px;
-}
-.mail-sender, .mail-receivers { color: var(--muted); font-weight:600; }
-.mail-subject{ font-size:1.25rem; color:var(--text); margin-top:6px; }
-
-/* body area gets scroll if long */
-.mail-body{
-  background: transparent;
-  padding: 12px;
-  border-radius:8px;
-  overflow:auto;
-  max-height: 40vh;
-  border: 1px dashed rgba(255,255,255,0.02);
-  color: var(--text);
-}
-
-/* small screens stack panels */
-@media (max-width: 880px){
-  .email-layout{ grid-template-columns: 1fr; }
-  .inbox-list{ order: 2; max-height: 28vh; }
-  .email-view{ order: 1; min-height: 40vh; }
-}
-
-/*
-   About / profiles section styles
-   */
 .list {
     list-style: none;
     padding: 0;
@@ -442,6 +294,49 @@ p {
     color: var(--light-gray);
 }
 
+.mail-card{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    border-radius: 10px;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+
+.mail-card--active {
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 20px rgba(255, 217, 102, 0.4);
+    animation: mailPop 0.35s ease-out;
+}
+
+
+.mail-header-line {
+    font-size: 0.92rem;
+    color: var(--text);
+    margin: 2px 0;
+}
+
+
+.mail-content-label {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--muted);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 4px;
+}
+
+
+.mail-body-box {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    color: var(--text);
+}
+
 /* responsive for profiles */
 @media (max-width: 768px) {
     .profile-card {
@@ -457,3 +352,14 @@ p {
         margin: 0 auto 10px;
     }
 }
+
+
+#GamePage {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+

@@ -40,12 +40,17 @@
     </main>
 
     <!-- Game page (hidden until StartGame shows it) -->
-    <section id="GamePage" class="panel hidden">
-      <div class="game-panel">
-        <div class="mail-container" id="MailsSender"></div>
-        <div class="mail-container" id="MailsRecievers"></div>
-        <div class="mail-container" id="MailsSubject"></div>
-        <div class="mail-container" id="MailsBody"></div>
+      <section id="GamePage" class="panel hidden">
+        <div class="mail-card">
+            <div class="mail-header-line"><strong>From:</strong> <span id="MailsSender"></span></div>
+            <div class="mail-header-line"><strong>To:</strong> <span id="MailsRecievers"></span></div>
+            <div class="mail-header-line"><strong>Subject:</strong> <span id="MailsSubject"></span></div>
+
+            <div class="mail-content-label">Content:</div>
+
+            <div class="mail-body-box" id="MailsBody"></div>
+        </div>
+
 
         <div class="GameButtons">
           <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
@@ -55,7 +60,7 @@
         </div>
 
         <div class="score-board" id="ScoreBoard">Score: 0</div>
-      </div>
+
     </section>
 
 <!--about section-->

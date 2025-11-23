@@ -31,7 +31,13 @@ async function StartGame(){
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
     GetNextMail();
+
+    const mailCard = document.querySelector('.mail-card');
+    if (mailCard) {
+        mailCard.classList.add('mail-card--active');
+    }
 }
+
 async function JSONTransmitter(filename){
     let FetchedData = await (await fetch(filename)).json();
     return FetchedData;
@@ -52,13 +58,13 @@ async function GetNextMail() {
         let recievers = document.getElementById("MailsRecievers");
         let sender = document.getElementById("MailsSender");
         let content = document.getElementById("MailsBody");
-        content.innerHTML =  "<p> Content: " + FinalMailsArray[mailCounter].body + "</p>";
-        subject.innerHTML = "<p> Subject: " + FinalMailsArray[mailCounter].content.subject + "</p>";
-        sender.innerHTML = "<p> From: " + FinalMailsArray[mailCounter].content.sender.name + " " + FinalMailsArray[mailCounter].content.sender.email + "</p>";
+        content.innerHTML =  "<p>  " + FinalMailsArray[mailCounter].body + "</p>";
+        subject.innerHTML = "<p>  " + FinalMailsArray[mailCounter].content.subject + "</p>";
+        sender.innerHTML = "<p>  " + FinalMailsArray[mailCounter].content.sender.name + " " + FinalMailsArray[mailCounter].content.sender.email + "</p>";
         //content for forEach() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
         recievers.innerHTML = "";
         FinalMailsArray[mailCounter].content.recievers.forEach(reciever => {
-            recievers.innerHTML += "<p> To: " + reciever.name + " " + reciever.email + "</p>";
+            recievers.innerHTML += "<p>  " + reciever.name + " " + reciever.email + "</p>";
         });
     }
     else{
