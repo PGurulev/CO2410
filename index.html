@@ -33,7 +33,7 @@
       </p>
 
       <section class="buttons" aria-label="main actions">
-        <button class="btn btn-start" onclick="StartGame()">Start the game</button>
+        <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
         <button class="btn btn-info">General info</button>
         <button class="btn btn-rules">Rules of the game</button>
       </section>
@@ -41,6 +41,7 @@
 
     <!-- Game page (hidden until StartGame shows it) -->
       <section id="GamePage" class="panel hidden">
+        <div class="timer-section" id="timer"></div>
         <div class="mail-card">
             <div class="mail-header-line"><strong>From:</strong> <span id="MailsSender"></span></div>
             <div class="mail-header-line"><strong>To:</strong> <span id="MailsRecievers"></span></div>
@@ -61,6 +62,19 @@
 
         <div class="score-board" id="ScoreBoard">Score: 0</div>
 
+    </section>
+
+    <!--PreGameState-->
+    <section class="panel hidden" id="PlayerIdPage">
+          <h2>Chose your nickname</h2>
+          <label>
+            <input type="text" id="nickname"/>
+          </label>
+          <div class="IdButtons">
+            <button class="btn btn-easy" onclick="GetNickname(`Easy`)">Easy mode</button>
+            <button class="btn btn-medium" onclick="GetNickname(`Medium`)">Medium mode</button>
+            <button class="btn btn-hard" onclick="GetNickname(`Hard`)">Hard mode</button>
+          </div>
     </section>
 
 <!--about section-->

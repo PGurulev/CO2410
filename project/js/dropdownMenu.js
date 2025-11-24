@@ -25,6 +25,8 @@ function goback(){
     var StartingContent = document.getElementById("MainPage");
     var ContactContent = document.getElementById("ContactsPage");
     ContactContent.style.display = "none";
+    var NicknameContent = document.getElementById("PlayerIdPage");
+    NicknameContent.style.display = "none";
     mailCounter = 0
 }
 
@@ -37,6 +39,8 @@ function about(){
     AboutContent.style.display = "block";
     var ContactContent = document.getElementById("ContactsPage");
     ContactContent.style.display = "none";
+    var NicknameContent = document.getElementById("PlayerIdPage");
+    NicknameContent.style.display = "none";
 }
 
 function contacts() {
@@ -48,4 +52,6 @@ function contacts() {
     ContactContent.style.display = "block";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "none";
+    var NicknameContent = document.getElementById("PlayerIdPage");
+    NicknameContent.style.display = "none";
 }

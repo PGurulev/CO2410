@@ -130,6 +130,10 @@ body{
 .btn-check-structure { background: rgba(238,243,255,0.98); color:#05336a; }
 .btn-restart { background: rgba(255,240,240,0.98); color:#ee0505; }
 .btn-close-modal { margin-top:12px; background:#ddd; color:#123; }
+/* Just added three styles for new menu buttons */
+.btn-easy {background:#9ac08e; color:rgb(81, 255, 0); }
+.btn-medium {background:#b6b189; color:rgb(255, 238, 0); }
+.btn-hard {background:#8f6e6e; color:rgb(255, 2, 2); }
 
 /* Layout helpers */
 .buttons{
@@ -360,6 +364,21 @@ p {
     align-items: center;
     gap: 16px;
 }
+
+#PlayerIdPage {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.IdButtons {
+  display:flex;
+    gap:12px;
+    margin-top:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 
 
 

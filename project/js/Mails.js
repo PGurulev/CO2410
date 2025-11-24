@@ -1,6 +1,7 @@
 let MailsFileName = "AssetsAndExamples/JsonFiles/real_emails.json";
+let FakeMailsFileName = "AssetsAndExamples/JsonFiles/phishing_emails.json";
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
-const MailsCheckArray = Array(20).fill(0);
+const MailsCheckArray = Array(240).fill(0);
 let FinalMailsArray = null
 let mailCounter = 0
 // sorce code for IIFE async https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_esm_dynamic
@@ -20,16 +21,26 @@ async function ShuffleMailArray(array) {
     return array;
 }
 */
-
+let score = 0;
+let tries = 0;
+let Difficulty = "";
+let Nickname = "";
 async function StartGame(){
+    GameInterval = null;
+    score = 0;
+    PerMailStart = null;
+    PerMailTimes = [];
     var StartingContent = document.getElementById("MainPage");
     StartingContent.style.display = "none";
     var AboutContent = document.getElementById("AboutPage");
     AboutContent.style.display = "none";
     var ContactContent = document.getElementById("ContactsPage");
     ContactContent.style.display = "none";
+    var NicknameContent = document.getElementById("PlayerIdPage");
+    NicknameContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
+    StartTimer();
     GetNextMail();
 
     const mailCard = document.querySelector('.mail-card');
@@ -48,24 +59,42 @@ async function MailsArrayDetermination(filename) {
     //console.log(res.mails);
     return res.mails;
 }
+async function GetFullEmailsArray(){
+    let RealRes = await JSONTransmitter(MailsFileName);
+    let FakeRes = await JSONTransmitter(FakeMailsFileName);
+    //content for set https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+    //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+    RealRes = RealRes.mails.map(mail =>({...mail, isFake:true}));
+    FakeRes = FakeRes.mails.map(mail =>({...mail, isFake:true}));
+    //console.log(RealRes);
+    //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+    let combined = {
+       mails: [...RealRes, ...FakeRes]
+    };
+    //console.log(combined);
+    return combined.mails;
+}
 async function GetNextMail() {
-    let FinalMailsArray = await MailsArrayDetermination(MailsFileName);
+    StartTimerForOneMail();
+    //let FinalMailsArray = await MailsArrayDetermination(MailsFileName);
+    let FinalMailsArray = await GetFullEmailsArray();
     let FreeMailIndex = await GetFreeMailIndex(FinalMailsArray);
     if(FreeMailIndex !== null){
-        MailsCheckArray[FreeMailIndex] = 0;
+        MailsCheckArray[FreeMailIndex] = 1;
         mailCounter+=1;
         let subject = document.getElementById("MailsSubject");
         let recievers = document.getElementById("MailsRecievers");
         let sender = document.getElementById("MailsSender");
         let content = document.getElementById("MailsBody");
-        content.innerHTML =  "<p>  " + FinalMailsArray[mailCounter].body + "</p>";
-        subject.innerHTML = "<p>  " + FinalMailsArray[mailCounter].content.subject + "</p>";
-        sender.innerHTML = "<p>  " + FinalMailsArray[mailCounter].content.sender.name + " " + FinalMailsArray[mailCounter].content.sender.email + "</p>";
+        content.innerHTML =  "<p>  " + FinalMailsArray[FreeMailIndex].body + "</p>";
+        subject.innerHTML = "<p>  " + FinalMailsArray[FreeMailIndex].content.subject + "</p>";
+        sender.innerHTML = "<p>  " + FinalMailsArray[FreeMailIndex].content.sender.name + " " + FinalMailsArray[FreeMailIndex].content.sender.email + "</p>";
         //content for forEach() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
         recievers.innerHTML = "";
-        FinalMailsArray[mailCounter].content.recievers.forEach(reciever => {
+        FinalMailsArray[FreeMailIndex].content.recievers.forEach(reciever => {
             recievers.innerHTML += "<p>  " + reciever.name + " " + reciever.email + "</p>";
         });
+        localStorage.setItem('MailType', FinalMailsArray[FreeMailIndex].isFake);
     }
     else{
         alert("You completed the game!");
@@ -76,25 +105,141 @@ async function GetFreeMailIndex(array) {
     return null;
    }
    let PossibleIndex = Math.floor(Math.random() * array.length);
-   let Tries = 0;
-   let MaxTries = array.length**2;
     do{
     PossibleIndex = Math.floor(Math.random() * array.length);
-    Tries+=1;
 
    } while(MailsCheckArray[PossibleIndex] > 0);
     return PossibleIndex;
 }
 
-function checkForCorrectness(string)
+function checkForCorrectness(arg)
 {
     //TO DO implement Game Logic
-    if(string == "Fake")
-    {
-
+    let EmailType = localStorage.getItem('MailType');
+    let TimeForEmail = StopTimerForOneMail();
+    let IsMailFake = (EmailType == "true");
+    CorrectGuess = false;
+    if(arg == "Fake"){
+        CorrectGuess = IsMailFake;
     }
     else{
-
+        CorrectGuess = !IsMailFake;
+    }
+    if(CorrectGuess){
+        score += 1 + (30 - Math.min(30, TimeForEmail));
+    }
+    else{
+        tries -= 1;
+        if(tries <= 0)
+        {
+            GameLostByLifes();
+            return;
+        }
+    }
+    UpdateScore();
+    if(mailCounter>= 20)
+    {
+        PlayerWonGame();
+        return;
     }
     GetNextMail();
+}
+
+function GetNickname(argument){
+    Nickname = document.getElementById("nickname").value;
+    if(Nickname == "")
+    {
+        alert("Enter your nickname");
+        return;
+    }
+    Difficulty = argument;
+    tries = GetTriesBasedOnDifficulty(Difficulty);
+    StartGame()
+}
+function AskUsrForNickname(){
+    var StartingContent = document.getElementById("MainPage");
+    StartingContent.style.display = "none";
+    var AboutContent = document.getElementById("AboutPage");
+    AboutContent.style.display = "none";
+    var ContactContent = document.getElementById("ContactsPage");
+    ContactContent.style.display = "none";
+    var EmailContent = document.getElementById("GamePage");
+    EmailContent.style.display = "none";
+    var NicknameContent = document.getElementById("PlayerIdPage");
+    NicknameContent.style.display = "flex";
+}
+
+//Timer section
+const TimerDuration = 600;
+let TimeLeft = TimerDuration;
+let GameInterval = null;
+let PerMailStart = null;
+let PerMailTimes = [];
+
+//function to make correct timer format
+function FormatTimer(StartFormat){
+    // padstart documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+    const minutes = Math.floor(StartFormat/60).toString().padStart(2, "0");
+    const seconds = (StartFormat % 60).toString().padStart(2, "0");
+    return minutes + ":" + seconds;
+}
+
+//Main timer implementation
+function StartTimer(){
+    let TimerDiv = document.getElementById("timer");
+    //clearInterval docs https://developer.mozilla.org/en-US/docs/Web/API/Window/clearInterval
+    if(GameInterval) clearInterval(GameInterval);
+    GameInterval = setInterval(() => {
+        TimeLeft--;
+        TimerDiv.innerHTML = "Time left: " + FormatTimer(TimeLeft);
+        if(TimeLeft <= 0)
+        {
+            GameLostByTimer();
+        }
+    }, 1000);
+}
+
+function StartTimerForOneMail(){
+    PerMailStart = Date.now();
+}
+
+function StopTimerForOneMail(){
+    let now = Date.now();
+    let diffInSecs = Math.round((now-PerMailStart)/1000);
+    PerMailTimes.push(diffInSecs);
+    PerMailStart = null;
+    return diffInSecs;
+}
+
+
+
+function GameLostByTimer(){
+    alert("Lost by timer");
+}
+
+function GameLostByLifes(){
+    alert("Guessed incorrectly to many times");
+}
+
+function GetTriesBasedOnDifficulty(arg){
+    if(arg == "Easy")
+    {
+        return 6;
+    }
+    else if(arg == "Medium")
+    {
+        return 4;
+    }
+    else if(arg == "Hard"){
+        return 2
+    }
+    return 0;
+}
+
+function UpdateScore(){
+    document.getElementById("ScoreBoard").innerHTML= "Score: " + score;
+}
+
+function PlayerWonGame(){
+    alert("You Won!");
 }
