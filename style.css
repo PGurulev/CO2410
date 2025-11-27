@@ -387,14 +387,6 @@ p {
     font-weight: bold;
     transition: background 0.2s, transform 0.2s;
 }
-#HintRightPanel p {
-    font-size: 1rem;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    border: 2px dashed #cce4ff;
-    border-radius: 8px;
-}
 
 
 

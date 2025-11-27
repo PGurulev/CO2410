@@ -171,23 +171,15 @@
       <!-- Modal (for Corporative Structure and Hints) -->
       <div class="modal" id="DetailsModal" aria-hidden="true">
           <div class="modal-content panel">
-
-              <!-- Left panel for corporative structure -->
-              <div class="modalLeftPanel" id="DepartmentDetails" style="display:flex; gap:12px;">
+              <div class="modalLeftPanel" style="display:flex; gap:12px;">
+                  <div id="DepartmentDetails" style="flex:1"></div>
               </div>
-
-              <!-- Right panel for employee details -->
               <div class="modalRightPanel" id="EmployeeDetails" style="margin-top:12px;"></div>
-
-              <!-- Right panel for hints (hidden by default) -->
-              <div class="modalRightPanel" id="HintPanel" style="margin-top:12px; display:none;"></div>
-
               <div style="text-align:center;">
-                  <button class="btn btn-close-modal" onclick="closeModal()">Close</button>
+                  <button class="btn btn-close-modal" onclick="document.querySelector('.modal').style.display='none'">Close</button>
               </div>
           </div>
       </div>
-
       <footer class="site-footer">
       <div class="contact panel">
         <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
