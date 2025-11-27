@@ -36,6 +36,7 @@
         <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
         <button class="btn btn-info">General info</button>
         <button class="btn btn-rules">Rules of the game</button>
+          <button class="btn btn-hint">Hints</button>
       </section>
     </main>
 
@@ -167,19 +168,27 @@
 
 
       <!-- Modal (structure styling handled in modal.css) -->
-    <div class="modal" id="DetailsModal" aria-hidden="true">
-      <div class="modal-content panel">
-        <div class="modalLeftPanel" style="display:flex; gap:12px;">
-          <div id="DepartmentDetails" style="flex:1"></div>
-        </div>
-        <div class="modalRightPanel" id="EmployeeDetails" style="margin-top:12px;"></div>
-        <div style="text-align:center;">
-          <button class="btn btn-close-modal" onclick="document.querySelector('.modal').style.display='none'">Close</button>
-        </div>
-      </div>
-    </div>
+      <!-- Modal (for Corporative Structure and Hints) -->
+      <div class="modal" id="DetailsModal" aria-hidden="true">
+          <div class="modal-content panel">
 
-    <footer class="site-footer">
+              <!-- Left panel for corporative structure -->
+              <div class="modalLeftPanel" id="DepartmentDetails" style="display:flex; gap:12px;">
+              </div>
+
+              <!-- Right panel for employee details -->
+              <div class="modalRightPanel" id="EmployeeDetails" style="margin-top:12px;"></div>
+
+              <!-- Right panel for hints (hidden by default) -->
+              <div class="modalRightPanel" id="HintPanel" style="margin-top:12px; display:none;"></div>
+
+              <div style="text-align:center;">
+                  <button class="btn btn-close-modal" onclick="closeModal()">Close</button>
+              </div>
+          </div>
+      </div>
+
+      <footer class="site-footer">
       <div class="contact panel">
         <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
         <p>T: +357 24 69 40 00<br />F: +357 24 81 21 20</p>
@@ -192,5 +201,6 @@
   <script src="project/js/Mails.js"></script>
   <script src="project/js/CorpStructure.js"></script>
   <script src="project/js/theme.js"></script>
+<script src="project/js/Hints.js"></script>
 </body>
 </html>
