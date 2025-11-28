@@ -340,7 +340,7 @@ p {
     color: var(--text);
 }
 
-/* responsive for profiles */
+
 @media (max-width: 768px) {
     .profile-card {
         flex-direction: column;
@@ -377,18 +377,34 @@ p {
     flex-wrap:wrap;
     justify-content:center;
 }
-.btn-hint {
-    background-color: #99ff66; /* soft yellow */
-    color: #000000;
-    border: none;
-    padding: 11px 40px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s, transform 0.2s;
+    .btn-hint {
+        background-color: #99ff66;
+        color: #000000;
+        border: none;
+        padding: 11px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.2s, transform 0.2s;
+    }
+
+.modal-content-small {
+    background-color: #ffffff;
+    margin: 15vh auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
+#HintContent p,
+#HintContent h3,
+#HintContent strong {
+    color: black !important;
+    font-size: 1rem;
+    font-weight: normal;
+}
 
 
