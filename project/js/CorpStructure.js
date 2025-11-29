@@ -2,9 +2,8 @@ let CorpStructPath = "./AssetsAndExamples/JsonFiles/corporate_structure.json";
 let DeptPlace = document.getElementById("DepartmentDetails");
 let RightPanel = document.getElementById("EmployeeDetails");
 
-let EmpList = new Map();  // employeeName → employeePanel
-let EmpData = [];         // filled after JSON loads
-let DeptData = [];        // filled after JSON loads
+let EmpList = new Map();
+let EmpData = [];
 
 async function GenerateDepartmentOBJ() {
     let FullData = await JSONTransmitter(CorpStructPath);
@@ -13,12 +12,11 @@ async function GenerateDepartmentOBJ() {
     EmpData = FullData.company.employees;
 
     DeptData.forEach(dept => {
-        // ----- DEPARTMENT DIV -----
         let deptDiv = document.createElement("div");
         deptDiv.className = "DeptContainer";
         deptDiv.textContent = dept.name;
 
-        // container that holds employees under this department
+
         let empContainer = document.createElement("div");
         empContainer.className = "EmpContainer";
         empContainer.style.display = "none";
@@ -28,7 +26,7 @@ async function GenerateDepartmentOBJ() {
                 empContainer.style.display === "none" ? "block" : "none";
         };
 
-        // ----- EMPLOYEES UNDER THIS DEPT -----
+        //EMPLOYEES
         EmpData.forEach(emp => {
             if (emp.department !== dept.name) return;
 
@@ -37,14 +35,14 @@ async function GenerateDepartmentOBJ() {
             EmpDiv.textContent = emp.name;
 
             EmpDiv.onclick = (event) => {
-                event.stopPropagation(); // prevent collapsing the department
+                event.stopPropagation();
                 hideAllEmpData();
                 EmpList.get(emp.name).style.display = "block";
             };
 
             empContainer.appendChild(EmpDiv);
 
-            // ----- RIGHT-SIDE PANEL FOR EMPLOYEE -----
+            //right side panel
             let EmpPanel = document.createElement("div");
             EmpPanel.className = "EmpDetailsPanel";
             EmpPanel.style.display = "none";
