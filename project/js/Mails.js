@@ -1,5 +1,6 @@
 let MailsFileName = "AssetsAndExamples/JsonFiles/real_emails.json";
 let FakeMailsFileName = "AssetsAndExamples/JsonFiles/phishing_emails.json";
+let LeaderBoardsFile = "AssetsAndExamples/JsonFiles/LeaderBoard.json";
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 const MailsCheckArray = Array(240).fill(0);
 let FinalMailsArray = null
@@ -259,10 +260,18 @@ function StopTimerForOneMail(){
 
 function GameLostByTimer(){
     alert("Lost by timer");
+    //make a seperate page and display content through that func
+    
+    //database connectivity
+    //DatabaseLeaderBoardCall()
 }
 
 function GameLostByLifes(){
     alert("Guessed incorrectly to many times");
+    //make a seperate page and display content through that func
+
+    //database connectivity
+    //DatabaseLeaderBoardCall()
 }
 
 function GetTriesBasedOnDifficulty(arg){
@@ -286,4 +295,31 @@ function UpdateScore(){
 
 function PlayerWonGame(){
     alert("You Won!");
+    //make a seperate page and display content through that func
+
+    //database connectivity
+    //DatabaseLeaderBoardCall()
+}
+
+async function fillInLeaderboard(){
+    let LeaderList = await JSONTransmitter(LeaderBoardsFile);
+    let LeaderSection = document.getElementById("leaderBoard");
+    LeaderSection.innerHTML = " ";
+    console.log(LeaderList);
+    LeaderList.players.forEach(player=>{
+        LeaderSection.innerHTML += `<div><p>${player.name}</p><p>${player.score}</p><p>${player.timestamp}</p></div>`;
+    })
+}
+fillInLeaderboard();
+
+function DatabaseLeaderBoardCall(){
+    // documentation for formData https://developer.mozilla.org/en-US/docs/Web/API/FormData
+    let form = new FormData();
+    form.append("score", score);
+    form.append("nickname", Nickname);
+    form.append("timestamp", Date.now().toLocaleString());
+    fetch("file.php", {
+        method : "POST",
+        body : form
+    })
 }

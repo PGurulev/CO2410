@@ -1,0 +1,19 @@
+{
+    "players" : [
+        {
+            "name" : "Petr",
+            "score" : "10",
+            "timestamp" : "26.11.2025 16:48"
+        },
+        {
+            "name" : "Devid",
+            "score" : "15",
+            "timestamp" : "27.11.2025 12:20"
+        },
+        {
+            "name" : "Fesdus",
+            "score" : "20",
+            "timestamp" : "29.11.2025 20:48"
+        }
+    ]
+}
