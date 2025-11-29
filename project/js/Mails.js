@@ -64,7 +64,7 @@ async function GetFullEmailsArray(){
     let FakeRes = await JSONTransmitter(FakeMailsFileName);
     //content for set https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
     //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-    RealRes = RealRes.mails.map(mail =>({...mail, isFake:true}));
+    RealRes = RealRes.mails.map(mail =>({...mail, isFake:false}));
     FakeRes = FakeRes.mails.map(mail =>({...mail, isFake:true}));
     //console.log(RealRes);
     //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
@@ -188,7 +188,10 @@ function FormatTimer(StartFormat){
 function StartTimer(){
     let TimerDiv = document.getElementById("timer");
     //clearInterval docs https://developer.mozilla.org/en-US/docs/Web/API/Window/clearInterval
-    if(GameInterval) clearInterval(GameInterval);
+    if(GameInterval !== null) return;
+
+    if(typeof TimeLeft !== "number")TimeLeft = TimerDuration;
+
     GameInterval = setInterval(() => {
         TimeLeft--;
         TimerDiv.innerHTML = "Time left: " + FormatTimer(TimeLeft);
@@ -197,6 +200,47 @@ function StartTimer(){
             GameLostByTimer();
         }
     }, 1000);
+}
+
+//A way to reset a timer to blanc state
+function ResetGameState(){
+    score = 0;
+    Difficulty = "";
+    tries = 0;
+    Nickname = "";
+    mailCounter = 0;
+
+    TimeLeft = TimerDuration;
+    if(GameInterval){
+        clearInterval(GameInterval);
+        GameInterval = null;
+    }
+
+    let TimerDiv = document.getElementById("timer");
+    if(TimerDiv){
+        TimerDiv.innerHTML = "";
+    }
+    let ScoreUI = document.getElementById("ScoreBoard");
+    if(ScoreUI){
+        ScoreUI.innerHTML = "Score : 0";
+    }
+
+    for(let i = 0; i < MailsCheckArray.length; i++){
+        MailsCheckArray[i] = 0;
+    }
+}
+
+function PauseTimer(){
+    if(GameInterval){
+        clearInterval(GameInterval);
+        GameInterval = null;
+    }
+}
+
+function ContinueTimer(){
+    if(!GameInterval){
+        StartTimer();
+    }
 }
 
 function StartTimerForOneMail(){

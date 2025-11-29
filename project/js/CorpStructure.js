@@ -78,6 +78,12 @@ function hideAllEmpData() {
 // OPEN MODAL WHEN BUTTON PRESSED
 function CheckCorparativeStructureToMakeSure() {
     document.getElementById("DetailsModal").style.display = "block";
+    PauseTimer();
+}
+
+function CloseStructure(){
+    ContinueTimer();
+    document.querySelector('.modal').style.display='none';
 }
 
 GenerateDepartmentOBJ();

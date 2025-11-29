@@ -16,6 +16,7 @@ window.onclick = function(event) {
     }
 }
 function goback(){
+    ResetGameState();
     var StartingContent = document.getElementById("MainPage");
     StartingContent.style.display = "block";
     var EmailContent = document.getElementById("GamePage");
