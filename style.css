@@ -370,6 +370,18 @@ p {
     align-items: center;
     gap: 16px;
 }
+
+#PlayerIdPage input#nickname {
+    width: 240px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: var(--text);
+    background: var(--white);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
 .IdButtons {
   display:flex;
     gap:12px;
