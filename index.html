@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starting page</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="modal.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
 </head>
 <body>
-  <div class="page-wrapper">
+<div class="page-wrapper">
     <header class="site-header panel">
-      <div class="header-left">
-        <h1 class="GameTitle">PhishPlay</h1>
-        <div class="subtitle">Spot fake vs real emails</div>
-      </div>
-
-
-      <div class="dropdown" style="position:relative">
-        <button onclick="myFunction()" class="dropbtn">Menu ▾</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a onclick="goback()">Home</a>
-            <a onclick="about()">About</a>
-            <a onclick="contacts()">Contacts</a>
+        <div class="header-left">
+            <h1 class="GameTitle">PhishPlay</h1>
+            <div class="subtitle">Spot fake vs real emails</div>
         </div>
-      </div>
+
+
+        <div class="dropdown" style="position:relative">
+            <button onclick="myFunction()" class="dropbtn">Menu ▾</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a onclick="goback()">Home</a>
+                <a onclick="about()">About</a>
+                <a onclick="contacts()">Contacts</a>
+            </div>
+        </div>
     </header>
     <button id="themeToggle" class="btn" aria-pressed="false" title="Toggle light / dark">🌙</button>
 
     <main id="MainPage" class="panel">
-      <p class="lead">
-        Review each email carefully and decide whether it’s real or fake. Look out for suspicious sender details, unusual links, grammar mistakes, and misleading information. When you're ready, press Start to begin.
-      </p>
+        <p class="lead">
+            Review each email carefully and decide whether it’s real or fake. Look out for suspicious sender details, unusual links, grammar mistakes, and misleading information. When you're ready, press Start to begin.
+        </p>
 
-      <section class="buttons" aria-label="main actions">
-        <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
-        <button class="btn btn-info">General info</button>
-        <button class="btn btn-rules">Rules of the game</button>
-      </section>
+        <section class="buttons" aria-label="main actions">
+            <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
+            <button class="btn btn-info">General info</button>
+            <button class="btn btn-rules">Rules of the game</button>
+            <button class="btn btn-hint">Hints!</button>
+        </section>
     </main>
 
-    <!-- Game page (hidden until StartGame shows it) -->
-      <section id="GamePage" class="panel hidden">
+    <section id="GamePage" class="panel hidden">
         <div class="timer-section" id="timer"></div>
         <div class="mail-card">
             <div class="mail-header-line"><strong>From:</strong> <span id="MailsSender"></span></div>
@@ -54,143 +54,148 @@
 
 
         <div class="GameButtons">
-          <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
-          <button class="btn btn-real" onclick="checkForCorrectness(`Real`)">Real</button>
-          <button class="btn btn-check-structure" onclick="CheckCorparativeStructureToMakeSure()">Corporative Structure</button>
-          <button class="btn btn-restart" onclick="restart(`Fake`)">Restart</button>
+            <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
+            <button class="btn btn-real" onclick="checkForCorrectness(`Real`)">Real</button>
+            <button class="btn btn-check-structure" onclick="CheckCorparativeStructureToMakeSure()">Corporative Structure</button>
+            <button class="btn btn-restart" onclick="restart(`Fake`)">Restart</button>
         </div>
 
         <div class="score-board" id="ScoreBoard">Score: 0</div>
 
     </section>
 
-    <!--PreGameState-->
     <section class="panel hidden" id="PlayerIdPage">
-          <h2>Type your nickname</h2>
-          <label>
+        <h2>Type your nickname</h2>
+        <label>
             <input type="text" id="nickname"/>
-          </label>
-          <div class="IdButtons">
+        </label>
+        <div class="IdButtons">
             <button class="btn btn-easy" onclick="GetNickname(`Easy`)">Easy mode</button>
             <button class="btn btn-medium" onclick="GetNickname(`Medium`)">Medium mode</button>
             <button class="btn btn-hard" onclick="GetNickname(`Hard`)">Hard mode</button>
-          </div>
+        </div>
     </section>
 
-<!--about section-->
-      <section id="AboutPage" class="panel hidden">
-          <ul class="list">
+    <section id="AboutPage" class="panel hidden">
+        <ul class="list">
 
-              <li class="profile-card ">
-                  <img src="project/assets/images/ScrumMaster.png" alt="Profile Picture" class="profile-pic">
-                  <div class="profile-details">
-                      <h2 class="name">Petr Gurulev</h2>
-                      <p class="position">Scrum Master (Software Developer)</p>
-                      <p class="role">G-21258765</p>
-                      <p class="email"><a href="mailto:PGurulev@uclan.ac.uk">PGurulev@uclan.ac.uk</a></p>
-                  </div>
-              </li>
+            <li class="profile-card ">
+                <img src="project/assets/images/ScrumMaster.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2 class="name">Petr Gurulev</h2>
+                    <p class="position">Scrum Master (Software Developer)</p>
+                    <p class="role">G-21258765</p>
+                    <p class="email"><a href="mailto:PGurulev@uclan.ac.uk">PGurulev@uclan.ac.uk</a></p>
+                </div>
+            </li>
 
-              <li class="profile-card">
-                  <img src="project/assets/images/Software.png" alt="Profile Picture" class="profile-pic">
-                  <div class="profile-details">
-                      <h2 class="name">Devid Brodskii</h2>
-                      <p class="position">Software Developer (UI/UX Designer)</p>
-                      <p class="role">G-21254142</p>
-                      <p class="email"><a href="mailto:dbrodskii@uclan.ac.uk">dbrodskii@uclan.ac.uk</a></p>
-                  </div>
-              </li>
+            <li class="profile-card">
+                <img src="project/assets/images/Software.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2 class="name">Devid Brodskii</h2>
+                    <p class="position">Software Developer (UI/UX Designer)</p>
+                    <p class="role">G-21254142</p>
+                    <p class="email"><a href="mailto:dbrodskii@uclan.ac.uk">dbrodskii@uclan.ac.uk</a></p>
+                </div>
+            </li>
 
-              <li class="profile-card ">
-                  <img src="project/assets/images/Database.png" alt="Profile Picture" class="profile-pic">
-                  <div class="profile-details">
-                      <h2 class="name">Tymofii Klochko--shemiakin</h2>
-                      <p class="position">Database Administrator (System Analyst)</p>
-                      <p class="role">G-21253710</p>
-                      <p class="email"><a href="mailto:tklochko-shemiakin@uclan.ac.uk">tklochko-shemiakin@uclan.ac.uk</a></p>
-                  </div>
-              </li>
+            <li class="profile-card ">
+                <img src="project/assets/images/Database.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2 class="name">Tymofii Klochko--shemiakin</h2>
+                    <p class="position">Database Administrator (System Analyst)</p>
+                    <p class="role">G-21253710</p>
+                    <p class="email"><a href="mailto:tklochko-shemiakin@uclan.ac.uk">tklochko-shemiakin@uclan.ac.uk</a></p>
+                </div>
+            </li>
 
-              <li class="profile-card ">
-                  <img src="project/assets/images/ux.png" alt="Profile Picture" class="profile-pic">
-                  <div class="profile-details">
-                      <h2 class="name">Festus Chinedu Obiwundu</h2>
-                      <p class="position">UI/UX Designer (QA Engineer/Tester)</p>
-                      <p class="role">G-21254053</p>
-                      <p class="email"><a href="mailto:fcobiwundu@uclan.ac.uk">fcobiwundu@uclan.ac.uk</a></p>
-                  </div>
-              </li>
-
-
-              <li class="profile-card ">
-                  <img src="project/assets/images/QA.png" alt="Profile Picture" class="profile-pic">
-                  <div class="profile-details">
-                      <h2 class="name">Owais Alhomsi </h2>
-                      <p class="position">QA Engineer/Tester (Software Developer)</p>
-                      <p class="role">G-21260389</p>
-                      <p class="email"><a href="mailto:OAlhomsi@uclan.ac.uk">OAlhomsi@uclan.ac.uk</a></p>
-                  </div>
-              </li>
-
-              <li class="profile-card ">
-                  <img src="project/assets/images/SystemAnalyst.png" alt="Profile Picture" class="profile-pic">
-                  <div class="profile-details">
-                      <h2 class="name">Roman Myslov </h2>
-                      <p class="position">System Analyst (Database Administrator)</p>
-                      <p class="role">G-21251404</p>
-                      <p class="email"><a href="mailto:romyslov@uclan.ac.uk">romyslov@uclan.ac.uk</a></p>
-                  </div>
-              </li>
+            <li class="profile-card ">
+                <img src="project/assets/images/ux.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2 class="name">Festus Chinedu Obiwundu</h2>
+                    <p class="position">UI/UX Designer (QA Engineer/Tester)</p>
+                    <p class="role">G-21254053</p>
+                    <p class="email"><a href="mailto:fcobiwundu@uclan.ac.uk">fcobiwundu@uclan.ac.uk</a></p>
+                </div>
+            </li>
 
 
+            <li class="profile-card ">
+                <img src="project/assets/images/QA.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2 class="name">Owais Alhomsi </h2>
+                    <p class="position">QA Engineer/Tester (Software Developer)</p>
+                    <p class="role">G-21260389</p>
+                    <p class="email"><a href="mailto:OAlhomsi@uclan.ac.uk">OAlhomsi@uclan.ac.uk</a></p>
+                </div>
+            </li>
 
-          </ul>
-      </section>
-
-      <!-- CONTACTS PAGE -->
-      <section id="ContactsPage" class="panel hidden">
-          <h2 style="margin-top:0; color:var(--accent)">Contact the Team</h2>
-
-          <p>If you have issues with project coordination — please contact: <a href="mailto:PGurulev@uclan.ac.uk">pgurulev@uclan.ac.uk</a></p>
-
-          <p>If you have issues with functionality or game logic — please contact: <a href="mailto:dbrodskii@uclan.ac.uk">dbrodskii@uclan.ac.uk</a></p>
-
-          <p>If you have issues with data, JSON structure or content — please contact: <a href="mailto:tklochko-shemiakin@uclan.ac.uk">tklochko-shemiakin@uclan.ac.uk</a></p>
-
-          <p>If you have issues with UI, layout, or design — please contact: <a href="mailto:fcobiwundu@uclan.ac.uk">fcobiwundu@uclan.ac.uk</a></p>
-
-          <p>If you found a bug or unexpected behaviour — please contact: <a href="mailto:OAl-homsi@uclan.ac.uk">OAl-homsi@uclan.ac.uk</a></p>
-
-          <p>If you have issues with system logic or requirements — please contact: <a href="mailto:romyslov@uclan.ac.uk">romyslov@uclan.ac.uk</a></p>
-      </section>
+            <li class="profile-card ">
+                <img src="project/assets/images/SystemAnalyst.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2 class="name">Roman Myslov </h2>
+                    <p class="position">System Analyst (Database Administrator)</p>
+                    <p class="role">G-21251404</p>
+                    <p class="email"><a href="mailto:romyslov@uclan.ac.uk">romyslov@uclan.ac.uk</a></p>
+                </div>
+            </li>
 
 
 
-      <!-- Modal (structure styling handled in modal.css) -->
+        </ul>
+    </section>
+
+    <section id="ContactsPage" class="panel hidden">
+        <h2 style="margin-top:0; color:var(--accent)">Contact the Team</h2>
+
+        <p>If you have issues with project coordination — please contact: <a href="mailto:PGurulev@uclan.ac.uk">pgurulev@uclan.ac.uk</a></p>
+
+        <p>If you have issues with functionality or game logic — please contact: <a href="mailto:dbrodskii@uclan.ac.uk">dbrodskii@uclan.ac.uk</a></p>
+
+        <p>If you have issues with data, JSON structure or content — please contact: <a href="mailto:tklochko-shemiakin@uclan.ac.uk">tklochko-shemiakin@uclan.ac.uk</a></p>
+
+        <p>If you have issues with UI, layout, or design — please contact: <a href="mailto:fcobiwundu@uclan.ac.uk">fcobiwundu@uclan.ac.uk</a></p>
+
+        <p>If you found a bug or unexpected behaviour — please contact: <a href="mailto:OAl-homsi@uclan.ac.uk">OAl-homsi@uclan.ac.uk</a></p>
+
+        <p>If you have issues with system logic or requirements — please contact: <a href="mailto:romyslov@uclan.ac.uk">romyslov@uclan.ac.uk</a></p>
+    </section>
+
+
+
     <div class="modal" id="DetailsModal" aria-hidden="true">
-      <div class="modal-content panel">
-        <div class="modalLeftPanel" style="display:flex; gap:12px;">
-          <div id="DepartmentDetails" style="flex:1"></div>
+        <div class="modal-content panel">
+            <div class="modalLeftPanel" style="display:flex; gap:12px;">
+                <div id="DepartmentDetails" style="flex:1"></div>
+            </div>
+            <div class="modalRightPanel" id="EmployeeDetails" style="margin-top:12px;"></div>
+            <div style="text-align:center;">
+                <button class="btn btn-close-modal" onclick="document.querySelector('.modal').style.display='none'">Close</button>
+            </div>
         </div>
-        <div class="modalRightPanel" id="EmployeeDetails" style="margin-top:12px;"></div>
-        <div style="text-align:center;">
-          <button class="btn btn-close-modal" onclick="document.querySelector('.modal').style.display='none'">Close</button>
-        </div>
-      </div>
     </div>
 
+    <div class="modal" id="HintModal" aria-hidden="true">
+        <div class="modal-content-small panel">
+            <div id="HintContent"></div>
+            <div style="text-align:center; margin-top: 15px;">
+                <button class="btn btn-close-modal" onclick="document.getElementById('HintModal').style.display='none'">Got it!</button>
+            </div>
+        </div>
+    </div>
     <footer class="site-footer">
-      <div class="contact panel">
-        <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
-        <p>T: +357 24 69 40 00<br />F: +357 24 81 21 20</p>
-        <p><a class="mail-link" href="mailto:info@uclancyprus.ac.cy">info@uclancyprus.ac.cy</a></p>
-      </div>
+        <div class="contact panel">
+            <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
+            <p>T: +357 24 69 40 00<br />F: +357 24 81 21 20</p>
+            <p><a class="mail-link" href="mailto:info@uclancyprus.ac.cy">info@uclancyprus.ac.cy</a></p>
+        </div>
     </footer>
-  </div>
+</div>
 
-  <script src="project/js/dropdownMenu.js"></script>
-  <script src="project/js/Mails.js"></script>
-  <script src="project/js/CorpStructure.js"></script>
-  <script src="project/js/theme.js"></script>
+<script src="project/js/dropdownMenu.js"></script>
+<script src="project/js/Mails.js"></script>
+<script src="project/js/CorpStructure.js"></script>
+<script src="project/js/theme.js"></script>
+<script src="project/js/Hints.js"></script>
 </body>
 </html>
