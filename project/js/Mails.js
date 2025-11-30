@@ -231,6 +231,45 @@ function ResetGameState(){
     }
 }
 
+
+function Restart(){
+    score = 0;
+    mailCounter = 0;
+
+    if(Difficulty){
+        tries = GetTriesBasedOnDifficulty(Difficulty);
+    } else{
+        tries = 0;
+    }
+
+    TimeLeft = TimerDuration;
+    if(GameInterval){
+        clearInterval(GameInterval);
+        GameInterval = null;
+    }
+
+    PerMailStart = null;
+    PerMailTimes = [];
+
+
+    for(let i = 0; i < MailsCheckArray.length; i++){
+        MailsCheckArray[i] = 0;
+    }
+
+    const TimerDiv = document.getElementById("timer");
+    if(TimerDiv){
+        TimerDiv.innerHTML = "";
+    }
+    const ScoreUI = document.getElementById("ScoreBoard");
+    if(ScoreUI){
+        ScoreUI.innerHTML = "Score : 0";
+    }
+
+    StartTimer();
+    GetNextMail();
+
+}
+
 function PauseTimer(){
     if(GameInterval){
         clearInterval(GameInterval);
