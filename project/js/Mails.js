@@ -243,6 +243,7 @@ function Restart(){
     } else{
         tries = 0;
     }
+    UpdateTries();
 
     TimeLeft = TimerDuration;
     if(GameInterval){
