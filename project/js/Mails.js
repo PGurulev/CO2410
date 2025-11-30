@@ -137,6 +137,7 @@ function checkForCorrectness(arg)
             return;
         }
     }
+    UpdateTries();
     UpdateScore();
     if(mailCounter>= 20)
     {
@@ -155,6 +156,7 @@ function GetNickname(argument){
     }
     Difficulty = argument;
     tries = GetTriesBasedOnDifficulty(Difficulty);
+    UpdateTries();
     StartGame()
 }
 function AskUsrForNickname(){
@@ -203,7 +205,7 @@ function StartTimer(){
     }, 1000);
 }
 
-//A way to reset a timer to blanc state
+//A way to reset a timer to blank state
 function ResetGameState(){
     score = 0;
     Difficulty = "";
@@ -361,4 +363,8 @@ function DatabaseLeaderBoardCall(){
         method : "POST",
         body : form
     })
+}
+
+function UpdateTries(){
+    document.getElementById("TryCounter").innerHTML= "You have: " + tries + " tries to guess corretly";
 }
