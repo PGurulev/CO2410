@@ -407,4 +407,8 @@ p {
     font-weight: normal;
 }
 
+#ResultModal .modal-content-small {
+    color: #000;
+}
+
 

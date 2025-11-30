@@ -299,23 +299,53 @@ function StopTimerForOneMail(){
 }
 
 
-
 function GameLostByTimer(){
-    alert("Lost by timer");
-    //make a seperate page and display content through that func
-    
-    //database connectivity
-    //DatabaseLeaderBoardCall()
+    showResultModal(
+        "Time is over ⏰",
+        "You ran out of time. Try again and be quicker spotting phishing emails!"
+    );
+
 }
 
 function GameLostByLifes(){
-    alert("Guessed incorrectly to many times");
-    //make a seperate page and display content through that func
-
-    //database connectivity
-    //DatabaseLeaderBoardCall()
+    showResultModal(
+        "No tries left ❌",
+        "You made too many mistakes. Review the emails more carefully and try again!"
+    );
 }
 
+function PlayerWonGame(){
+    showResultModal(
+        "You won! 🎉",
+        "Great job! You successfully won the game!!"
+    );
+}
+
+
+
+// function GameLostByTimer(){
+//     alert("Lost by timer");
+//     //make a seperate page and display content through that func
+//
+//     //database connectivity
+//     //DatabaseLeaderBoardCall()
+// }
+//
+// function GameLostByLifes(){
+//     alert("Guessed incorrectly to many times");
+//     //make a seperate page and display content through that func
+//
+//     //database connectivity
+//     //DatabaseLeaderBoardCall()
+// }
+//
+// function PlayerWonGame(){
+//     alert("You Won!");
+//     //make a seperate page and display content through that func
+//
+//     //database connectivity
+//     //DatabaseLeaderBoardCall()
+// }
 function GetTriesBasedOnDifficulty(arg){
     if(arg == "Easy")
     {
@@ -335,13 +365,6 @@ function UpdateScore(){
     document.getElementById("ScoreBoard").innerHTML= "Score: " + score;
 }
 
-function PlayerWonGame(){
-    alert("You Won!");
-    //make a seperate page and display content through that func
-
-    //database connectivity
-    //DatabaseLeaderBoardCall()
-}
 
 async function fillInLeaderboard(){
     let LeaderList = await JSONTransmitter(LeaderBoardsFile);
@@ -368,4 +391,25 @@ function DatabaseLeaderBoardCall(){
 
 function UpdateTries(){
     document.getElementById("TryCounter").innerHTML= "You have: " + tries + " tries to guess corretly";
+}
+
+function showResultModal(title, message) {
+    PauseTimer();
+
+    const modal = document.getElementById("ResultModal");
+    const titleEl = document.getElementById("ResultTitle");
+    const msgEl = document.getElementById("ResultMessage");
+    const scoreEl = document.getElementById("ResultScore");
+    if (!modal) return;
+    if (titleEl) titleEl.textContent = title;
+    if (msgEl) msgEl.textContent = message;
+    if (scoreEl) scoreEl.textContent = "Your score: " + score;
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+function closeResultModal() {
+    const modal = document.getElementById("ResultModal");
+    if (!modal) return;
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
 }

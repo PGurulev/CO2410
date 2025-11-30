@@ -190,6 +190,25 @@
             </div>
         </div>
     </div>
+
+    <div class="modal" id="ResultModal" aria-hidden="true">
+        <div class="modal-content-small panel">
+            <h2 id="ResultTitle"></h2>
+            <p id="ResultMessage"></p>
+            <p id="ResultScore"></p>
+
+            <div style="text-align:center; margin-top: 15px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                <button class="btn btn-start" onclick="closeResultModal(); Restart();">
+                    Play again
+                </button>
+                <button class="btn btn-rules" onclick="closeResultModal(); goback();">
+                    Main menu
+                </button>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="site-footer">
         <div class="contact panel">
             <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
