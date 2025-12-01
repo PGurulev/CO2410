@@ -42,6 +42,30 @@
   padding-left: 15px;
 }
 
+.modal-content-small {
+    background-color: var(--bg-2);
+    margin: 15vh auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#HintContent p,
+#HintContent h3,
+#HintContent strong {
+    color: var(--text) !important;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#ResultModal .modal-content-small {
+    color: #000;
+}
+
+
 /* ===== Corporate Structure Modal Styling ===== */
 
 /* Department container */
