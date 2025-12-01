@@ -473,6 +473,50 @@ p {
     justify-content:center;
 }
 
+#PlayerIdPage input#nickname {
+    width: 240px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: var(--text);
+    background: var(--white);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.btn-hint {
+    background-color: #99ff66;
+    color: #000000;
+    border: none;
+    padding: 11px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.modal-content-small {
+    background-color: #ffffff;
+    margin: 15vh auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#HintContent p,
+#HintContent h3,
+#HintContent strong {
+    color: black !important;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#ResultModal .modal-content-small {
+    color: #000;
+}
 
 
 
