@@ -20,11 +20,9 @@
     if (!toggle) return;
     const current = root.getAttribute('data-theme');
     if (current === 'light') {
-      toggle.textContent = '🌒';
       toggle.setAttribute('aria-pressed','false');
       toggle.title = 'Switch to dark mode';
     } else {
-      toggle.textContent = '☀️';
       toggle.setAttribute('aria-pressed','true');
       toggle.title = 'Switch to light mode';
     }

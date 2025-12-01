@@ -51,6 +51,82 @@ body{
   min-height:100vh;
 }
 
+#themeToggle{
+  width: 64px;
+  height: 34px;
+  padding: 0;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  color: var(--text);
+  box-shadow: 0 6px 14px rgba(2,6,23,0.35), inset 0 -4px 10px rgba(255,255,255,0.02);
+  transition: background .22s ease, color .18s ease, box-shadow .18s ease, transform .12s ease;
+  line-height: 1;
+  user-select: none;
+}
+
+/*small circular switch*/
+#themeToggle::before{
+  content: "";
+  position: absolute;
+  left: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(235,235,235,0.9));
+  box-shadow: 0 4px 10px rgba(2,6,23,0.25);
+  transition: transform .22s cubic-bezier(.2,.9,.3,1), background .18s ease, box-shadow .18s ease;
+  transform: translateX(0);
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+/* Light theme switch slides right and background becomes light*/
+html[data-theme="light"] #themeToggle{
+  background: linear-gradient(90deg, #ffffff, #f2f4f8);
+  color: #123;
+  box-shadow: 0 6px 18px rgba(10,20,40,0.08), inset 0 -4px 10px rgba(0,0,0,0.02);
+}
+html[data-theme="light"] #themeToggle::before{
+  transform: translateX(30px);
+  background: #0f2448;
+  box-shadow: 0 6px 16px rgba(2,6,23,0.06);
+}
+
+/* Dark theme: switch to left */
+html[data-theme="dark"] #themeToggle{
+  background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  color: #fff;
+}
+html[data-theme="dark"] #themeToggle::before{
+  transform: translateX(0);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(235,235,235,0.9));
+  box-shadow: 0 4px 10px rgba(2,6,23,0.25);
+}
+
+/* Focus / keyboard */
+#themeToggle:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(100,150,255,0.12), 0 8px 18px rgba(2,6,23,0.25);
+  transform: translateY(-1px);
+}
+
+/* small-screen adjustment (optional) */
+@media (max-width:420px){
+  #themeToggle{ width:52px; height:30px; font-size:15px; }
+  #themeToggle::before{ width:20px; height:20px; left:5px; }
+  html[data-theme="light"] #themeToggle::before{ transform: translateX(26px); }
+}
+
+
+
 /* Page wrapper to center but allow full height scrolling */
 .page-wrapper{
   max-width:1100px;
@@ -289,6 +365,7 @@ body{
 
 .email a:hover {
     text-decoration: underline;
+    color: var(--primary-hover);
 }
 
 p {
@@ -340,7 +417,7 @@ p {
     color: var(--text);
 }
 
-
+/* responsive for profiles */
 @media (max-width: 768px) {
     .profile-card {
         flex-direction: column;
@@ -370,18 +447,6 @@ p {
     align-items: center;
     gap: 16px;
 }
-
-#PlayerIdPage input#nickname {
-    width: 240px;
-    padding: 8px 12px;
-    font-size: 16px;
-    color: var(--text);
-    background: var(--white);
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-}
-
 .IdButtons {
   display:flex;
     gap:12px;
@@ -389,38 +454,7 @@ p {
     flex-wrap:wrap;
     justify-content:center;
 }
-    .btn-hint {
-        background-color: #99ff66;
-        color: #000000;
-        border: none;
-        padding: 11px 40px;
-        border-radius: 10px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background 0.2s, transform 0.2s;
-    }
 
-.modal-content-small {
-    background-color: #ffffff;
-    margin: 15vh auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
 
-#HintContent p,
-#HintContent h3,
-#HintContent strong {
-    color: black !important;
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-#ResultModal .modal-content-small {
-    color: #000;
-}
 
 
