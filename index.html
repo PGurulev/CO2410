@@ -47,10 +47,12 @@
     </main>
     
     <section class="panel hidden" id="PlayerIdPage">
-        <h2>Type your nickname</h2>
-        <label>
-            <input type="text" id="nickname"/>
-        </label>
+        
+        <div class="nickname-wrapper">
+            <h2>Enter your nickname</h2>
+            <input type="text" id="nickname" placeholder="Enter your nickname">
+        </div>
+
         <div class="IdButtons">
             <button class="btn btn-easy" onclick="GetNickname(`Easy`)">Easy mode</button>
             <button class="btn btn-medium" onclick="GetNickname(`Medium`)">Medium mode</button>
