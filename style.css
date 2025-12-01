@@ -207,9 +207,10 @@ html[data-theme="dark"] #themeToggle::before{
 .btn-restart { background: rgba(255,240,240,0.98); color:#ee0505; }
 .btn-close-modal { margin-top:12px; background:#ddd; color:#123; }
 /* Just added three styles for new menu buttons */
-.btn-easy {background:#9ac08e; color:rgb(81, 255, 0); }
-.btn-medium {background:#b6b189; color:rgb(255, 238, 0); }
-.btn-hard {background:#8f6e6e; color:rgb(255, 2, 2); }
+
+.btn-easy {background:#c8ecbd; color:rgb(21, 51, 7); }
+.btn-medium {background:#FFF7B0; color:rgb(114, 107, 6); }
+.btn-hard {background:#ffdfdf; color:rgb(235, 12, 12); }
 
 /* Layout helpers */
 .buttons{
