@@ -7,14 +7,14 @@ function handleHintClick() {
     const modalContentArea = document.getElementById('HintContent');
 
 
-    const hintTitle = "💡 Phishing Hint";
+    const hintTitle = "💡Phishing Hint";
     const hintMessage = "<p>Always check the sender's full email address and the subject line for suspicious characters!</p>";
 
 
 
     if (modalContentArea) {
         modalContentArea.innerHTML = `
-            <h3 style="margin-top:0; color : black;">${hintTitle}</h3>
+            <h2>${hintTitle}</h2>
             ${hintMessage}
         `;
     }
@@ -23,6 +23,7 @@ function handleHintClick() {
     if (modal) {
         modal.style.display = 'block';
         modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -37,6 +38,15 @@ function initHint() {
     } else {
         console.error("Error: Button with class 'btn-hint' not found.");
     }
+
 }
+function closeHint() {
+  const modal = document.getElementById('HintModal');
+  if (!modal) return;
+  modal.style.display = 'none';
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = ''; // restore scrolling
+}
+
 
 document.addEventListener('DOMContentLoaded', initHint);

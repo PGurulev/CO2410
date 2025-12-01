@@ -36,7 +36,6 @@
             <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
             <button class="btn btn-info">General info</button>
             <button class="btn btn-rules">Rules of the game</button>
-            <button class="btn btn-hint">Hints!</button>
         </section>
 
         <h2>Leaderboard</h2>
@@ -78,6 +77,7 @@
             <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
             <button class="btn btn-real" onclick="checkForCorrectness(`Real`)">Real</button>
             <button class="btn btn-check-structure" onclick="CheckCorparativeStructureToMakeSure()">Corporative Structure</button>
+            <button class="btn btn-hint">Hints!</button>
             <button class="btn btn-restart" onclick="Restart()">Restart</button>
         </div>
 
@@ -190,7 +190,7 @@
         <div class="modal-content-small panel">
             <div id="HintContent"></div>
             <div style="text-align:center; margin-top: 15px;">
-                <button class="btn btn-close-modal" onclick="document.getElementById('HintModal').style.display='none'">Got it!</button>
+                <button class="btn btn-close-modal" onclick="closeHint()">Got it!</button>
             </div>
         </div>
     </div>
