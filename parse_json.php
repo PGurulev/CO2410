@@ -4,13 +4,7 @@ require_once __DIR__ . '/db.php';
 
 $conn = db_connect();
 
-// 1. Import departments and employees from corporate_structure.json
-// Try multiple possible paths
-$possiblePaths = [
-	__DIR__ . '/../../AssetsAndExamples/JsonFiles/corporate_structure.json',
-	__DIR__ . '/../AssetsAndExamples/JsonFiles/corporate_structure.json',
-	__DIR__ . '/../../../AssetsAndExamples/JsonFiles/corporate_structure.json'
-];
+
 
 $corporateFile = null;
 foreach ($possiblePaths as $path) {
@@ -18,10 +12,6 @@ foreach ($possiblePaths as $path) {
 		$corporateFile = $path;
 		break;
 	}
-}
-
-if (!$corporateFile) {
-	die("Error: corporate_structure.json not found. Tried paths:\n" . implode("\n", $possiblePaths) . "\n");
 }
 
 // json_decode() - Converts JSON string to PHP array/object. Second parameter (true) returns associative array instead of object
