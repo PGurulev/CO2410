@@ -367,26 +367,65 @@ function UpdateScore(){
 
 
 async function fillInLeaderboard(){
-    let LeaderList = await JSONTransmitter(LeaderBoardsFile);
-    let LeaderSection = document.getElementById("leaderBoard");
-    LeaderSection.innerHTML = " ";
-    console.log(LeaderList);
-    LeaderList.players.forEach(player=>{
-        LeaderSection.innerHTML += `<div><p>${player.name}</p><p>${player.score}</p><p>${player.timestamp}</p></div>`;
-    })
+  try {
+    const LeaderList = await JSONTransmitter(LeaderBoardsFile); 
+    const LeaderSection = document.getElementById("leaderBoard");
+    LeaderSection.innerHTML = ""; 
+
+    // header 
+    LeaderSection.innerHTML = `
+    <h2 class="leaderboard-title">LeaderBoard</h2>
+
+      <div class="leaderboard-header">
+        <div class="col-rank">#</div>
+        <div class="col-name">Player</div>
+        <div class="col-score">Score</div>
+        <div class="col-time">Date/Time</div>
+      </div>
+    `;
+
+    if (!LeaderList || !Array.isArray(LeaderList.players) || LeaderList.players.length === 0) {
+      LeaderSection.innerHTML += '<div style="padding:12px">No scores yet</div>';
+      return;
+    }
+
+    //  highest score 
+    const players = LeaderList.players.slice().sort((a,b) => (Number(b.score)||0) - (Number(a.score)||0));
+
+    const rowsHtml = players.map((p, i) => {
+      let timeText = p.timestamp || p.time || "";
+      const parsed = new Date(p.timestamp);
+      if (!isNaN(parsed.getTime())) timeText = parsed.toLocaleString();
+      return `
+        <div class="leaderboard-row">
+          <div class="col-rank">${i+1}</div>
+          <div class="col-name">${p.name || "Unknown"}</div>
+          <div class="col-score">${p.score ?? 0}</div>
+          <div class="col-time">${timeText}</div>
+        </div>
+      `;
+    }).join("");
+
+    LeaderSection.innerHTML += rowsHtml;
+
+  } catch (err) {
+    console.error(err);
+    document.getElementById("leaderBoard").innerHTML += '<div style="padding:12px">Error loading leaderboard</div>';
+  }
 }
 fillInLeaderboard();
 
 function DatabaseLeaderBoardCall(){
-    // documentation for formData https://developer.mozilla.org/en-US/docs/Web/API/FormData
-    let form = new FormData();
-    form.append("score", score);
-    form.append("nickname", Nickname);
-    form.append("timestamp", Date.now().toLocaleString());
-    fetch("file.php", {
-        method : "POST",
-        body : form
-    })
+  let form = new FormData();
+  form.append("score", score);
+  form.append("nickname", Nickname);
+  form.append("timestamp", new Date().toISOString());
+  fetch("file.php", {
+    method: "POST",
+    body: form
+  }).then(()=> {
+    fillInLeaderboard();
+  }).catch(e => console.error(e));
 }
 
 function UpdateTries(){
