@@ -215,6 +215,22 @@ html[data-theme="dark"] #themeToggle::before{
 .btn-medium {background:#FFF7B0; color:rgb(114, 107, 6); }
 .btn-hard {background:#ffdfdf; color:rgb(235, 12, 12); }
 
+/* Hover for btns */
+.btn-start:hover { background: #ecc85a; }
+.btn-info:hover { background: rgba(185, 212, 185, 0.95); }
+.btn-rules:hover { background: rgba(189, 207, 233, 0.95); }
+.btn-hint:hover { background-color: #86e258; }
+.btn-fake:hover { background: rgba(226, 202, 202, 0.97); }
+.btn-real:hover { background: rgba(196, 218, 202, 0.97); }
+.btn-check-structure:hover { background: rgba(202, 208, 224, 0.98); }
+.btn-restart:hover { background: rgba(233, 208, 208, 0.98); }
+.btn-close-modal:hover { margin-top:12px; background: rgba(192, 210, 235, 0.95); }
+
+.btn-easy:hover {background:#9fc096; }
+.btn-medium:hover {background:#e0d997; }
+.btn-hard:hover {background:#dabbbb; }
+
+
 /* Layout helpers */
 .buttons{
   display:flex;
@@ -406,6 +422,7 @@ p {
 
 
 .mail-card--active {
+    max-width: 600px;
     border: 2px solid var(--accent);
     box-shadow: 0 0 20px rgba(255, 217, 102, 0.4);
     animation: mailPop 0.35s ease-out;
@@ -523,4 +540,20 @@ p {
     flex-wrap:wrap;
   }
   .col-score, .col-time { width: 100%; text-align:left; margin-top:6px; }
+}
+
+
+.timer-hint-container {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;   
+
+}
+
+.left-group {
+    display: flex;
+    flex-direction: column;       
+    gap: 5px;
+    margin-right: 5rem;
+    
 }

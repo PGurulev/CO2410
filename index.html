@@ -60,8 +60,14 @@
     </section>
 
     <section id="GamePage" class="panel hidden">
-        <div class="timer-section" id="timer"></div>
-        <div id="TryCounter"></div>
+
+        <div class="timer-hint-container">
+            <div class="left-group">
+                <div class="timer-section" id="timer"></div>
+                <div id="TryCounter"></div>
+            </div>
+            <button class="btn btn-hint">Hints!</button>
+        </div>
         <div class="mail-card">
             <div class="mail-header-line"><strong>From:</strong> <span id="MailsSender"></span></div>
             <div class="mail-header-line"><strong>To:</strong> <span id="MailsRecievers"></span></div>
@@ -77,7 +83,6 @@
             <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
             <button class="btn btn-real" onclick="checkForCorrectness(`Real`)">Real</button>
             <button class="btn btn-check-structure" onclick="CheckCorparativeStructureToMakeSure()">Corporative Structure</button>
-            <button class="btn btn-hint">Hints!</button>
             <button class="btn btn-restart" onclick="Restart()">Restart</button>
         </div>
 
@@ -211,15 +216,6 @@
             </div>
         </div>
     </div>
-
-
-    <footer class="site-footer">
-        <div class="contact panel">
-            <p>12–14 University Avenue, Pyla, 7080<br />Larnaka, Cyprus</p>
-            <p>T: +357 24 69 40 00<br />F: +357 24 81 21 20</p>
-            <p><a class="mail-link" href="mailto:info@uclancyprus.ac.cy">info@uclancyprus.ac.cy</a></p>
-        </div>
-    </footer>
 </div>
 
 <script src="project/js/dropdownMenu.js"></script>

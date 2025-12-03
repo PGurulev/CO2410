@@ -429,7 +429,8 @@ function DatabaseLeaderBoardCall(){
 }
 
 function UpdateTries(){
-    document.getElementById("TryCounter").innerHTML= "You have: " + tries + " tries to guess corretly";
+    document.getElementById("TryCounter").innerHTML=  "You have: <strong>" + tries + "</strong> lives left";
+
 }
 
 function showResultModal(title, message) {
