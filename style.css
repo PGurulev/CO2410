@@ -203,7 +203,7 @@ html[data-theme="dark"] #themeToggle::before{
 .btn-start { background: var(--accent); color: #07203a; }
 .btn-info { background: rgba(214,245,214,0.95); color: #07203a; }
 .btn-rules { background: rgba(214,231,255,0.95); color: #07203a; }
-.btn-hint { background-color: #99ff66; color: #07203a;}
+.btn-hint { background-color: #8ee065; color: #07203a;}
 .btn-fake { background: rgba(255,240,240,0.97); color:#7a1212; }
 .btn-real { background: rgba(240,255,244,0.97); color:#0a5d0a; }
 .btn-check-structure { background: rgba(238,243,255,0.98); color:#05336a; }
@@ -219,7 +219,7 @@ html[data-theme="dark"] #themeToggle::before{
 .btn-start:hover { background: #ecc85a; }
 .btn-info:hover { background: rgba(185, 212, 185, 0.95); }
 .btn-rules:hover { background: rgba(189, 207, 233, 0.95); }
-.btn-hint:hover { background-color: #86e258; }
+.btn-hint:hover { background-color: #89ff4e; }
 .btn-fake:hover { background: rgba(226, 202, 202, 0.97); }
 .btn-real:hover { background: rgba(196, 218, 202, 0.97); }
 .btn-check-structure:hover { background: rgba(202, 208, 224, 0.98); }
