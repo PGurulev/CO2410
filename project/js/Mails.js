@@ -133,13 +133,14 @@ function checkForCorrectness(arg)
     }
     else{
         tries -= 1;
+        UpdateTries();
         if(tries <= 0)
         {
             GameLostByLifes();
             return;
         }
     }
-    UpdateTries();
+
     UpdateScore();
     if(mailCounter>= 20)
     {
@@ -432,10 +433,14 @@ function DatabaseLeaderBoardCall(){
   }).catch(e => console.error(e));
 }
 
-function UpdateTries(){
-    document.getElementById("TryCounter").innerHTML=  "You have: <strong>" + tries + "</strong> lives left";
+function UpdateTries() {
+    const counter = document.getElementById("TryCounter");
+    if (!counter) return;
 
+    const heart = "❤️";
+    counter.textContent = heart.repeat(tries);
 }
+
 
 function showResultModal(title, message) {
     PauseTimer();
