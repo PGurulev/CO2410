@@ -28,6 +28,8 @@ function goback(){
     ContactContent.style.display = "none";
     var NicknameContent = document.getElementById("PlayerIdPage");
     NicknameContent.style.display = "none";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
     mailCounter = 0
 }
 
@@ -42,6 +44,8 @@ function about(){
     ContactContent.style.display = "none";
     var NicknameContent = document.getElementById("PlayerIdPage");
     NicknameContent.style.display = "none";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
 }
 
 function contacts() {
@@ -55,4 +59,21 @@ function contacts() {
     EmailContent.style.display = "none";
     var NicknameContent = document.getElementById("PlayerIdPage");
     NicknameContent.style.display = "none";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
+}
+
+function settings() {
+    var StartingContent = document.getElementById("MainPage");
+    StartingContent.style.display = "none";
+    var AboutContent = document.getElementById("AboutPage");
+    AboutContent.style.display = "none";
+    var ContactContent = document.getElementById("ContactsPage");
+    ContactContent.style.display = "none";
+    var EmailContent = document.getElementById("GamePage");
+    EmailContent.style.display = "none";
+    var NicknameContent = document.getElementById("PlayerIdPage");
+    NicknameContent.style.display = "none";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "block";
 }

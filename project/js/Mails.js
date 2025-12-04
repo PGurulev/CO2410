@@ -41,6 +41,8 @@ async function StartGame(){
     NicknameContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
     StartTimer();
     GetNextMail();
 
@@ -170,6 +172,8 @@ function AskUsrForNickname(){
     EmailContent.style.display = "none";
     var NicknameContent = document.getElementById("PlayerIdPage");
     NicknameContent.style.display = "flex";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
 }
 
 //Timer section
