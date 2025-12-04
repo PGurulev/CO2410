@@ -6,10 +6,11 @@ function loadLeaderboard() {
 
             let html = 
                 <h2 class="leaderboard-title">Leaderboard</h2>
-                <table class="leaderboard-table">
+                <table class="leaderboard">
                     <tr>
                         <th>Player</th>
                         <th>Score</th>
+                        <th>Timestamp<th>
                     </tr>
             ;
 
@@ -18,6 +19,7 @@ function loadLeaderboard() {
                     <tr>
                         <td>${player.name}</td>
                         <td>${player.score}</td>
+                        <td>${player.timestamp}</td>  
                     </tr>
                 ;
             });
@@ -27,6 +29,7 @@ function loadLeaderboard() {
             document.getElementById("leaderBoard").innerHTML = html;
         });
 }
+
 
 
 window.addEventListener("load", loadLeaderboard);
