@@ -462,3 +462,36 @@ function closeResultModal() {
     modal.style.display = "none";
     modal.setAttribute("aria-hidden", "true");
 }
+
+function openInfoModal() {
+    const modal = document.getElementById("InfoModal");
+    if (!modal) return;
+    PauseTimer();
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+
+function closeInfoModal() {
+    const modal = document.getElementById("InfoModal");
+    if (!modal) return;
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+    ContinueTimer();
+}
+
+function openRulesModal() {
+    const modal = document.getElementById("RulesModal");
+    if (!modal) return;
+    PauseTimer();
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+
+function closeRulesModal() {
+    const modal = document.getElementById("RulesModal");
+    if (!modal) return;
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+    ContinueTimer();
+}
+
