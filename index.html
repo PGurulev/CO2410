@@ -26,8 +26,7 @@
             </div>
         </div>
     </header>
-    <button id="themeToggle" class="btn" aria-pressed="false" title="Toggle light / dark"></button>
-
+    
     <main id="MainPage" class="panel">
         <p class="lead">
             Review each email carefully and decide whether it’s real or fake. Look out for suspicious sender details, unusual links, grammar mistakes, and misleading information. When you're ready, press Start to begin.
@@ -79,15 +78,24 @@
             <div class="mail-body-box" id="MailsBody"></div>
         </div>
 
+        <div class="score-board" id="ScoreBoard">Score: 0</div>
 
         <div class="GameButtons">
-            <button class="btn btn-fake" onclick="checkForCorrectness(`Fake`)">Fake</button>
-            <button class="btn btn-real" onclick="checkForCorrectness(`Real`)">Real</button>
-            <button class="btn btn-check-structure" onclick="CheckCorparativeStructureToMakeSure()">Corporative Structure</button>
-            <button class="btn btn-restart" onclick="Restart()">Restart</button>
+            <div class="decision-buttons">
+                <button class="btn btn-fake" onclick="checkForCorrectness('Fake')">Fake</button>
+                <button class="btn btn-real" onclick="checkForCorrectness('Real')">Real</button>
+            </div>
         </div>
+        <div class="help-actions">
+        <span class="help-link" onclick="CheckCorparativeStructureToMakeSure()">
+            Not sure? <b><u>Check Corporate Structure</u></b>
+        </span>
 
-        <div class="score-board" id="ScoreBoard">Score: 0</div>
+        <span class="help-link" onclick="Restart()">
+            <Strong><u>Restart</u></Strong>
+        </span>
+    </div>
+
 
     </section>
 
@@ -180,11 +188,19 @@
 
     <section id="SettingsPage" class="panel hidden">
 
+        <h3 class="settings-category">General</h3>
 
+        <div class="setting-row">
+            <span class="setting-label">Dark mode</span>
+            <button id="themeToggle" class="toggle-btn" class="btn" aria-pressed="false" title="Toggle light / dark"></button>
+        </div>
+
+        <div class="setting-row">
+            <span class="setting-label">Logo animation</span>
+            <button id="logoAnimToggle" class="btn">On</button>
+        </div>
 
     </section>
-
-
 
     <div class="modal" id="DetailsModal" aria-hidden="true">
         <div class="modal-content panel">

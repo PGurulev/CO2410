@@ -55,3 +55,21 @@
     }
   });
 })();
+
+//for the btn to turn off logo/tittle animation
+const logoTitle = document.querySelector(".GameTitle");
+const logoAnimBtn = document.getElementById("logoAnimToggle");
+
+let animationOn = true;
+
+logoAnimBtn.addEventListener("click", () => {
+    animationOn = !animationOn;
+
+    if (animationOn) {
+        logoTitle.classList.remove("no-animation");
+        logoAnimBtn.textContent = "On";
+    } else {
+        logoTitle.classList.add("no-animation");
+        logoAnimBtn.textContent = "Off";
+    }
+});

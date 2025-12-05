@@ -10,9 +10,11 @@ html[data-theme="light"]{
   --text: #07203a;
   --panel-bg: rgba(255,255,255,0.92);
   --panel-border: rgba(0,0,0,0.06);
+  --border: rgba(4, 53, 85, 0.15);
   --mail-snippet: rgba(30,30,40,0.7);
   --white: #ffffff;
   --light-gray: #666;
+
 
 }
 
@@ -27,6 +29,7 @@ html[data-theme="dark"]{
   --text: #ffffff;
   --panel-bg: rgba(255,255,255,0.02);
   --panel-border: rgba(255,255,255,0.03);
+  --border:rgba(255, 255, 255, 0.15);
   --mail-snippet: rgba(235,245,255,0.8);
   --got-it-btn: rgba(214, 231, 255, 0.95);
 }
@@ -113,14 +116,14 @@ html[data-theme="dark"] #themeToggle::before{
   box-shadow: 0 4px 10px rgba(2,6,23,0.25);
 }
 
-/* Focus / keyboard */
+
 #themeToggle:focus{
   outline: none;
   box-shadow: 0 0 0 3px rgba(100,150,255,0.12), 0 8px 18px rgba(2,6,23,0.25);
   transform: translateY(-1px);
 }
 
-/* small-screen adjustment (optional) */
+/*  for small-screen  */
 @media (max-width:420px){
   #themeToggle{ width:52px; height:30px; font-size:15px; }
   #themeToggle::before{ width:20px; height:20px; left:5px; }
@@ -206,8 +209,6 @@ html[data-theme="dark"] #themeToggle::before{
 .btn-hint { background-color: #8ee065; color: #07203a;}
 .btn-fake { background: rgba(255,240,240,0.97); color:#7a1212; }
 .btn-real { background: rgba(240,255,244,0.97); color:#0a5d0a; }
-.btn-check-structure { background: rgba(238,243,255,0.98); color:#05336a; }
-.btn-restart { background: rgba(255,240,240,0.98); color:#ee0505; }
 .btn-close-modal { margin-top:12px; background: rgba(214, 231, 255, 0.95); color:#123; }
 /* Just added three styles for new menu buttons */
 
@@ -219,11 +220,9 @@ html[data-theme="dark"] #themeToggle::before{
 .btn-start:hover { background: #ecc85a; }
 .btn-info:hover { background: rgba(185, 212, 185, 0.95); }
 .btn-rules:hover { background: rgba(189, 207, 233, 0.95); }
-.btn-hint:hover { background-color: #89ff4e; }
+.btn-hint:hover { background-color: #6cb647; }
 .btn-fake:hover { background: rgba(226, 202, 202, 0.97); }
 .btn-real:hover { background: rgba(196, 218, 202, 0.97); }
-.btn-check-structure:hover { background: rgba(202, 208, 224, 0.98); }
-.btn-restart:hover { background: rgba(233, 208, 208, 0.98); }
 .btn-close-modal:hover { margin-top:12px; background: rgba(192, 210, 235, 0.95); }
 
 .btn-easy:hover {background:#9fc096; }
@@ -263,12 +262,37 @@ html[data-theme="dark"] #themeToggle::before{
 }
 
 /* Game buttons & scoreboard */
-.GameButtons{
-    display:flex;
-    gap:12px;
-    margin-top:12px;
-    flex-wrap:wrap;
-    justify-content:center;
+.GameButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+/* Fake + Real  group */
+.decision-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0.30rem;
+}
+
+/* Text links */
+.help-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}
+
+.help-link {
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.90rem;
+    transition: opacity .2s ease;
+}
+
+.help-link:hover {
+    opacity: 0.7;
 }
 
 
@@ -316,15 +340,6 @@ html[data-theme="dark"] #themeToggle::before{
 }
 .dropdown-content a:hover { background-color: #ddd; }
 .show { display:block !important; }
-
-/* Footer */
-.site-footer{
-  margin-top:auto;
-  padding:18px 0 6px;
-  color:var(--muted);
-}
-.contact p{ margin:4px 0; color:var(--muted) }
-.mail-link{ color:#a8cfff }
 
 /* Animations */
 @keyframes gradientMove {
@@ -411,7 +426,7 @@ p {
 }
 
 .mail-card{
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 16px 20px;
     border-radius: 10px;
@@ -422,7 +437,6 @@ p {
 
 
 .mail-card--active {
-    max-width: 600px;
     border: 2px solid var(--accent);
     box-shadow: 0 0 20px rgba(255, 217, 102, 0.4);
     animation: mailPop 0.35s ease-out;
@@ -449,6 +463,21 @@ p {
     line-height: 1.55;
     white-space: pre-wrap;
     color: var(--text);
+}
+
+.timer-hint-container {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;   
+
+}
+
+.left-group {
+    display: flex;
+    flex-direction: column;       
+    gap: 5px;
+    margin-right: 5rem;
+    
 }
 
 /* responsive for profiles */
@@ -542,18 +571,28 @@ p {
   .col-score, .col-time { width: 100%; text-align:left; margin-top:6px; }
 }
 
-
-.timer-hint-container {
-    display: flex;
-    justify-content: space-between;   
-    align-items: center;   
-
+.settings-category {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text);
 }
 
-.left-group {
+.setting-row {
     display: flex;
-    flex-direction: column;       
-    gap: 5px;
-    margin-right: 5rem;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
 }
+
+.setting-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.no-animation {
+  animation: none !important;
+}
+

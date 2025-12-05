@@ -202,7 +202,7 @@ function StartTimer(){
 
     GameInterval = setInterval(() => {
         TimeLeft--;
-        TimerDiv.innerHTML = "Time left: " + FormatTimer(TimeLeft);
+        TimerDiv.innerHTML = "Time left: <strong>" + FormatTimer(TimeLeft) + "</strong>";
         if(TimeLeft <= 0)
         {
             GameLostByTimer();
@@ -306,7 +306,7 @@ function StopTimerForOneMail(){
 
 function GameLostByTimer(){
     showResultModal(
-        "Time is over ⏰",
+        "Time is Over ⏰",
         "You ran out of time. Try again and be quicker spotting phishing emails!"
     );
 
@@ -314,7 +314,7 @@ function GameLostByTimer(){
 
 function GameLostByLifes(){
     showResultModal(
-        "No tries left ❌",
+        "No Lives Left ❌",
         "You made too many mistakes. Review the emails more carefully and try again!"
     );
 }
@@ -437,7 +437,7 @@ function UpdateTries() {
     const counter = document.getElementById("TryCounter");
     if (!counter) return;
 
-    const heart = "❤️";
+    const heart = "💚";
     counter.textContent = heart.repeat(tries);
 }
 
