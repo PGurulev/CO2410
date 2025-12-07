@@ -21,19 +21,19 @@ foreach ($possiblePaths as $path) { // the possible paths to the corporate file
 }
 
 if (!$corporateFile) {
-	die("Error: corporate_structure.json not found. Tried paths:\n" . implode("\n", $possiblePaths) . "\n");
+	die("Error: corporate_structure.json not found. Tried paths:\n" . implode("\n", $possiblePaths) . "\n"); //die method is to stop
 }
 
 // json_decode() - Converts JSON string to PHP array/object. Second parameter (true) returns associative array instead of object
 // Reference: https://www.geeksforgeeks.org/php-json_decode-function/
 $corporateData = json_decode(file_get_contents($corporateFile), true);
 if (!$corporateData) {
-	die("Error: Failed to parse corporate_structure.json\n"); //die method is to stop
+	die("Error: Failed to parse corporate_structure.json\n"); //stops the whole script
 }
 
 echo "Importing departments and employees...\n";
 
-//mport departments
+//Import departments
 $departmentsMap = []; //map department name to ID
 foreach ($corporateData['company']['departments'] as $dept) {
 	$deptName = $conn->real_escape_string($dept['name']);
@@ -99,8 +99,8 @@ echo "\n";
 //Import mails from real_emails.json and phishing_emails.json
 $basePath = dirname($corporateFile);// getting the base path of the corporate file
 $mailFiles = [
-	['file' => $basePath . '/real_emails.json', 'is_fake' => 0],
-	['file' => $basePath . '/phishing_emails.json', 'is_fake' => 1]
+	['file' => $basePath . '/real_emails.json', 'is_fake' => false], // false = real email
+	['file' => $basePath . '/phishing_emails.json', 'is_fake' => true] // true = phishing email
 ];
 
 foreach ($mailFiles as $mailFileInfo) {
@@ -120,7 +120,7 @@ foreach ($mailFiles as $mailFileInfo) {
 		continue;
 	}
 	
-	$mailType = $isFake ? 'PHISHING' : 'REAL'; //
+	$mailType = $isFake ? 'PHISHING' : 'REAL'; // true = PHISHING, false = REAL
 	echo "Importing $mailType mails from: " . basename($mailFile) . "\n";
 	
 	foreach ($mailData['mails'] as $mail) {
@@ -134,21 +134,25 @@ foreach ($mailFiles as $mailFileInfo) {
 		$checkResult = $conn->query($checkSql);
 		$mailId = null;
 		
-		//шf query executed successfully and found at least one row, mail already exists in database
+		//If query executed successfully and found at least one row, mail already exists in database
 		if ($checkResult && $checkResult->num_rows > 0) {
 			//the mail already exists, get its ID and update is_fake flag
 			$existingRow = $checkResult->fetch_assoc();
 			$mailId = (int)$existingRow['id'];
 			//update is_fake flag in case it was wrong, also update body and sender_name in case they changed
-			$updateSql = "UPDATE mails SET is_fake = $isFake, body = '$body', sender_name = '$senderName' WHERE id = $mailId";
+			//Convert boolean to integer for MySQL: true = 1, false = 0
+			$isFakeInt = $isFake ? 1 : 0;
+			$updateSql = "UPDATE mails SET is_fake = $isFakeInt, body = '$body', sender_name = '$senderName' WHERE id = $mailId";
 			$conn->query($updateSql);
 			echo "  Mail exists (updated): $subject (ID: $mailId)\n";
 		} 
 		else
 		 {
-			//insert new mail with is_fake flag to distinguish real emails (0) from phishing emails (1)
+			//insert new mail with is_fake flag to distinguish real emails (false) from phishing emails (true)
+			//Convert boolean to integer for MySQL: true = 1, false = 0
+			$isFakeInt = $isFake ? 1 : 0;
 			$sql = "INSERT INTO mails (subject, body, sender_name, sender_email, is_fake) 
-					VALUES ('$subject', '$body', '$senderName', '$senderEmail', $isFake)";
+					VALUES ('$subject', '$body', '$senderName', '$senderEmail', $isFakeInt)";
 			
 			//if INSERT query executed then get the auto-generated ID
 			if($conn->query($sql)) 
@@ -167,11 +171,12 @@ foreach ($mailFiles as $mailFileInfo) {
 		//Insert recipients (delete old ones first if mail existed, then insert fresh)
 		//Only process recipients if mailId was successfully gotten
 		if ($mailId !== null) {
-			//ввelete existing recipients for this mail to avoid duplicates 
+			//Delete existing recipients for this mail to avoid duplicates 
 			$conn->query("DELETE FROM mail_recipients WHERE mail_id = $mailId");
 			
 
-			if (isset($mail['content']['recievers']) && is_array($mail['content']['recievers'])) {//сhecks if recievers array exists in mail data and is actually an array before processing
+			//Checks if recievers array exists in mail data and is actually an array before processing
+			if (isset($mail['content']['recievers']) && is_array($mail['content']['recievers'])) {
 				foreach ($mail['content']['recievers'] as $recipient) {
 					$recName = $conn->real_escape_string($recipient['name']);
 					$recEmail = $conn->real_escape_string($recipient['email']);
