@@ -471,6 +471,7 @@ function openInfoModal() {
     modal.setAttribute("aria-hidden", "false");
 }
 
+
 function closeInfoModal() {
     const modal = document.getElementById("InfoModal");
     if (!modal) return;

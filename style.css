@@ -592,6 +592,7 @@ p {
     color: var(--text);
 }
 
+
 .no-animation {
   animation: none !important;
 }
