@@ -7,6 +7,7 @@ $conn = db_connect();
 //Import departments and employees from corporate_structure.json
 
 $possiblePaths = [//Try multiple possible paths
+	'/home/tklochko-shemiakin/public_html/CO2410-main/AssetsAndExamples/JsonFiles/corporate_structure.json',
 	__DIR__ . '/../../AssetsAndExamples/JsonFiles/corporate_structure.json',
 	__DIR__ . '/../AssetsAndExamples/JsonFiles/corporate_structure.json',
 	__DIR__ . '/../../../AssetsAndExamples/JsonFiles/corporate_structure.json'
@@ -57,7 +58,15 @@ foreach ($corporateData['company']['departments'] as $dept) {
 
 //import employees (first pass: employees without managers, second pass: with managers)
 $employeesToInsert = [];
+$Emails = [];
+
 foreach ($corporateData['company']['employees'] as $emp) {
+	// Check for duplicate emails in JSON file itself
+	if (isset($seenEmails[$emp['email']])) {
+		echo "  Warning: Duplicate email in JSON file: {$emp['email']} (skipping duplicate)\n";
+		continue;
+	}
+	$seenEmails[$emp['email']] = true;
 	$employeesToInsert[] = $emp;
 }
 
@@ -81,16 +90,36 @@ foreach ($employeesToInsert as $emp) { //foreach loop to insert the employees
 	$position = $conn->real_escape_string($emp['position']);
 	$manager = $emp['manager'] !== null ? "'" . $conn->real_escape_string($emp['manager']) . "'" : 'NULL';
 	
-	$sql = "INSERT INTO employees (name, password, email, position, department_id, manager_email) 
-			VALUES ('$name', '$password', '$email', '$position', $deptId, $manager)
-			ON DUPLICATE KEY UPDATE name = VALUES(name), password = VALUES(password), position = VALUES(position), department_id = VALUES(department_id), manager_email = VALUES(manager_email)";
+	// Check if employee already exists by email before inserting
+	$checkSql = "SELECT id FROM employees WHERE email = '$email' LIMIT 1";
+	$checkResult = $conn->query($checkSql);
+	$employeeExists = $checkResult && $checkResult->num_rows > 0;
 	
-	if ($conn->query($sql)) {
-		echo "  Employee: {$emp['name']} ({$emp['email']})\n";
-	} 
-	else
-	 {
-		echo "  Error inserting employee {$emp['name']}: {$conn->error}\n";
+	if ($employeeExists) {
+		//Update existing employee
+		$updateSql = "UPDATE employees SET --this query makes update the employee with the new data
+			name = '$name', 
+			password = '$password', 
+			position = '$position', 
+			department_id = $deptId, 
+			manager_email = $manager 
+			WHERE email = '$email'"; 
+		
+		if ($conn->query($updateSql)) {
+			echo " Employee updated: {$emp['name']} ({$emp['email']})\n";
+		} else {
+			echo "Error updating employee {$emp['name']}: {$conn->error}\n";
+		}
+	} else {
+		// Insert new employee
+		$sql = "INSERT INTO employees (name, password, email, position, department_id, manager_email) 
+				VALUES ('$name', '$password', '$email', '$position', $deptId, $manager)";
+		
+		if ($conn->query($sql)) {
+			echo "  Employee: {$emp['name']} ({$emp['email']})\n";
+		} else {
+			echo "  Error inserting employee {$emp['name']}: {$conn->error}\n";
+		}
 	}
 }
 
