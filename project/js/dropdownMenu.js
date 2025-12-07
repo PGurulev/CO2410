@@ -14,7 +14,7 @@ window.onclick = function(event) {
             }
         }
     }
-    
+
 }
 function goback(){
     ResetGameState();
