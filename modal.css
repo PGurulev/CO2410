@@ -42,6 +42,115 @@
   padding-left: 15px;
 }
 
+.modal-content-small {
+    background-color: var(--bg-2);
+    margin: 15vh auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+#HintModal{
+  font-weight: bold;
+}
+
+#HintContent p,
+#HintContent h2,
+#HintContent strong {
+    color: var(--text) !important;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+#HintContent h2{
+  font-weight: bold;
+}
+
+#ResultModal .modal-content-small {
+    color: var(--text);
+}
+
+.hint-image {
+  max-width: 100%;
+  margin-top: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.rules-modal h2,.info-modal h2  {
+    text-align: center;
+}
+
+.rules-modal h3, .info-modal h3  {
+    margin: 10px 0 6px;
+    font-size: 1rem;
+}
+
+.rules-intro, .info-intro  {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.rules-section,.info-section  {
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 8px;
+}
+
+.rules-list,
+.rules-list-sub,  .info-list {
+    list-style: none;
+    margin: 4px 0 0;
+    padding-left: 0;
+    font-size: 0.9rem;
+}
+
+.rules-list li, .info-list li  {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 4px;
+}
+
+.rules-list li::before, .info-list li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    top: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.rules-list-sub {
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.rules-list-sub li::before {
+    content: "–";
+}
+
+.rules-note,
+.rules-warning, .info-note  {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.rules-warning {
+    font-weight: 600;
+}
+
+.modal p{
+  color:var(--text)
+}
+
+
+
+
 /* ===== Corporate Structure Modal Styling ===== */
 
 /* Department container */
@@ -130,3 +239,34 @@
   from { opacity: 0; transform: translateY(5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@media (max-width: 768px) {
+
+    .modal-content {
+        flex-direction: column;
+        width: 95%;
+        max-width: 95%;
+        padding: 16px 12px;
+    }
+
+    .modalLeftPanel,
+    .modalRightPanel {
+        flex: 1 1 auto;
+        max-height: none;
+        overflow-y: visible;
+        padding: 0;
+    }
+    .modalLeftPanel {
+        margin-bottom: 12px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+    .DeptContainer {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+    .EmpName {
+        font-size: 0.9rem;
+        padding: 7px 6px;
+    }
+}
+

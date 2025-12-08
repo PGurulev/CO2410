@@ -3,7 +3,7 @@ declare(strict_types=1); //  strict types declaration
  
 header('Content-Type: application/json; charset=utf-8');
 
-require_once __DIR__ . '/db.php'; // 
+require_once __DIR__ . '/db.php'; //makes the connection
 
 $conn = db_connect();
 
@@ -19,7 +19,7 @@ if ($resultMails === false) {
 	exit;
 }
 
-// Собираем id писем
+// Collect mail IDs
 $mailIds = [];
 $mails = [];
 while ($row = $resultMails->fetch_assoc()) {
@@ -52,8 +52,10 @@ if (count($mailIds) > 0) {
 
 $rows = [];
 foreach ($mails as $mail) {
-	$mid = (int)$mail['id']; // basically the same as the mail id which is in the mails table
-	$recievers = $recipientsByMail[$mid] ?? []; // if the mail id is not in the recipientsByMail array, then add it
+	$mid = (int)$mail['id']; //basically the same as the mail id which is in the mails table
+	$recievers = $recipientsByMail[$mid] ?? []; //if the mail id is not in the recipientsByMail array, then add it
+	
+	$isFake = isset($mail['is_fake']) ? (bool)(int)$mail['is_fake'] : false;// (bool)(int) here is to convert the mail's flag, it becomes false if its real one
 	$rows[] = [
 		'id' => strval($mid),
 		'content' => [
@@ -65,7 +67,7 @@ foreach ($mails as $mail) {
 			], // all this is the content of the email
 		],
 		'body' => $mail['body'], // which gets the body of the email
-		'is_fake' => (int)$mail['is_fake'] // 0 = real, 1 = phishing
+		'is_fake' => $isFake // false = real email, true = phishing email
 	];
 }
 
@@ -74,5 +76,3 @@ foreach ($mails as $mail) {
 echo json_encode(['mails' => $rows], JSON_UNESCAPED_UNICODE);
 
 $conn->close();
-
-

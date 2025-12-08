@@ -49,8 +49,7 @@ async function GenerateDepartmentOBJ() {
 
             EmpPanel.innerHTML = `
                 <h3>${emp.name}</h3>
-                <p><strong>Email:</strong> ${emp.email}</p>
-                <p><strong>Password:</strong> ${emp.password}</p>
+                <p><strong>Email:</strong> ${emp.email}</p>    
                 <p><strong>Position:</strong> ${emp.position}</p>
                 <p><strong>Department:</strong> ${emp.department}</p>
                 <p><strong>Manager:</strong> ${emp.manager ?? "—"}</p>
@@ -79,6 +78,12 @@ function hideAllEmpData() {
 // OPEN MODAL WHEN BUTTON PRESSED
 function CheckCorparativeStructureToMakeSure() {
     document.getElementById("DetailsModal").style.display = "block";
+    PauseTimer();
+}
+
+function CloseStructure(){
+    ContinueTimer();
+    document.querySelector('.modal').style.display='none';
 }
 
 GenerateDepartmentOBJ();

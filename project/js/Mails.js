@@ -1,5 +1,6 @@
 let MailsFileName = "AssetsAndExamples/JsonFiles/real_emails.json";
 let FakeMailsFileName = "AssetsAndExamples/JsonFiles/phishing_emails.json";
+let LeaderBoardsFile = "AssetsAndExamples/JsonFiles/LeaderBoard.json";
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 const MailsCheckArray = Array(240).fill(0);
 let FinalMailsArray = null
@@ -40,6 +41,8 @@ async function StartGame(){
     NicknameContent.style.display = "none";
     var EmailContent = document.getElementById("GamePage");
     EmailContent.style.display = "flex";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
     StartTimer();
     GetNextMail();
 
@@ -64,7 +67,7 @@ async function GetFullEmailsArray(){
     let FakeRes = await JSONTransmitter(FakeMailsFileName);
     //content for set https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
     //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-    RealRes = RealRes.mails.map(mail =>({...mail, isFake:true}));
+    RealRes = RealRes.mails.map(mail =>({...mail, isFake:false}));
     FakeRes = FakeRes.mails.map(mail =>({...mail, isFake:true}));
     //console.log(RealRes);
     //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
@@ -130,12 +133,14 @@ function checkForCorrectness(arg)
     }
     else{
         tries -= 1;
+        UpdateTries();
         if(tries <= 0)
         {
             GameLostByLifes();
             return;
         }
     }
+
     UpdateScore();
     if(mailCounter>= 20)
     {
@@ -154,6 +159,7 @@ function GetNickname(argument){
     }
     Difficulty = argument;
     tries = GetTriesBasedOnDifficulty(Difficulty);
+    UpdateTries();
     StartGame()
 }
 function AskUsrForNickname(){
@@ -167,6 +173,8 @@ function AskUsrForNickname(){
     EmailContent.style.display = "none";
     var NicknameContent = document.getElementById("PlayerIdPage");
     NicknameContent.style.display = "flex";
+    var SettingsContent = document.getElementById("SettingsPage");
+    SettingsContent.style.display = "none";
 }
 
 //Timer section
@@ -188,15 +196,99 @@ function FormatTimer(StartFormat){
 function StartTimer(){
     let TimerDiv = document.getElementById("timer");
     //clearInterval docs https://developer.mozilla.org/en-US/docs/Web/API/Window/clearInterval
-    if(GameInterval) clearInterval(GameInterval);
+    if(GameInterval !== null) return;
+
+    if(typeof TimeLeft !== "number")TimeLeft = TimerDuration;
+
     GameInterval = setInterval(() => {
         TimeLeft--;
-        TimerDiv.innerHTML = "Time left: " + FormatTimer(TimeLeft);
+        TimerDiv.innerHTML = "Time left: <strong>" + FormatTimer(TimeLeft) + "</strong>";
         if(TimeLeft <= 0)
         {
             GameLostByTimer();
         }
     }, 1000);
+}
+
+//A way to reset a timer to blank state
+function ResetGameState(){
+    score = 0;
+    Difficulty = "";
+    tries = 0;
+    Nickname = "";
+    mailCounter = 0;
+
+    TimeLeft = TimerDuration;
+    if(GameInterval){
+        clearInterval(GameInterval);
+        GameInterval = null;
+    }
+
+    let TimerDiv = document.getElementById("timer");
+    if(TimerDiv){
+        TimerDiv.innerHTML = "";
+    }
+    let ScoreUI = document.getElementById("ScoreBoard");
+    if(ScoreUI){
+        ScoreUI.innerHTML = "Score : 0";
+    }
+
+    for(let i = 0; i < MailsCheckArray.length; i++){
+        MailsCheckArray[i] = 0;
+    }
+}
+
+
+function Restart(){
+    score = 0;
+    mailCounter = 0;
+
+    if(Difficulty){
+        tries = GetTriesBasedOnDifficulty(Difficulty);
+    } else{
+        tries = 0;
+    }
+    UpdateTries();
+
+    TimeLeft = TimerDuration;
+    if(GameInterval){
+        clearInterval(GameInterval);
+        GameInterval = null;
+    }
+
+    PerMailStart = null;
+    PerMailTimes = [];
+
+
+    for(let i = 0; i < MailsCheckArray.length; i++){
+        MailsCheckArray[i] = 0;
+    }
+
+    const TimerDiv = document.getElementById("timer");
+    if(TimerDiv){
+        TimerDiv.innerHTML = "";
+    }
+    const ScoreUI = document.getElementById("ScoreBoard");
+    if(ScoreUI){
+        ScoreUI.innerHTML = "Score : 0";
+    }
+
+    StartTimer();
+    GetNextMail();
+
+}
+
+function PauseTimer(){
+    if(GameInterval){
+        clearInterval(GameInterval);
+        GameInterval = null;
+    }
+}
+
+function ContinueTimer(){
+    if(!GameInterval){
+        StartTimer();
+    }
 }
 
 function StartTimerForOneMail(){
@@ -212,15 +304,53 @@ function StopTimerForOneMail(){
 }
 
 
-
 function GameLostByTimer(){
-    alert("Lost by timer");
+    showResultModal(
+        "Time is Over ⏰",
+        "You ran out of time. Try again and be quicker spotting phishing emails!"
+    );
+
 }
 
 function GameLostByLifes(){
-    alert("Guessed incorrectly to many times");
+    showResultModal(
+        "No Lives Left ❌",
+        "You made too many mistakes. Review the emails more carefully and try again!"
+    );
 }
 
+function PlayerWonGame(){
+    showResultModal(
+        "You won! 🎉",
+        "Great job! You successfully won the game!!"
+    );
+}
+
+
+
+// function GameLostByTimer(){
+//     alert("Lost by timer");
+//     //make a seperate page and display content through that func
+//
+//     //database connectivity
+//     //DatabaseLeaderBoardCall()
+// }
+//
+// function GameLostByLifes(){
+//     alert("Guessed incorrectly to many times");
+//     //make a seperate page and display content through that func
+//
+//     //database connectivity
+//     //DatabaseLeaderBoardCall()
+// }
+//
+// function PlayerWonGame(){
+//     alert("You Won!");
+//     //make a seperate page and display content through that func
+//
+//     //database connectivity
+//     //DatabaseLeaderBoardCall()
+// }
 function GetTriesBasedOnDifficulty(arg){
     if(arg == "Easy")
     {
@@ -240,6 +370,129 @@ function UpdateScore(){
     document.getElementById("ScoreBoard").innerHTML= "Score: " + score;
 }
 
-function PlayerWonGame(){
-    alert("You Won!");
+
+async function fillInLeaderboard(){
+  try {
+    const LeaderList = await JSONTransmitter(LeaderBoardsFile); 
+    const LeaderSection = document.getElementById("leaderBoard");
+    LeaderSection.innerHTML = ""; 
+
+    // header 
+    LeaderSection.innerHTML = `
+    <h2 class="leaderboard-title">LeaderBoard</h2>
+
+      <div class="leaderboard-header">
+        <div class="col-rank">#</div>
+        <div class="col-name">Player</div>
+        <div class="col-score">Score</div>
+        <div class="col-time">Date/Time</div>
+      </div>
+    `;
+
+    if (!LeaderList || !Array.isArray(LeaderList.players) || LeaderList.players.length === 0) {
+      LeaderSection.innerHTML += '<div style="padding:12px">No scores yet</div>';
+      return;
+    }
+
+    //  highest score 
+    const players = LeaderList.players.slice().sort((a,b) => (Number(b.score)||0) - (Number(a.score)||0));
+
+    const rowsHtml = players.map((p, i) => {
+      let timeText = p.timestamp || p.time || "";
+      const parsed = new Date(p.timestamp);
+      if (!isNaN(parsed.getTime())) timeText = parsed.toLocaleString();
+      return `
+        <div class="leaderboard-row">
+          <div class="col-rank">${i+1}</div>
+          <div class="col-name">${p.name || "Unknown"}</div>
+          <div class="col-score">${p.score ?? 0}</div>
+          <div class="col-time">${timeText}</div>
+        </div>
+      `;
+    }).join("");
+
+    LeaderSection.innerHTML += rowsHtml;
+
+  } catch (err) {
+    console.error(err);
+    document.getElementById("leaderBoard").innerHTML += '<div style="padding:12px">Error loading leaderboard</div>';
+  }
 }
+fillInLeaderboard();
+
+function DatabaseLeaderBoardCall(){
+  let form = new FormData();
+  form.append("score", score);
+  form.append("nickname", Nickname);
+  form.append("timestamp", new Date().toISOString());
+  fetch("file.php", {
+    method: "POST",
+    body: form
+  }).then(()=> {
+    fillInLeaderboard();
+  }).catch(e => console.error(e));
+}
+
+function UpdateTries() {
+    const counter = document.getElementById("TryCounter");
+    if (!counter) return;
+
+    const heart = "💚";
+    counter.textContent = heart.repeat(tries);
+}
+
+
+function showResultModal(title, message) {
+    PauseTimer();
+
+    const modal = document.getElementById("ResultModal");
+    const titleEl = document.getElementById("ResultTitle");
+    const msgEl = document.getElementById("ResultMessage");
+    const scoreEl = document.getElementById("ResultScore");
+    if (!modal) return;
+    if (titleEl) titleEl.textContent = title;
+    if (msgEl) msgEl.textContent = message;
+    if (scoreEl) scoreEl.textContent = "Your score: " + score;
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+function closeResultModal() {
+    const modal = document.getElementById("ResultModal");
+    if (!modal) return;
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+}
+
+function openInfoModal() {
+    const modal = document.getElementById("InfoModal");
+    if (!modal) return;
+    PauseTimer();
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+
+
+function closeInfoModal() {
+    const modal = document.getElementById("InfoModal");
+    if (!modal) return;
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+    ContinueTimer();
+}
+
+function openRulesModal() {
+    const modal = document.getElementById("RulesModal");
+    if (!modal) return;
+    PauseTimer();
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+}
+
+function closeRulesModal() {
+    const modal = document.getElementById("RulesModal");
+    if (!modal) return;
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+    ContinueTimer();
+}
+

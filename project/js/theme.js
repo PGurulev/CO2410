@@ -20,11 +20,9 @@
     if (!toggle) return;
     const current = root.getAttribute('data-theme');
     if (current === 'light') {
-      toggle.textContent = '🌒';
       toggle.setAttribute('aria-pressed','false');
       toggle.title = 'Switch to dark mode';
     } else {
-      toggle.textContent = '☀️';
       toggle.setAttribute('aria-pressed','true');
       toggle.title = 'Switch to light mode';
     }
@@ -57,3 +55,21 @@
     }
   });
 })();
+
+//for the btn to turn off logo/tittle animation
+const logoTitle = document.querySelector(".GameTitle");
+const logoAnimBtn = document.getElementById("logoAnimToggle");
+
+let animationOn = true;
+
+logoAnimBtn.addEventListener("click", () => {
+    animationOn = !animationOn;
+
+    if (animationOn) {
+        logoTitle.classList.remove("no-animation");
+        logoAnimBtn.textContent = "On";
+    } else {
+        logoTitle.classList.add("no-animation");
+        logoAnimBtn.textContent = "Off";
+    }
+});
