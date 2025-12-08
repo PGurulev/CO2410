@@ -11,7 +11,7 @@
 <div class="page-wrapper">
     <header class="site-header panel">
         <div class="header-left">
-            <h1 class="GameTitle">PhishPlay</h1>
+            <a onclick="goback()"><h1 class="GameTitle">PhishPlay</h1></a>
             <div class="subtitle">Spot fake vs real emails</div>
         </div>
 
@@ -33,13 +33,157 @@
         </p>
 
         <section class="buttons" aria-label="main actions">
-            <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
-            <button class="btn btn-info">General info</button>
-            <button class="btn btn-rules">Rules of the game</button>
+            <button class="btn btn-start" onclick="AskUsrForNickname()">Start the Game</button>
+            <button class="btn btn-info" onclick="openInfoModal()">General Information</button>
+            <button class="btn btn-rules" onclick="openRulesModal()">How to Play</button>
         </section>
 
-    
+        <div class="modal" id="InfoModal" aria-hidden="true">
+            <div class="modal-content-small panel info-modal">
+                <h2>General Information</h2>
 
+                <p class="info-intro">
+                    This game helps you practice spotting <strong>phishing emails</strong>, fake messages
+                    that try to trick you into sharing sensitive information or clicking malicious links.
+                </p>
+
+                <div class="info-section">
+                    <h3>📬 What is phishing?</h3>
+                    <p>
+                        Phishing is a type of online scam where attackers pretend to be trusted organisations
+                        (banks, stores, delivery services, even your workplace) to steal data like passwords,
+                        credit card numbers, or other personal details.
+                    </p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🔍 Common signs of a phishing email</h3>
+                    <ul class="info-list">
+                        <li>Strange or <strong>slightly misspelled sender addresses</strong>.</li>
+                        <li><strong>Urgent</strong> or <strong>threatening</strong> language (“Your account will be closed today!”).</li>
+                        <li>Messages that pressure you to <strong>act fast</strong> or “verify now”.</li>
+                        <li><strong>Links</strong> that don’t match the real website when you hover over them.</li>
+                        <li><strong>Unexpected attachments</strong> (.zip, .exe, suspicious documents).</li>
+                        <li>Requests for <strong>passwords</strong>, <strong>PINs</strong>, or other sensitive information.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🛡️ How to stay safe</h3>
+                    <ul class="info-list">
+                        <li>Always check the <strong>full email address</strong> of the sender.</li>
+                        <li>Think before you click, especially on links and attachments.</li>
+                        <li>Go directly to the official website instead of using links in suspicious emails.</li>
+                        <li>Never share passwords or PINs over email.</li>
+                        <li>If something feels off, <strong>double-check with the organisation</strong> using a trusted channel.</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🎮 How this game helps you</h3>
+                    <p>
+                        Each email in the game is based on real-world examples of both legitimate and phishing messages.
+                        By practising here, you train yourself to:
+                    </p>
+                    <ul class="info-list">
+                        <li>Slow down and inspect email details.</li>
+                        <li>Recognise suspicious wording and formatting.</li>
+                        <li>Build safe habits before real attacks reach your inbox.</li>
+                    </ul>
+                    <p class="info-note">
+                        Use this game as a <strong>safe space</strong> to make mistakes and learn, so you’re ready in real life.
+                    </p>
+                </div>
+
+                <div style="text-align:center; margin-top: 15px;">
+                    <button class="btn btn-close-modal" onclick="closeInfoModal()">Got it!</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="RulesModal" aria-hidden="true">
+            <div class="modal-content-small panel rules-modal">
+                <h2>How to Play</h2>
+
+                <p class="rules-intro">
+                    Your mission is simple: <strong>spot which emails are real and which are phishing</strong>
+                    before you run out of time or lives.
+                </p>
+
+                <div class="rules-section">
+                    <h3>🎯 Objective</h3>
+                    <ul class="rules-list">
+                        <li>Read each email carefully.</li>
+                        <li>Decide if it is <strong>Real</strong> or <strong>Fake (phishing)</strong>.</li>
+                        <li>Survive until you correctly classify <strong>20 emails</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-section">
+                    <h3>⚙️ Difficulty & Lives</h3>
+                    <ul class="rules-list">
+                        <li><strong>Easy</strong> – 6 lives 💚💚💚💚💚💚</li>
+                        <li><strong>Medium</strong> – 4 lives 💚💚💚💚</li>
+                        <li><strong>Hard</strong> – 2 lives 💚💚</li>
+                    </ul>
+                    <p class="rules-note">
+                        Every wrong answer costs you <strong>one life</strong>.
+                        When lives reach <strong>0</strong>, the game is over.
+                    </p>
+                </div>
+
+                <div class="rules-section">
+                    <h3>⏳ Timer</h3>
+                    <ul class="rules-list">
+                        <li>You have a total of <strong>10 minutes</strong> to finish the game.</li>
+                        <li>The timer keeps ticking while you play.</li>
+                        <li>Opening the Hints window pauses the timer; closing it resumes the game.</li>
+                    </ul>
+                    <p class="rules-warning">
+                        If the timer reaches <strong>0</strong>, you lose the game.
+                    </p>
+                </div>
+
+                <div class="rules-section">
+                    <h3>📈 Scoring</h3>
+                    <ul class="rules-list">
+                        <li>Each correct answer gives you <strong>points</strong>.</li>
+                        <li>The faster you answer, the <strong>more bonus points</strong> you get for that email.</li>
+                        <li>Wrong answers give you <strong>no points</strong> and cost a life.</li>
+                    </ul>
+                </div>
+
+                <div class="rules-section">
+                    <h3>🏆 Winning & Losing</h3>
+                    <ul class="rules-list">
+                        <li><strong>You win</strong> by correctly classifying <strong>20 emails</strong>.</li>
+                        <li><strong>You lose</strong> if:
+                            <ul class="rules-list-sub">
+                                <li>Your lives reach <strong>0</strong>, or</li>
+                                <li>The timer runs out.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="rules-section">
+                    <h3>💡 Tips</h3>
+                    <ul class="rules-list">
+                        <li>Check the <strong>sender’s email address</strong> carefully.</li>
+                        <li>Look for <strong>urgent</strong> or <strong>threatening</strong> language.</li>
+                        <li>Be suspicious of <strong>links</strong> and <strong>attachments</strong> you didn’t expect.</li>
+                        <li>Legitimate companies rarely ask for <strong>passwords</strong> or sensitive data via email.</li>
+                    </ul>
+                </div>
+
+                <div style="text-align:center; margin-top: 15px;">
+                    <button class="btn btn-close-modal" onclick="closeRulesModal()">Got it!</button>
+                </div>
+            </div>
+        </div>
+
+   
         <section id="leaderBoard">
             
         </section>

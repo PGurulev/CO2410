@@ -178,7 +178,7 @@ html[data-theme="dark"] #themeToggle::before{
 .subtitle{
   margin: 2px 0 0;
   font-size:clamp(13px, 2vw, 16px);
-  color: var(--muted);
+  color: var(--text);
 }
 
 .lead{
@@ -592,7 +592,10 @@ p {
     color: var(--text);
 }
 
+
 .no-animation {
   animation: none !important;
+  -webkit-text-fill-color: var(--text) !important;
+
 }
 

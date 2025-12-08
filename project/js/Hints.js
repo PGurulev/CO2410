@@ -3,19 +3,19 @@
 
 const HintsArray = [
     {
-        message: "Always check the sender's full email address and the subject line for suspicious characters!",
+        message: "Always verify the sender’s full email address and subject line, watching carefully for odd or suspicious details.",
         image: "project/assets/images/hint01.png"
     },
     {
-        message: "Phishers often hide malicious links behind text!",
+        message: "Be aware that phishers often disguise dangerous links with harmless-looking text meant to mislead or confuse you.",
         image: "project/assets/images/hint02.png"
     },
     {
-        message: "Look for urgent or threatening language in the email. Be suspicious of requests that pressure you to act fast!",
+        message: "Stay alert for urgent or threatening wording in emails, especially when you are pressured to respond quickly.",
         image: "project/assets/images/hint03.png"
     },
     {
-        message: "Check for unexpected attachments or requests for personal information. Legitimate companies usually don't ask for sensitive info via email.",
+        message: "Check for unexpected attachments or demands for private data, since trustworthy companies rarely request it",
         image: "project/assets/images/hint04.png"
     }
 ];
