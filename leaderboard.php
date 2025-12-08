@@ -1,25 +1,25 @@
-header("Content-Type: application/json");
+<?php
+header('Content-Type: application/json; charset=utf-8');
 
-//Include database connection
-require_once "db_connect.php";
+require_once __DIR__ . '/db.php'; // 
 
-//Query all players from leaderboard table
-$sql = "SELECT name, score FROM leaderboard ORDER BY score DESC";
+$conn = db_connect();
+$sql = "SELECT name, score, timestamp FROM leaderboard ORDER BY score DESC LIMIT 15";
 $result = $conn->query($sql);
 
 $players = [];
 
-//Fetch each row and add to the array
 if ($result && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $players[] = [
             "name"  => $row["name"],
-            "score" => (int)$row["score"]
+            "score" => (int)$row["score"],
+            "timestamp"=> $row["timestamp"]
         ];
     }
 }
 
-//Output JSON
 echo json_encode(["players" => $players], JSON_PRETTY_PRINT);
 
 $conn->close();
+?>

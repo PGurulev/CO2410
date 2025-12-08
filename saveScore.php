@@ -1,13 +1,12 @@
 <?php
 header("Content-Type: application/json");
-require_once "db_connect.php";
-
+require_once "project/php/db.php";
+$conn = db_connect();
 $data = json_decode(file_get_contents("php://input"), true);
 
 $name  = $data["name"] ?? null;
 $score = $data["score"] ?? null;
-
-if (!$name || !$score) {
+if ($name === null || $score === null) {
     echo json_encode(["success" => false, "message" => "Invalid input"]);
     exit;
 }
