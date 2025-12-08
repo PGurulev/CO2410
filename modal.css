@@ -80,42 +80,42 @@
 }
 
 
-.rules-modal h2 {
+.rules-modal h2,.info-modal h2  {
     text-align: center;
 }
 
-.rules-modal h3 {
+.rules-modal h3, .info-modal h3  {
     margin: 10px 0 6px;
     font-size: 1rem;
 }
 
-.rules-intro {
+.rules-intro, .info-intro  {
     font-size: 0.95rem;
     margin-bottom: 12px;
     text-align: center;
 }
 
-.rules-section {
+.rules-section,.info-section  {
     margin-bottom: 10px;
     border-top: 1px solid rgba(255,255,255,0.06);
     padding-top: 8px;
 }
 
 .rules-list,
-.rules-list-sub {
+.rules-list-sub,  .info-list {
     list-style: none;
     margin: 4px 0 0;
     padding-left: 0;
     font-size: 0.9rem;
 }
 
-.rules-list li {
+.rules-list li, .info-list li  {
     position: relative;
     padding-left: 18px;
     margin-bottom: 4px;
 }
 
-.rules-list li::before {
+.rules-list li::before, .info-list li::before {
     content: "•";
     position: absolute;
     left: 4px;
@@ -134,8 +134,8 @@
 }
 
 .rules-note,
-.rules-warning {
-    font-size: 0.85rem;
+.rules-warning, .info-note  {
+    font-size: 0.9rem;
     margin-top: 4px;
     opacity: 0.9;
 }
@@ -143,6 +143,13 @@
 .rules-warning {
     font-weight: 600;
 }
+
+.modal p{
+  color:var(--text)
+}
+
+
+
 
 /* ===== Corporate Structure Modal Styling ===== */
 
