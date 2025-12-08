@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 function db_connect(): mysqli {
 	$host = 'localhost';
-	$user = 'root';
-	$pass = '';
-	$db   = 'cyber_game';
+	$user = 'tklochko-shemiakin';
+	$pass = 'usUrfdMQhZ';
+	$db   = 'tklochko-shemiakin';
 
 	$mysqli = new mysqli($host, $user, $pass, $db);
 	if ($mysqli->connect_errno) {
