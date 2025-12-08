@@ -33,9 +33,9 @@
         </p>
 
         <section class="buttons" aria-label="main actions">
-            <button class="btn btn-start" onclick="AskUsrForNickname()">Start the game</button>
-            <button class="btn btn-info" onclick="openInfoModal()">General info</button>
-            <button class="btn btn-rules" onclick="openRulesModal()">Rules of the game</button>
+            <button class="btn btn-start" onclick="AskUsrForNickname()">Start the Game</button>
+            <button class="btn btn-info" onclick="openInfoModal()">General Info</button>
+            <button class="btn btn-rules" onclick="openRulesModal()">How to Play</button>
         </section>
 
         <div class="modal" id="InfoModal" aria-hidden="true">
@@ -53,19 +53,86 @@
         </div>
 
         <div class="modal" id="RulesModal" aria-hidden="true">
-            <div class="modal-content-small panel">
-                <h2>Rules of the Game</h2>
-                <p>
+    <div class="modal-content-small panel rules-modal">
+        <h2>How to Play</h2>
 
+        <p class="rules-intro">
+            Your mission is simple: <strong>spot which emails are real and which are phishing</strong>
+            before you run out of time or lives.
+        </p>
 
-
-
-                </p>
-                <div style="text-align:center; margin-top: 15px;">
-                    <button class="btn btn-close-modal" onclick="closeRulesModal()">Got it!</button>
-                </div>
-            </div>
+        <div class="rules-section">
+            <h3>🎯 Objective</h3>
+            <ul class="rules-list">
+                <li>Read each email carefully.</li>
+                <li>Decide if it is <strong>Real</strong> or <strong>Fake (phishing)</strong>.</li>
+                <li>Survive until you correctly classify <strong>20 emails</strong>.</li>
+            </ul>
         </div>
+
+        <div class="rules-section">
+            <h3>⚙️ Difficulty & Lives</h3>
+            <ul class="rules-list">
+                <li><strong>Easy</strong> – 6 lives 💚💚💚💚💚💚</li>
+                <li><strong>Medium</strong> – 4 lives 💚💚💚💚</li>
+                <li><strong>Hard</strong> – 2 lives 💚💚</li>
+            </ul>
+            <p class="rules-note">
+                Every wrong answer costs you <strong>one life</strong>.
+                When lives reach <strong>0</strong>, the game is over.
+            </p>
+        </div>
+
+        <div class="rules-section">
+            <h3>⏳ Timer</h3>
+            <ul class="rules-list">
+                <li>You have a total of <strong>10 minutes</strong> to finish the game.</li>
+                <li>The timer keeps ticking while you play.</li>
+                <li>Opening the Hints window pauses the timer; closing it resumes the game.</li>
+            </ul>
+            <p class="rules-warning">
+                If the timer reaches <strong>0</strong>, you lose the game.
+            </p>
+        </div>
+
+        <div class="rules-section">
+            <h3>📈 Scoring</h3>
+            <ul class="rules-list">
+                <li>Each correct answer gives you <strong>points</strong>.</li>
+                <li>The faster you answer, the <strong>more bonus points</strong> you get for that email.</li>
+                <li>Wrong answers give you <strong>no points</strong> and cost a life.</li>
+            </ul>
+        </div>
+
+        <div class="rules-section">
+            <h3>🏆 Winning & Losing</h3>
+            <ul class="rules-list">
+                <li><strong>You win</strong> by correctly classifying <strong>20 emails</strong>.</li>
+                <li><strong>You lose</strong> if:
+                    <ul class="rules-list-sub">
+                        <li>Your lives reach <strong>0</strong>, or</li>
+                        <li>The timer runs out.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="rules-section">
+            <h3>💡 Tips</h3>
+            <ul class="rules-list">
+                <li>Check the <strong>sender’s email address</strong> carefully.</li>
+                <li>Look for <strong>urgent</strong> or <strong>threatening</strong> language.</li>
+                <li>Be suspicious of <strong>links</strong> and <strong>attachments</strong> you didn’t expect.</li>
+                <li>Legitimate companies rarely ask for <strong>passwords</strong> or sensitive data via email.</li>
+            </ul>
+        </div>
+
+        <div style="text-align:center; margin-top: 15px;">
+            <button class="btn btn-close-modal" onclick="closeRulesModal()">Got it!</button>
+        </div>
+    </div>
+</div>
+
    
         <section id="leaderBoard">
             
