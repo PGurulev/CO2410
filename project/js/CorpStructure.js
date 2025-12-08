@@ -76,15 +76,19 @@ function hideAllEmpData() {
     });
 }
 
-// OPEN MODAL WHEN BUTTON PRESSED
 function CheckCorparativeStructureToMakeSure() {
-    document.getElementById("DetailsModal").style.display = "block";
+    let modal = document.getElementById("DetailsModal");
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+    modal.querySelector(".modal").focus();
     PauseTimer();
 }
 
 function CloseStructure(){
     ContinueTimer();
-    document.querySelector('.modal').style.display='none';
+    let modal = document.getElementById("DetailsModal");
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
 }
 
 GenerateDepartmentOBJ();
