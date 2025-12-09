@@ -565,11 +565,34 @@ p {
 
 /* responsive */
 @media (max-width:600px){
-  .leaderboard-row, #leaderBoard .leaderboard-header {
-    flex-wrap:wrap;
-  }
-  .col-score, .col-time { width: 100%; text-align:left; margin-top:6px; }
+    #leaderBoard .leaderboard-header{
+        display:none;
+    }
+    .leaderboard-row{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:6px;
+        padding:12px;
+        margin-bottom:8px;
+        border-radius:8px;
+        background: var(--glass);
+    }
+    .col-rank::before { content:"# "; opacity:.7; font-weight:500; }
+    .col-name::before { content:"Player: "; opacity:.7; font-weight:500; }
+    .col-score::before { content:"Score: "; opacity:.7; font-weight:500; }
+    .col-time::before { content:"Date/Time: "; opacity:.7; font-weight:500; }
+    .col-rank, .col-name, .col-score, .col-time{
+        width:100%;
+        text-align:left;
+        white-space:normal;
+        font-size:0.95rem;
+    }
+    .col-name{
+        font-weight:700;
+        font-size:1rem;
+    }
 }
+
 
 .settings-category {
     font-size: 1.2rem;
@@ -599,14 +622,5 @@ p {
 
 }
 
-#leaderBoard {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
 
-#leaderBoard .leaderboard-header,
-#leaderBoard .leaderboard-row {
-    flex-wrap: nowrap !important;
-    min-width: 520px;
-}
 
