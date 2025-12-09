@@ -1,0 +1,182 @@
+{
+  "company": {
+    "name": "Aegis Oceanic University (AOU)",
+    "industry": "Higher Education & Marine Technology Research",
+    "founded_year": 1998,
+    "hq_location": "Larnaca, Cyprus",
+    "mission": "Advance sustainable maritime innovation and educate leaders for the blue economy.",
+    "history": "AOU began as a small maritime academy established by a coalition of local port authorities in 1998. In the mid-2000s, it partnered with European research councils to develop ocean-sensing platforms and autonomous ROVs for reef conservation. After 2015, AOU expanded into fintech-for-marinas and supply-chain analytics for coastal logistics. Today, AOU operates three research centers and a technology incubator focused on resilient coastal infrastructure and green shipping.",
+    "departments": [
+      {
+        "name": "Executive Office"
+      },
+      {
+        "name": "Engineering & R&D"
+      },
+      {
+        "name": "IT & Security"
+      },
+      {
+        "name": "Finance"
+      },
+      {
+        "name": "Human Resources"
+      },
+      {
+        "name": "Operations (Marina Campus)"
+      },
+      {
+        "name": "Student Affairs"
+      },
+      {
+        "name": "Admissions & Outreach"
+      }
+    ],
+    "employees": [
+      {
+        "name": "Dr. Eleni Hadjis",
+        "password": "AOU!Pres2025",
+        "email": "ehadjis@aou.example.com",
+        "position": "President & Vice-Chancellor",
+        "department": "Executive Office",
+        "manager": null
+      },
+      {
+        "name": "Mateo Grivas",
+        "password": "Exec#Strat_8842",
+        "email": "mgrivas@aou.example.com",
+        "position": "Chief of Staff",
+        "department": "Executive Office",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Prof. Nia Kouris",
+        "password": "R&D_Lead^2025",
+        "email": "nkouris@aou.example.com",
+        "position": "Director of Engineering & R&D",
+        "department": "Engineering & R&D",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Armin Petrescu",
+        "password": "AuvLab$412",
+        "email": "apetrescu@aou.example.com",
+        "position": "Senior Robotics Engineer",
+        "department": "Engineering & R&D",
+        "manager": "nkouris@aou.example.com"
+      },
+      {
+        "name": "Lia Demetriou",
+        "password": "OceanData_73!",
+        "email": "ldemetriou@aou.example.com",
+        "position": "Data Scientist (Ocean Sensing)",
+        "department": "Engineering & R&D",
+        "manager": "nkouris@aou.example.com"
+      },
+      {
+        "name": "Hassan Al-Masri",
+        "password": "CISO@AOU_2025",
+        "email": "halmasri@aou.example.com",
+        "position": "Head of IT & Security (CISO)",
+        "department": "IT & Security",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Sofia Marin",
+        "password": "IdP-Gateway*902",
+        "email": "smarin@aou.example.com",
+        "position": "Systems Administrator",
+        "department": "IT & Security",
+        "manager": "halmasri@aou.example.com"
+      },
+      {
+        "name": "Jonas Mikkelsen",
+        "password": "NetOps^Switch31",
+        "email": "jmikkelsen@aou.example.com",
+        "position": "Network Engineer",
+        "department": "IT & Security",
+        "manager": "halmasri@aou.example.com"
+      },
+      {
+        "name": "Maria Kyriakou",
+        "password": "FinCtrl_77$",
+        "email": "mkyriakou@aou.example.com",
+        "position": "Finance Controller",
+        "department": "Finance",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Owen Dlamini",
+        "password": "P2P_Ledger009!",
+        "email": "odlamini@aou.example.com",
+        "position": "Accounts Payable Specialist",
+        "department": "Finance",
+        "manager": "mkyriakou@aou.example.com"
+      },
+      {
+        "name": "Agata Nowak",
+        "password": "HR_Policy*2025",
+        "email": "anowak@aou.example.com",
+        "position": "HR Manager",
+        "department": "Human Resources",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Theo Christoforou",
+        "password": "Talent!Board_55",
+        "email": "tchristoforou@aou.example.com",
+        "position": "Talent Acquisition Specialist",
+        "department": "Human Resources",
+        "manager": "anowak@aou.example.com"
+      },
+      {
+        "name": "Irina Kovacs",
+        "password": "Ops_Marina^441",
+        "email": "ikovacs@aou.example.com",
+        "position": "Operations Lead (Marina Campus)",
+        "department": "Operations (Marina Campus)",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Babatunde Ajayi",
+        "password": "GateCtrl_NFC!28",
+        "email": "bajayi@aou.example.com",
+        "position": "Access Control Technician",
+        "department": "Operations (Marina Campus)",
+        "manager": "ikovacs@aou.example.com"
+      },
+      {
+        "name": "Elif Yildiz",
+        "password": "StudentCare_960",
+        "email": "eyildiz@aou.example.com",
+        "position": "Director of Student Affairs",
+        "department": "Student Affairs",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "George Papas",
+        "password": "Advisor*2025",
+        "email": "gpapas@aou.example.com",
+        "position": "Student Advisor",
+        "department": "Student Affairs",
+        "manager": "eyildiz@aou.example.com"
+      },
+      {
+        "name": "Rita Okoye",
+        "password": "Outreach+Enroll77",
+        "email": "rokoye@aou.example.com",
+        "position": "Head of Admissions & Outreach",
+        "department": "Admissions & Outreach",
+        "manager": "ehadjis@aou.example.com"
+      },
+      {
+        "name": "Samuel Petrou",
+        "password": "Fairs&Schools_33",
+        "email": "spetrou@aou.example.com",
+        "position": "Admissions Officer",
+        "department": "Admissions & Outreach",
+        "manager": "rokoye@aou.example.com"
+      }
+    ]
+  }
+}
