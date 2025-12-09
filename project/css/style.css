@@ -599,3 +599,14 @@ p {
 
 }
 
+#leaderBoard {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#leaderBoard .leaderboard-header,
+#leaderBoard .leaderboard-row {
+    flex-wrap: nowrap !important;
+    min-width: 520px;
+}
+

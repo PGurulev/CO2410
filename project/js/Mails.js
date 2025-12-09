@@ -1,6 +1,5 @@
 let MailsFileName = "./project/php/get_mails.php";
 let FakeMailsFileName = "AssetsAndExamples/JsonFiles/phishing_emails.json";
-//let LeaderBoardsFile = "./project/php/leaderboard.php";
 LeaderBoardsFile = "./AssetsAndExamples/JsonFiles/LeaderBoard.json";
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 const MailsCheckArray = Array(240).fill(0);
