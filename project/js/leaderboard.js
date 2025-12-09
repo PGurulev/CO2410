@@ -1,5 +1,5 @@
 function loadLeaderboard() {
-    fetch("project/php/leaderboard.php") //Refer from php part for logic part of js
+    fetch("./project/php/leaderboard.php") //Refer from php part for logic part of js
         .then(res => res.json())
         .then(data => {
             const list = data.players; //Create list of player's data for leaderboard

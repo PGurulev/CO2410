@@ -1,6 +1,6 @@
-let MailsFileName = "project/php/get_mails.php";
+let MailsFileName = "./project/php/get_mails.php";
 let FakeMailsFileName = "AssetsAndExamples/JsonFiles/phishing_emails.json";
-let LeaderBoardsFile = "leaderboard.php";
+let LeaderBoardsFile = "./project/php/leaderboard.php";
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 const MailsCheckArray = Array(240).fill(0);
 let FinalMailsArray = null
@@ -428,7 +428,7 @@ async function fillInLeaderboard(){
 fillInLeaderboard();
 
 function DatabaseLeaderBoardCall(){
-  fetch("saveScore.php", {
+  fetch("./project/php/saveScore.php", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"

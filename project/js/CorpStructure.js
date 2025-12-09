@@ -1,4 +1,4 @@
-let CorpStructPath = "project/php/get_departments.php";
+let CorpStructPath = "./project/php/get_departments.php";
 let DeptPlace = document.getElementById("DepartmentDetails");
 let RightPanel = document.getElementById("EmployeeDetails");
 
