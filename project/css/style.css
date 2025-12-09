@@ -14,6 +14,7 @@ html[data-theme="light"]{
   --mail-snippet: rgba(30,30,40,0.7);
   --white: #ffffff;
   --light-gray: #666;
+  --light-blue: #8bbcff;
 
 
 }
@@ -619,7 +620,21 @@ p {
 .no-animation {
   animation: none !important;
   -webkit-text-fill-color: var(--text) !important;
+}
 
+#ContactsPage a,
+#AboutPage a,
+.email a {
+    color: #8bbcff;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+#ContactsPage a:hover,
+#AboutPage a:hover,
+.email a:hover {
+    color: var(--light-gray);
 }
 
 
