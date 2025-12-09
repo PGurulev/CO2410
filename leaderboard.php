@@ -9,8 +9,9 @@ $result = $conn->query($sql);
 
 $players = [];
 
-if ($result && $result->num_rows > 0) {
+if ($result && $result->num_rows > 0) { //If result is not null and values more than 0
     while ($row = $result->fetch_assoc()) {
+        //Add values for leaderboard table which contain information about player's data 
         $players[] = [
             "name"  => $row["name"],
             "score" => (int)$row["score"],
