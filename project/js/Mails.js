@@ -1,6 +1,6 @@
-let MailsFileName = "AssetsAndExamples/JsonFiles/real_emails.json";
+let MailsFileName = "project/php/get_mails.php";
 let FakeMailsFileName = "AssetsAndExamples/JsonFiles/phishing_emails.json";
-let LeaderBoardsFile = "AssetsAndExamples/JsonFiles/LeaderBoard.json";
+let LeaderBoardsFile = "leaderboard.php";
 // source for array filling https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 const MailsCheckArray = Array(240).fill(0);
 let FinalMailsArray = null
@@ -64,23 +64,25 @@ async function MailsArrayDetermination(filename) {
 }
 async function GetFullEmailsArray(){
     let RealRes = await JSONTransmitter(MailsFileName);
-    let FakeRes = await JSONTransmitter(FakeMailsFileName);
+    //let FakeRes = await JSONTransmitter(FakeMailsFileName);
     //content for set https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
     //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-    RealRes = RealRes.mails.map(mail =>({...mail, isFake:false}));
-    FakeRes = FakeRes.mails.map(mail =>({...mail, isFake:true}));
+    //RealRes = RealRes.mails.map(mail =>({...mail, isFake:false}));
+    //FakeRes = FakeRes.mails.map(mail =>({...mail, isFake:true}));
     //console.log(RealRes);
     //content for ... syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-    let combined = {
-       mails: [...RealRes, ...FakeRes]
-    };
+    //et combined = {
+    //   mails: [...RealRes, ...FakeRes]
+    //};
     //console.log(combined);
-    return combined.mails;
+    sessionStorage.setItem("FullEmailsArray", JSON.stringify(RealRes.mails));
+    return ;
 }
 async function GetNextMail() {
     StartTimerForOneMail();
     //let FinalMailsArray = await MailsArrayDetermination(MailsFileName);
-    let FinalMailsArray = await GetFullEmailsArray();
+    let FinalMailsArray = JSON.parse(sessionStorage.getItem("FullEmailsArray"));
+    console.log(FinalMailsArray);
     let FreeMailIndex = await GetFreeMailIndex(FinalMailsArray);
     if(FreeMailIndex !== null){
         MailsCheckArray[FreeMailIndex] = 1;
@@ -97,7 +99,8 @@ async function GetNextMail() {
         FinalMailsArray[FreeMailIndex].content.recievers.forEach(reciever => {
             recievers.innerHTML += "<p>  " + reciever.name + " " + reciever.email + "</p>";
         });
-        localStorage.setItem('MailType', FinalMailsArray[FreeMailIndex].isFake);
+        localStorage.setItem('MailType', FinalMailsArray[FreeMailIndex].is_fake);
+        console.log(FinalMailsArray[FreeMailIndex].is_fake);
     }
     else{
         alert("You completed the game!");
@@ -119,8 +122,10 @@ function checkForCorrectness(arg)
 {
     //TO DO implement Game Logic
     let EmailType = localStorage.getItem('MailType');
+    console.log(EmailType);
     let TimeForEmail = StopTimerForOneMail();
-    let IsMailFake = (EmailType == "true");
+    let IsMailFake = (parseInt(EmailType) == 1);
+    console.log(IsMailFake);
     CorrectGuess = false;
     if(arg == "Fake"){
         CorrectGuess = IsMailFake;
@@ -309,7 +314,7 @@ function GameLostByTimer(){
         "Time is Over ⏰",
         "You ran out of time. Try again and be quicker spotting phishing emails!"
     );
-
+    DatabaseLeaderBoardCall();
 }
 
 function GameLostByLifes(){
@@ -317,6 +322,7 @@ function GameLostByLifes(){
         "No Lives Left ❌",
         "You made too many mistakes. Review the emails more carefully and try again!"
     );
+    DatabaseLeaderBoardCall();
 }
 
 function PlayerWonGame(){
@@ -324,6 +330,7 @@ function PlayerWonGame(){
         "You won! 🎉",
         "Great job! You successfully won the game!!"
     );
+    DatabaseLeaderBoardCall();
 }
 
 
@@ -421,13 +428,15 @@ async function fillInLeaderboard(){
 fillInLeaderboard();
 
 function DatabaseLeaderBoardCall(){
-  let form = new FormData();
-  form.append("score", score);
-  form.append("nickname", Nickname);
-  form.append("timestamp", new Date().toISOString());
-  fetch("file.php", {
+  fetch("saveScore.php", {
     method: "POST",
-    body: form
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        name: Nickname,
+        score: score
+    })
   }).then(()=> {
     fillInLeaderboard();
   }).catch(e => console.error(e));
@@ -462,6 +471,7 @@ function closeResultModal() {
     modal.style.display = "none";
     modal.setAttribute("aria-hidden", "true");
 }
+GetFullEmailsArray();
 
 function openInfoModal() {
     const modal = document.getElementById("InfoModal");

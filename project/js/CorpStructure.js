@@ -1,4 +1,4 @@
-let CorpStructPath = "./AssetsAndExamples/JsonFiles/corporate_structure.json";
+let CorpStructPath = "project/php/get_departments.php";
 let DeptPlace = document.getElementById("DepartmentDetails");
 let RightPanel = document.getElementById("EmployeeDetails");
 
@@ -7,9 +7,8 @@ let EmpData = [];
 
 async function GenerateDepartmentOBJ() {
     let FullData = await JSONTransmitter(CorpStructPath);
-
-    DeptData = FullData.company.departments;
-    EmpData = FullData.company.employees;
+    DeptData = FullData.departments;
+    //EmpData = FullData.company.employees;
 
     DeptData.forEach(dept => {
         let deptDiv = document.createElement("div");
@@ -25,6 +24,7 @@ async function GenerateDepartmentOBJ() {
             empContainer.style.display =
                 empContainer.style.display === "none" ? "block" : "none";
         };
+        EmpData = dept.employees;
 
         //EMPLOYEES
         EmpData.forEach(emp => {
@@ -49,6 +49,7 @@ async function GenerateDepartmentOBJ() {
 
             EmpPanel.innerHTML = `
                 <h3>${emp.name}</h3>
+                <p><strong>Employee Password</strong>${emp.password}</p>
                 <p><strong>Email:</strong> ${emp.email}</p>    
                 <p><strong>Position:</strong> ${emp.position}</p>
                 <p><strong>Department:</strong> ${emp.department}</p>
@@ -75,15 +76,19 @@ function hideAllEmpData() {
     });
 }
 
-// OPEN MODAL WHEN BUTTON PRESSED
 function CheckCorparativeStructureToMakeSure() {
-    document.getElementById("DetailsModal").style.display = "block";
+    let modal = document.getElementById("DetailsModal");
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+    modal.querySelector(".modal").focus();
     PauseTimer();
 }
 
 function CloseStructure(){
     ContinueTimer();
-    document.querySelector('.modal').style.display='none';
+    let modal = document.getElementById("DetailsModal");
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
 }
 
 GenerateDepartmentOBJ();
