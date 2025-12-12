@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\diagrams"
+    "\\diagrams",
+    "\\project",
+    "\\project\\Documents"
   ],
   "SelectedNode": "\\diagrams\\UserStoriesDiagram.drawio.png",
   "PreviewInSolutionExplorer": false
