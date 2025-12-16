@@ -18,8 +18,6 @@ if ($resultMails === false) {
 	$conn->close();
 	exit;
 }
-
-// Собираем id писем
 $mailIds = [];
 $mails = [];
 while ($row = $resultMails->fetch_assoc()) {
@@ -74,5 +72,6 @@ foreach ($mails as $mail) {
 echo json_encode(['mails' => $rows], JSON_UNESCAPED_UNICODE);
 
 $conn->close();
+
 
 
